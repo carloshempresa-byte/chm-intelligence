@@ -1,0 +1,1025 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CHM Intelligence | Dados e inteligência artificial para empresas de Três Lagoas/MS</title>
+<meta name="description" content="Consultoria em dados e inteligência artificial para pequenas e médias empresas de Três Lagoas e região: dashboards em Power BI e Excel, cronogramas em MS Project, relatórios, propostas comerciais, sites, vídeos e automações.">
+<meta name="theme-color" content="#0B1F3A">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="CHM Intelligence">
+<meta property="og:title" content="CHM Intelligence: sua empresa no controle">
+<meta property="og:description" content="Inteligência artificial e dados a serviço do empresário. Consultoria para pequenas e médias empresas de Três Lagoas e região.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B1F3A'/%3E%3Cpath d='M15 52V41h8v11zM28 52V35h8v17zM41 52V28h8v24z' fill='%23FF7A1A'/%3E%3Cpath d='M12 34L52 14' stroke='%23fff' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
+<script>document.documentElement.classList.add('js')</script>
+<!--
+  CHM Intelligence — site de uma página.
+  WhatsApp: substitua 5591993244514 pelo número com DDI e DDD, só números (ex.: 5567999998888).
+  Use "Localizar e substituir" no editor para trocar todas as ocorrências de uma vez.
+-->
+<style>
+:root{
+  --navy:#0B1F3A;
+  --navy-2:#13294A;
+  --navy-deep:#07162B;
+  --orange:#FF7A1A;
+  --orange-hover:#FF8B38;
+  --orange-ink:#B04A00;
+  --orange-soft:#FFF0E4;
+  --paper:#F4F6F9;
+  --white:#FFFFFF;
+  --slate:#4A5A70;
+  --slate-2:#637287;
+  --line:#DCE3EB;
+  --line-2:#E8EDF3;
+  --steel:#9AAEC7;
+  --green:#17784A;
+  --radius-lg:20px;
+  --radius:14px;
+  --font:"Archivo","Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;
+  --gutter:clamp(20px,4vw,40px);
+  --header-h:76px;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;font-family:var(--font);font-size:17px;line-height:1.6;color:var(--navy);background:var(--paper);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,p,ul,ol,figure{margin:0}
+ul,ol{padding:0;list-style:none}
+h1,h2,h3{font-weight:700;line-height:1.12;letter-spacing:-.012em;text-wrap:balance}
+p{text-wrap:pretty}
+.container{width:min(100% - 2 * var(--gutter), 1200px);margin-inline:auto}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:absolute;left:16px;top:-80px;z-index:100;padding:10px 16px;border-radius:8px;background:var(--navy);color:#fff;font-weight:600;text-decoration:none}
+.skip:focus{top:12px}
+:focus-visible{outline:3px solid var(--navy);outline-offset:3px}
+.on-dark :focus-visible{outline-color:var(--orange)}
+section[id]{scroll-margin-top:var(--header-h)}
+.icon{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+/* Botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border:1.5px solid transparent;border-radius:12px;font:inherit;font-size:16px;font-weight:650;line-height:1.2;text-decoration:none;cursor:pointer;transition:background-color .15s ease,border-color .15s ease,color .15s ease}
+.btn .icon{width:21px;height:21px;stroke-width:1.9}
+.btn--primary{background:var(--orange);color:var(--navy)}
+.btn--primary:hover{background:var(--orange-hover)}
+.btn--ghost{background:var(--white);border-color:var(--line);color:var(--navy)}
+.btn--ghost:hover{border-color:var(--navy)}
+.btn--navy{background:var(--navy);color:#fff}
+.btn--navy:hover{background:var(--navy-2)}
+.btn--sm{min-height:44px;padding:0 18px;font-size:15px;border-radius:10px}
+.btn--lg{min-height:58px;padding:0 30px;font-size:17px}
+
+/* Cabeçalho */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(244,246,249,.84);-webkit-backdrop-filter:blur(14px) saturate(1.3);backdrop-filter:blur(14px) saturate(1.3);border-bottom:1px solid transparent;transition:border-color .2s ease,background-color .2s ease}
+.site-header.is-scrolled{background:rgba(255,255,255,.92);border-bottom-color:var(--line)}
+.header-inner{display:flex;align-items:center;gap:32px;height:var(--header-h)}
+.brand{display:flex;flex:none;border-radius:6px}
+.brand img{width:auto;height:40px}
+.nav{display:flex;gap:28px;margin-left:auto}
+.nav a{position:relative;padding:8px 0;font-size:15px;font-weight:550;color:var(--slate);text-decoration:none;transition:color .15s ease}
+.nav a:hover,.nav a.is-active{color:var(--navy)}
+.nav a.is-active::after{content:"";position:absolute;left:0;right:0;bottom:1px;height:2px;border-radius:2px;background:var(--orange)}
+.header-cta{flex:none}
+.menu-toggle{display:none;align-items:center;justify-content:center;width:46px;height:46px;margin-left:auto;border:1.5px solid var(--line);border-radius:12px;background:var(--white);color:var(--navy);cursor:pointer}
+.menu-toggle .icon{width:22px;height:22px}
+.menu-toggle .i-close,.menu-toggle[aria-expanded="true"] .i-open{display:none}
+.menu-toggle[aria-expanded="true"] .i-close{display:block}
+.mobile-menu{position:absolute;top:100%;left:0;right:0;background:var(--white);border-bottom:1px solid var(--line);box-shadow:0 28px 40px -28px rgba(11,31,58,.4)}
+.mobile-menu[hidden]{display:none}
+.mobile-menu nav{display:grid;padding:4px var(--gutter) 24px}
+.mobile-menu a:not(.btn){padding:15px 0;border-bottom:1px solid var(--line-2);font-size:19px;font-weight:600;text-decoration:none}
+.mobile-menu .btn{margin-top:20px}
+
+/* Hero */
+.hero{padding:clamp(28px,3.6vw,52px) 0 clamp(88px,10vw,136px);overflow-x:clip}
+.hero__title{font-size:clamp(2.4rem,1.25rem + 4vw,4.25rem);font-weight:800;font-stretch:108%;line-height:1.02;letter-spacing:-.028em}
+.br-lg{display:none}
+.hero__grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);grid-template-rows:auto 1fr;grid-template-areas:"copy visual" "try visual";column-gap:clamp(40px,5.5vw,84px);align-items:start;margin-top:clamp(28px,3vw,44px)}
+.hero__copy{grid-area:copy}
+.hero__visual{grid-area:visual}
+.hero__lead{max-width:30em;font-size:clamp(1.08rem,1rem + .35vw,1.25rem);line-height:1.55;color:var(--slate)}
+.hero__actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.hero__note{margin-top:16px;font-size:15px;color:var(--slate-2)}
+.try{grid-area:try;max-width:420px;margin-top:32px;padding-top:26px;border-top:1px solid var(--line)}
+.try label{display:block;margin-bottom:10px;font-size:15px;font-weight:650}
+.try input{width:100%;height:50px;padding:0 16px;border:1.5px solid var(--line);border-radius:11px;background:var(--white);color:var(--navy);font:inherit;font-size:16px;transition:border-color .15s ease,box-shadow .15s ease}
+.try input::placeholder{color:var(--slate-2)}
+.try input:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 4px rgba(11,31,58,.12)}
+
+/* Mockup do painel (escala com a largura via container query) */
+.mock{position:relative;container-type:inline-size}
+.mock__win{font-size:11px;font-size:clamp(6.2px,1.82cqi,12.4px);line-height:1.35;background:var(--white);border-radius:1.5em;overflow:hidden;box-shadow:0 44px 80px -36px rgba(11,31,58,.5),0 16px 32px -20px rgba(11,31,58,.28),0 0 0 1px rgba(11,31,58,.07)}
+.mock__top{display:flex;align-items:center;gap:1.1em;padding:.95em 1.3em;border-bottom:1px solid var(--line-2)}
+.mock__brand{display:flex;align-items:center;gap:.7em;min-width:0;font-size:1.08em;font-weight:700}
+.mock__name{max-width:16em;padding:0 .2em;margin:0 -.2em;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;border-radius:.3em;transition:background-color .7s ease}
+.mock__name.is-updated{background:var(--orange-soft);transition:none}
+.mock__mark{display:grid;place-items:center;flex:none;width:2.3em;height:2.3em;border-radius:.6em;background:var(--navy);color:#fff;font-size:.8em;font-weight:800;letter-spacing:.02em}
+.mock__period{margin-left:auto;padding:.3em .85em;border:1px solid var(--line);border-radius:99em;font-size:.88em;color:var(--slate);white-space:nowrap}
+.mock__live{display:flex;align-items:center;gap:.5em;font-size:.88em;color:var(--slate);white-space:nowrap}
+.mock__live i{width:.6em;height:.6em;border-radius:50%;background:var(--green);box-shadow:0 0 0 .25em rgba(23,120,74,.15)}
+.mock__body{display:grid;grid-template-columns:3.4em minmax(0,1fr)}
+.mock__side{display:flex;flex-direction:column;align-items:center;gap:1.05em;padding:1.3em 0;background:var(--navy)}
+.mock__side i{width:1.45em;height:1.45em;border-radius:.42em;background:rgba(255,255,255,.14)}
+.mock__side i.is-on{background:var(--orange)}
+.mock__main{display:grid;gap:.85em;min-width:0;padding:1.2em;background:var(--paper)}
+.mock__kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.85em}
+.kpi,.mcard{min-width:0;background:var(--white);border:1px solid var(--line-2);border-radius:.95em}
+.kpi{display:grid;gap:.15em;padding:.9em 1em}
+.kpi__label{overflow:hidden;font-size:.82em;color:var(--slate);white-space:nowrap;text-overflow:ellipsis}
+.kpi__value{font-size:1.7em;font-weight:750;line-height:1.15;letter-spacing:-.02em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.kpi__value small{font-size:.6em;font-weight:650;letter-spacing:0;color:var(--slate)}
+.kpi__delta{display:flex;align-items:center;gap:.45em;font-size:.76em;font-weight:650;color:var(--green);white-space:nowrap}
+.kpi__delta::before{content:"";border-left:.38em solid transparent;border-right:.38em solid transparent;border-bottom:.55em solid currentColor}
+.mock__row{display:grid;grid-template-columns:minmax(0,1.62fr) minmax(0,1fr);gap:.85em}
+.mcard{display:flex;flex-direction:column;gap:.55em;padding:.95em 1.05em}
+.mcard__head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.3em .6em}
+.mcard__title{font-size:.92em;font-weight:700}
+.mcard__legend{display:flex;align-items:center;gap:.3em;font-size:.72em;color:var(--slate);white-space:nowrap}
+.lg{display:inline-block;width:1.1em;height:.22em;margin-left:.55em;border-radius:1em}
+.lg:first-child{margin-left:0}
+.lg--real{background:var(--navy)}
+.lg--meta{background:repeating-linear-gradient(90deg,var(--steel) 0 .3em,transparent .3em .5em)}
+.lg--ia{background:repeating-linear-gradient(90deg,var(--orange) 0 .22em,transparent .22em .45em)}
+.chart{width:100%;height:auto;overflow:visible}
+.chart text{font-family:var(--font);font-size:9px;fill:var(--slate-2)}
+.chart__grid{fill:none;stroke:var(--line-2);stroke-width:1}
+.chart__meta{fill:none;stroke:var(--steel);stroke-width:1.6;stroke-dasharray:4 4}
+.chart__real{fill:none;stroke:var(--navy);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.chart__proj{fill:none;stroke:var(--orange);stroke-width:2.8;stroke-linecap:round;stroke-dasharray:.1 6.2}
+.chart__dot{fill:var(--white);stroke:var(--navy);stroke-width:2.6}
+.chart__pdot{fill:var(--white);stroke:var(--orange);stroke-width:2.4}
+.chart__tip rect{fill:var(--navy)}
+.chart__tip text{font-weight:700;fill:#fff;text-anchor:middle}
+.chart__x text{text-anchor:middle}
+.donut{position:relative;width:7.6em;margin:.25em auto .15em}
+.donut svg{width:100%;height:auto;transform:rotate(-90deg)}
+.donut circle{fill:none;stroke-width:5.2}
+.donut__track{stroke:var(--line-2)}
+.donut__seg--a{stroke:var(--navy);stroke-dasharray:76.5 23.5}
+.donut__seg--b{stroke:var(--steel);stroke-dasharray:13.5 86.5;stroke-dashoffset:-78}
+.donut__seg--c{stroke:var(--orange);stroke-dasharray:5.5 94.5;stroke-dashoffset:-93}
+.donut__center{position:absolute;inset:0;display:grid;place-content:center;line-height:1.1;text-align:center}
+.donut__center strong{font-size:1.45em;font-weight:750;letter-spacing:-.02em}
+.donut__center span{font-size:.72em;color:var(--slate)}
+.legend{display:grid;gap:.32em;font-size:.76em}
+.legend li{display:flex;align-items:center;gap:.5em;color:var(--slate)}
+.legend b{margin-left:auto;color:var(--navy);font-weight:700;font-variant-numeric:tabular-nums}
+.sw{flex:none;width:.75em;height:.75em;border-radius:.2em}
+.sw--a{background:var(--navy)}
+.sw--b{background:var(--steel)}
+.sw--c{background:var(--orange)}
+.hbars{display:grid;gap:.6em;margin-top:.1em}
+.hbars li{display:grid;grid-template-columns:7.2em minmax(0,1fr) 2.6em;align-items:center;gap:.7em;font-size:.8em}
+.hbars span{overflow:hidden;color:var(--slate);white-space:nowrap;text-overflow:ellipsis}
+.hbars i{display:block;width:calc(var(--v) * 100%);height:.75em;border-radius:.4em;background:var(--steel);transform-origin:left center}
+.hbars li:first-child i{background:var(--navy)}
+.hbars b{text-align:right;font-variant-numeric:tabular-nums}
+.mcard--insight{background:var(--navy);border-color:var(--navy);color:#fff}
+.insight__head{display:flex;align-items:center;gap:.45em;font-size:.84em;font-weight:700;color:var(--orange)}
+.insight__head .icon{width:1.35em;height:1.35em;stroke-width:1.8}
+.mcard--insight p{font-size:.86em;line-height:1.45;color:rgba(255,255,255,.88)}
+.chip{position:absolute;display:flex;align-items:center;gap:.75em;padding:.75em 1.15em .75em .75em;font-size:11px;font-size:clamp(7px,1.9cqi,13px);line-height:1.3;white-space:nowrap;background:var(--white);border-radius:1.1em;box-shadow:0 20px 40px -18px rgba(11,31,58,.45),0 0 0 1px rgba(11,31,58,.07)}
+.chip__icon{display:grid;place-items:center;flex:none;width:2.5em;height:2.5em;border-radius:.75em;background:var(--navy);color:var(--orange)}
+.chip__icon .icon{width:1.35em;height:1.35em;stroke-width:2.1}
+.chip strong{display:block;font-weight:700}
+.chip small{display:block;font-size:.86em;color:var(--slate)}
+.chip--a{top:-2.5em;left:23%}
+.chip--b{bottom:-1.9em;left:-4%}
+.chip--b .chip__icon{background:var(--orange-soft);color:var(--orange-ink)}
+
+/* Um único momento de animação: o painel se monta ao carregar */
+@media (prefers-reduced-motion:no-preference){
+  .js .chart__real{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.5s .35s cubic-bezier(.65,0,.35,1) forwards}
+  .js .chart__area{opacity:0;animation:fade .9s 1.15s ease forwards}
+  .js .chart__dot{opacity:0;transform-box:fill-box;transform-origin:center;animation:pop .45s 1.6s cubic-bezier(.2,.8,.2,1.3) forwards}
+  .js .chart__tip,.js .chart__proj,.js .chart__pdot{opacity:0;animation:fade .5s 1.8s ease forwards}
+  .js .donut circle:not(.donut__track){animation:donut 1.2s .45s cubic-bezier(.65,0,.35,1) both}
+  .js .hbars i{transform:scaleX(0);animation:grow .9s cubic-bezier(.2,.7,.2,1) forwards}
+  .js .hbars li:nth-child(1) i{animation-delay:.6s}
+  .js .hbars li:nth-child(2) i{animation-delay:.7s}
+  .js .hbars li:nth-child(3) i{animation-delay:.8s}
+  .js .hbars li:nth-child(4) i{animation-delay:.9s}
+  .js .chip{opacity:0;transform:translateY(12px);animation:rise .6s cubic-bezier(.2,.8,.2,1) forwards}
+  .js .chip--a{animation-delay:2s}
+  .js .chip--b{animation-delay:2.3s}
+}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fade{to{opacity:1}}
+@keyframes pop{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:none}}
+@keyframes donut{from{stroke-dasharray:0 100}}
+@keyframes grow{to{transform:none}}
+@keyframes rise{to{opacity:1;transform:none}}
+
+/* Seções */
+.section{padding-block:clamp(84px,9.5vw,136px)}
+.section--white{background:var(--white)}
+.section--paper{background:var(--paper)}
+.section--navy{background:var(--navy);color:#fff}
+.section__head{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:20px clamp(32px,5vw,80px);align-items:end}
+.section__head h2,.dif h2{font-size:clamp(2rem,1.25rem + 2.5vw,3.15rem);font-weight:750;font-stretch:110%;line-height:1.06;letter-spacing:-.022em}
+.section__lead{max-width:36em;font-size:clamp(1.05rem,1rem + .25vw,1.18rem);color:var(--slate)}
+
+/* Problemas */
+.compare{margin-top:clamp(44px,5vw,72px)}
+.compare__labels,.compare__row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,80px)}
+.compare__labels{padding-bottom:14px;border-bottom:2px solid var(--navy);font-size:14.5px;font-weight:650;color:var(--slate)}
+.compare__row{padding-block:clamp(22px,2.6vw,32px);border-bottom:1px solid var(--line)}
+.compare__problem h3{margin-bottom:8px;font-size:clamp(1.15rem,1rem + .4vw,1.32rem);font-stretch:108%}
+.compare__problem p{max-width:34em;color:var(--slate)}
+.compare__solution{display:grid;grid-template-columns:30px minmax(0,1fr);gap:14px;align-items:start}
+.compare__solution .icon{width:30px;height:30px;padding:6px;border-radius:50%;background:var(--orange);color:var(--navy);stroke-width:2.6}
+.compare__solution p{max-width:32em;padding-top:2px;font-weight:500}
+.compare__cta{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 24px;margin-top:clamp(32px,4vw,48px);padding:clamp(22px,3vw,28px) clamp(22px,3vw,32px);background:var(--paper);border-radius:var(--radius)}
+.compare__cta p{font-size:clamp(1.05rem,1rem + .3vw,1.2rem);font-weight:650}
+
+/* Serviços */
+.services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;margin-top:clamp(44px,5vw,72px);overflow:hidden;background:var(--line);border:1px solid var(--line);border-radius:var(--radius-lg)}
+.service{display:flex;flex-direction:column;padding:clamp(26px,3vw,38px);background:var(--white)}
+.service__icon{width:48px;height:48px;padding:10px;border-radius:12px;background:var(--navy);color:var(--orange);stroke-width:1.9}
+.service h3{margin-top:24px;font-size:clamp(1.15rem,1.05rem + .3vw,1.3rem);font-stretch:106%;line-height:1.2}
+.service > p{margin:10px 0 24px;font-size:16px;color:var(--slate)}
+.service__list{display:grid;gap:7px;margin-top:auto;padding-top:20px;border-top:1px solid var(--line-2);font-size:15px}
+.service__list li{position:relative;padding-left:18px}
+.service__list li::before{content:"";position:absolute;left:0;top:.68em;width:8px;height:2px;border-radius:2px;background:var(--orange)}
+
+/* Para quem */
+.sectors{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:44px clamp(20px,3vw,40px);margin-top:clamp(44px,5vw,72px)}
+.sector{display:grid;align-content:start;gap:12px;padding-top:22px;border-top:2px solid var(--navy)}
+.sector__icon{width:30px;height:30px;color:var(--navy);stroke-width:1.6}
+.sector h3{font-size:clamp(1.05rem,1rem + .2vw,1.18rem);font-stretch:106%}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tags li{padding:4px 10px;border:1px solid var(--line);border-radius:99px;background:var(--paper);font-size:13.5px;line-height:1.35;color:var(--slate);white-space:nowrap}
+.sectors__note{max-width:46em;margin-top:clamp(40px,5vw,56px);font-size:16.5px;color:var(--slate)}
+.sectors__note a{color:var(--navy);font-weight:650;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:4px}
+
+/* Como funciona */
+.gantt{margin-top:clamp(44px,5vw,72px);overflow:hidden;background:var(--white);border:1px solid var(--line);border-radius:var(--radius-lg)}
+.gantt__head,.gantt__row{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr)}
+.gantt__head{border-bottom:1px solid var(--line);font-size:13.5px;font-weight:600;color:var(--slate-2)}
+.gantt__head > span{padding:14px clamp(20px,2.4vw,30px)}
+.gantt__time{display:flex;justify-content:space-between;border-left:1px solid var(--line)}
+.gantt__row + .gantt__row{border-top:1px solid var(--line)}
+.gantt__info{display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;padding:26px clamp(20px,2.4vw,30px)}
+.gantt__num{display:grid;place-items:center;width:34px;height:34px;border:1.5px solid var(--navy);border-radius:50%;font-size:15px;font-weight:700}
+.gantt__row--free .gantt__num{background:var(--orange);border-color:var(--orange)}
+.gantt__info h3{margin:5px 0 6px;font-size:clamp(1.08rem,1rem + .25vw,1.2rem);font-stretch:106%}
+.gantt__info p{max-width:30em;font-size:16px;color:var(--slate)}
+.gantt__track{position:relative;padding-inline:clamp(20px,2.4vw,30px);border-left:1px solid var(--line);background-image:repeating-linear-gradient(90deg,transparent 0 calc(8.3333% - 1px),var(--line-2) calc(8.3333% - 1px) 8.3333%);background-origin:content-box;background-clip:content-box}
+.gantt__lane{position:absolute;inset:0 clamp(20px,2.4vw,30px)}
+.gantt__bar{position:absolute;top:30px;left:calc(var(--s) * 100%);width:calc((var(--e) - var(--s)) * 100%);height:28px;border-radius:7px;background:var(--navy)}
+.gantt__row--free .gantt__bar{display:flex;align-items:center;padding-inline:10px;background:var(--orange);color:var(--navy);font-size:13px;font-weight:700}
+.gantt__row--ongoing .gantt__bar{background:linear-gradient(90deg,var(--navy) 0 55%,rgba(11,31,58,.1));border-radius:7px 0 0 7px}
+.gantt__lane::before{content:"";position:absolute;top:0;left:calc(var(--s) * 100% - .75px);height:22px;border-left:1.5px solid var(--steel)}
+.gantt__lane::after{content:"";position:absolute;top:58px;bottom:0;left:calc(var(--e) * 100% - .75px);border-left:1.5px solid var(--steel)}
+.gantt__bar::before{content:"";position:absolute;top:-8px;left:-5px;border-left:5px solid transparent;border-right:5px solid transparent;border-top:7px solid var(--steel)}
+.gantt__row:first-child .gantt__lane::before,.gantt__row:first-child .gantt__bar::before,.gantt__row:last-child .gantt__lane::after{display:none}
+
+/* Diferencial */
+.dif{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(44px,5vw,72px) clamp(40px,6vw,96px);align-items:center}
+.dif h2{font-size:clamp(2rem,1.3rem + 2.2vw,2.85rem);color:#fff}
+.dif__text{display:grid;gap:16px;max-width:36em;margin-top:28px;font-size:clamp(1.05rem,1rem + .25vw,1.16rem);color:rgba(255,255,255,.78)}
+.dif__text strong{font-weight:650;color:#fff}
+.scurve{padding:clamp(20px,2.6vw,30px);background:var(--navy-2);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius-lg)}
+.scurve__head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px;margin-bottom:14px}
+.scurve__title{font-size:16px;font-weight:650}
+.scurve__legend{display:flex;gap:16px;font-size:13.5px;color:rgba(255,255,255,.72)}
+.scurve__legend span{display:inline-flex;align-items:center;gap:8px}
+.scurve__legend i{width:18px;border-top:2px dashed rgba(255,255,255,.55)}
+.scurve__legend i.is-act{border-top:3px solid var(--orange)}
+.scurve svg{width:100%;height:auto}
+.scurve text{font-family:var(--font);font-size:11px;fill:rgba(255,255,255,.55)}
+.sc-grid{fill:none;stroke:rgba(255,255,255,.09);stroke-width:1}
+.sc-y text{text-anchor:end}
+.sc-plan{fill:none;stroke:rgba(255,255,255,.55);stroke-width:2;stroke-dasharray:6 6}
+.sc-act{fill:none;stroke:var(--orange);stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round}
+.sc-today{stroke:rgba(255,255,255,.32);stroke-width:1.2;stroke-dasharray:3 4}
+.sc-today-label{text-anchor:middle;font-weight:600}
+.sc-dot{fill:var(--orange);stroke:var(--navy-2);stroke-width:3}
+.sc-end{text-anchor:end}
+.scurve figcaption{margin-top:14px;font-size:14.5px;line-height:1.5;color:rgba(255,255,255,.66)}
+.dif__points{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,4vw,56px)}
+.dif__points li{padding-top:20px;border-top:2px solid var(--orange)}
+.dif__points h3{margin-bottom:8px;font-size:clamp(1.1rem,1rem + .3vw,1.25rem);font-stretch:106%;color:#fff}
+.dif__points p{font-size:16px;color:rgba(255,255,255,.74)}
+
+/* Chamada final */
+.cta__inner{display:grid;grid-template-columns:minmax(0,8fr) minmax(0,4fr);gap:40px;align-items:end}
+.cta h2{max-width:13em;font-size:clamp(2.2rem,1.3rem + 3.3vw,3.9rem);font-weight:800;font-stretch:112%;line-height:1.03;letter-spacing:-.026em}
+.cta__text{max-width:34em;margin-top:22px;font-size:clamp(1.08rem,1rem + .3vw,1.25rem);color:var(--slate)}
+.cta__actions{display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px;margin-top:34px}
+.cta__note{font-size:15px;color:var(--slate-2)}
+.cta__mark{justify-self:end;width:100%;max-width:280px}
+
+/* Rodapé */
+.footer{padding:clamp(56px,7vw,88px) 0 28px;background:var(--navy-deep);color:rgba(255,255,255,.74)}
+.footer__grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,3fr) minmax(0,4fr);gap:40px}
+.footer__brand img{width:auto;height:46px}
+.footer__brand p{max-width:30em;margin-top:22px;font-size:15.5px}
+.footer h2{margin-bottom:16px;font-size:14.5px;font-weight:650;letter-spacing:0;color:#fff}
+.footer__nav ul{display:grid;gap:10px}
+.footer__nav a{font-size:15.5px;text-decoration:none}
+.footer__nav a:hover{color:#fff;text-decoration:underline;text-underline-offset:4px}
+.footer__contact p{margin-bottom:20px;font-size:15.5px}
+.footer__bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;margin-top:clamp(44px,5vw,64px);padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:14px;color:rgba(255,255,255,.55)}
+
+/* Botão flutuante (celular e tablet) */
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:45;display:none;align-items:center;gap:10px;height:54px;padding:0 22px 0 18px;border-radius:99px;background:var(--orange);color:var(--navy);font-size:15.5px;font-weight:700;text-decoration:none;box-shadow:0 16px 32px -12px rgba(11,31,58,.55)}
+.fab .icon{width:23px;height:23px;stroke-width:1.9}
+.js .fab{opacity:0;transform:translateY(16px);pointer-events:none;transition:opacity .25s ease,transform .25s ease}
+.js .fab.is-visible{opacity:1;transform:none;pointer-events:auto}
+
+/* Responsivo */
+@media (min-width:1024px){.br-lg{display:inline}}
+@media (max-width:1023px){
+  .nav,.header-cta{display:none}
+  .menu-toggle{display:inline-flex}
+  .hero__grid{grid-template-columns:minmax(0,1fr);grid-template-rows:auto;grid-template-areas:"copy" "visual" "try"}
+  .hero__visual{max-width:700px;margin-top:48px}
+  .try{margin-top:64px}
+  .fab{display:inline-flex}
+  .services{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sectors{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .dif{grid-template-columns:minmax(0,1fr)}
+  .dif__points{grid-template-columns:minmax(0,1fr)}
+  .footer__grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .footer__brand{grid-column:1/-1}
+}
+@media (max-width:860px){
+  .section__head{grid-template-columns:minmax(0,1fr)}
+  .cta__inner{grid-template-columns:minmax(0,1fr)}
+  .cta__mark{grid-row:1;justify-self:start;max-width:150px}
+}
+@media (max-width:760px){
+  .compare__labels{display:none}
+  .compare__list{border-top:2px solid var(--navy)}
+  .compare__row{grid-template-columns:minmax(0,1fr);gap:16px}
+  .gantt__head{display:none}
+  .gantt__row{grid-template-columns:minmax(0,1fr)}
+  .gantt__info{padding-bottom:14px}
+  .gantt__track{height:46px;margin:0 clamp(20px,2.4vw,30px) 24px;padding:0;border-left:0;border-radius:9px;background-color:var(--paper);background-origin:border-box;background-clip:border-box}
+  .gantt__lane{inset:0 10px}
+  .gantt__bar{top:11px;height:24px}
+  .gantt__lane::before,.gantt__lane::after,.gantt__bar::before{display:none}
+}
+@media (max-width:620px){
+  .services{grid-template-columns:minmax(0,1fr)}
+  .footer__grid{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:560px){
+  :root{--header-h:66px}
+  .brand img{height:32px}
+  .hero__actions .btn,.compare__cta .btn,.cta__actions .btn{width:100%}
+  .sectors{grid-template-columns:minmax(0,1fr);gap:0}
+  .sector{grid-template-columns:28px minmax(0,1fr);gap:10px 16px;padding:20px 0 22px;border-top:1px solid var(--line)}
+  .sector:first-child{border-top:2px solid var(--navy)}
+  .sector__icon{grid-row:1 / span 2;width:28px;height:28px}
+  .sector h3,.sector .tags{grid-column:2}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .fab{transition:none}
+}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"CHM Intelligence","description":"Consultoria em dados e inteligência artificial para pequenas e médias empresas.","areaServed":{"@type":"City","name":"Três Lagoas"},"address":{"@type":"PostalAddress","addressLocality":"Três Lagoas","addressRegion":"MS","addressCountry":"BR"}}
+</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4.6 19l1.1-3.4a7.4 7.4 0 0 1-1.2-4C4.5 7.4 8 4 12.3 4S20 7.4 20 11.6s-3.4 7.6-7.7 7.6c-1.4 0-2.7-.3-3.8-.9z"/><path d="M8.8 10.3h7M8.8 13.3h4.4"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.6l4.3 4.2L19 7.2"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M11 3.5l1.7 5.1 5.1 1.7-5.1 1.7L11 17.1l-1.7-5.1-5.1-1.7 5.1-1.7z"/><path d="M18.5 15.5v5M16 18h5"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4.3l8.7 15H3.3z"/><path d="M12 10v4.3M12 16.9v.1"/></symbol>
+  <symbol id="i-dashboard" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M7.5 16.5v-3M11.5 16.5V11M15.5 16.5v-4"/><path d="M7 9.3l3-2 3 1.5 4-3"/></symbol>
+  <symbol id="i-gantt" viewBox="0 0 24 24"><path d="M4 4.5v15h16"/><rect x="6.5" y="6.3" width="6.5" height="2.6" rx="1.1"/><rect x="10" y="10.6" width="7" height="2.6" rx="1.1"/><rect x="13.5" y="14.9" width="5.5" height="2.6" rx="1.1"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3.5H7.5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V8z"/><path d="M14 3.5V8h4.5M8.8 12h6.4M8.8 15.3h6.4M8.8 8.8h2.6"/></symbol>
+  <symbol id="i-presentation" viewBox="0 0 24 24"><path d="M3 4.5h18M4.5 4.5v10A1.5 1.5 0 0 0 6 16h12a1.5 1.5 0 0 0 1.5-1.5v-10M12 16v3.5M8.5 20.5l3.5-1 3.5 1"/><path d="M8 12.5l2.6-2.6 2 1.8 3.4-3.7"/></symbol>
+  <symbol id="i-web" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><path d="M3 8.5h18M10.3 11.3v5.4l4.5-2.7z"/></symbol>
+  <symbol id="i-nodes" viewBox="0 0 24 24"><circle cx="6" cy="6.5" r="2"/><circle cx="18" cy="5.5" r="2"/><circle cx="12.5" cy="12.5" r="2.4"/><circle cx="6.5" cy="18.5" r="2"/><circle cx="18" cy="17.5" r="2"/><path d="M7.6 7.8l3.1 3M16.6 6.9l-2.7 3.8M10.8 14.2L8 17M14.4 14l2.2 2M8 6.3l8-.6"/></symbol>
+  <symbol id="i-crane" viewBox="0 0 24 24"><path d="M3.5 20.5h17M6.5 20.5V5.5M4 8.5h16M6.5 5.5L4 8.5M6.5 5.5L9 8.5M17 8.5v3"/><path d="M15.9 11.5h2.2v1.4a1.1 1.1 0 0 1-2.2 0z"/><path d="M10.5 20.5V15.5h8v5"/></symbol>
+  <symbol id="i-beam" viewBox="0 0 24 24"><path d="M5 4.5h14v3.2h-5.2v8.6H19v3.2H5v-3.2h5.2V7.7H5z"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.8 5.2a4.3 4.3 0 0 0-5.6 5.5l-5.4 5.4a1.8 1.8 0 0 0 2.5 2.6l5.4-5.4a4.3 4.3 0 0 0 5.6-5.6l-2.6 2.6-2.3-.4-.4-2.3z"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2.5 6.5h11v9.5h-11zM13.5 9.5h4l3 3.5V16h-7"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></symbol>
+  <symbol id="i-tree" viewBox="0 0 24 24"><path d="M12 3l-4.5 6.2h2.6L6 15h12l-4.1-5.8h2.6zM12 15v6"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4.5h2.4l2.3 10.3h10.2l2.1-7.3H6.4"/><circle cx="9.5" cy="18.6" r="1.4"/><circle cx="16.6" cy="18.6" r="1.4"/></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><path d="M3.5 16.5v-2.6a1.4 1.4 0 0 1 1.4-1.4h14.2a1.4 1.4 0 0 1 1.4 1.4v2.6M6.5 12.5l2-4.3a1.2 1.2 0 0 1 1.1-.7h4.8a1.2 1.2 0 0 1 1.1.7l2 4.3M3.5 16.5h2.1M9.4 16.5h5.2M18.4 16.5h2.1"/><circle cx="7.5" cy="16.5" r="1.9"/><circle cx="16.5" cy="16.5" r="1.9"/></symbol>
+  <symbol id="i-store" viewBox="0 0 24 24"><path d="M4.5 10.5V20h15v-9.5M3.5 10l1.6-5.5h13.8l1.6 5.5M3.5 10a2.1 2.1 0 0 0 4.2 0 2.1 2.1 0 0 0 4.2 0 2.1 2.1 0 0 0 4.2 0 2.1 2.1 0 0 0 4.2 0M10 20v-5h4v5"/></symbol>
+</svg>
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#inicio" aria-label="CHM Intelligence, voltar ao início">
+      <img src="data:image/png;base64,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" alt="CHM Intelligence" width="226" height="40">
+    </a>
+    <nav class="nav" aria-label="Seções">
+      <a href="#problemas">Problemas</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#para-quem">Para quem</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#diferencial">Diferencial</a>
+    </nav>
+    <a class="btn btn--primary btn--sm header-cta" href="https://wa.me/5591993244514" target="_blank" rel="noopener">
+      <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>Falar no WhatsApp
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+      <svg class="icon i-open" aria-hidden="true"><use href="#i-menu"/></svg>
+      <svg class="icon i-close" aria-hidden="true"><use href="#i-close"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu" id="menu" hidden>
+    <nav aria-label="Menu">
+      <a href="#problemas">Problemas que resolvemos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#para-quem">Para quem</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#diferencial">Diferencial</a>
+      <a class="btn btn--primary" href="https://wa.me/5591993244514" target="_blank" rel="noopener">
+        <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>Falar no WhatsApp
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <section class="hero" id="inicio" aria-labelledby="hero-title">
+    <div class="container">
+      <h1 class="hero__title" id="hero-title">Sua empresa no controle,<br class="br-lg"> sem depender de planilha bagunçada</h1>
+
+      <div class="hero__grid">
+        <div class="hero__copy">
+          <p class="hero__lead">Inteligência artificial e dados a serviço do empresário: painéis claros, relatórios que se atualizam sozinhos e rotinas organizadas, para você decidir com segurança e ganhar tempo.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="https://wa.me/5591993244514" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>Falar no WhatsApp
+            </a>
+            <a class="btn btn--ghost" href="#servicos">Conhecer os serviços</a>
+          </div>
+          <p class="hero__note">Consultoria para pequenas e médias empresas de Três Lagoas e região.</p>
+        </div>
+
+        <div class="try">
+          <label for="empresa">Veja o painel com o nome da sua empresa</label>
+          <input id="empresa" type="text" maxlength="32" placeholder="Nome da sua empresa" autocomplete="organization" spellcheck="false">
+        </div>
+
+        <div class="hero__visual">
+          <figure class="mock" role="img" aria-label="Exemplo de painel de gestão com faturamento do mês, margem, pedidos, gráfico de faturamento com projeção feita por inteligência artificial, contas a receber, vendas por canal e alertas automáticos">
+            <div class="mock__win" aria-hidden="true">
+              <div class="mock__top">
+                <div class="mock__brand"><span class="mock__mark" data-initials>SE</span><span class="mock__name" data-company>Sua Empresa</span></div>
+                <span class="mock__period" data-period>Novembro 2026</span>
+                <span class="mock__live"><i></i>Atualizado agora</span>
+              </div>
+              <div class="mock__body">
+                <div class="mock__side"><i class="is-on"></i><i></i><i></i><i></i><i></i></div>
+                <div class="mock__main">
+                  <div class="mock__kpis">
+                    <div class="kpi">
+                      <span class="kpi__label">Faturamento do mês</span>
+                      <strong class="kpi__value"><small>R$</small> <span data-count="412.8" data-dec="1">412,8</span> <small>mil</small></strong>
+                      <span class="kpi__delta">12,4% vs mês anterior</span>
+                    </div>
+                    <div class="kpi">
+                      <span class="kpi__label">Margem bruta</span>
+                      <strong class="kpi__value"><span data-count="31.6" data-dec="1">31,6</span><small>%</small></strong>
+                      <span class="kpi__delta">2,1 p.p. vs mês anterior</span>
+                    </div>
+                    <div class="kpi">
+                      <span class="kpi__label">Pedidos</span>
+                      <strong class="kpi__value"><span data-count="1284" data-dec="0">1.284</span></strong>
+                      <span class="kpi__delta">8,3% vs mês anterior</span>
+                    </div>
+                  </div>
+
+                  <div class="mock__row">
+                    <div class="mcard">
+                      <div class="mcard__head">
+                        <span class="mcard__title">Faturamento x meta</span>
+                        <span class="mcard__legend"><i class="lg lg--real"></i>Realizado<i class="lg lg--meta"></i>Meta<i class="lg lg--ia"></i>Projeção IA</span>
+                      </div>
+                      <svg class="chart" viewBox="0 0 320 150">
+                        <defs>
+                          <linearGradient id="gArea" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0" stop-color="#0B1F3A" stop-opacity=".16"/>
+                            <stop offset="1" stop-color="#0B1F3A" stop-opacity="0"/>
+                          </linearGradient>
+                        </defs>
+                        <path class="chart__grid" d="M14 16H306M14 42.5H306M14 69H306M14 95.5H306M14 122H306"/>
+                        <path class="chart__area" fill="url(#gArea)" d="M14 110.1C22.1 107.4 46.4 96.1 62.7 94.2C78.9 92.3 95.1 100.9 111.3 98.8C127.6 96.7 143.8 87.6 160 81.6C176.2 75.6 192.4 68.8 208.7 63C224.9 57.3 249.2 49.9 257.3 47.3L257.3 122L14 122Z"/>
+                        <path class="chart__meta" d="M14 102.1L306 62.4"/>
+                        <path class="chart__real" pathLength="1" d="M14 110.1C22.1 107.4 46.4 96.1 62.7 94.2C78.9 92.3 95.1 100.9 111.3 98.8C127.6 96.7 143.8 87.6 160 81.6C176.2 75.6 192.4 68.8 208.7 63C224.9 57.3 249.2 49.9 257.3 47.3"/>
+                        <path class="chart__proj" d="M257.3 47.3L306 25.3"/>
+                        <circle class="chart__pdot" cx="306" cy="25.3" r="3.6"/>
+                        <circle class="chart__dot" cx="257.3" cy="47.3" r="4.6"/>
+                        <g class="chart__tip"><rect x="168" y="13" width="84" height="20" rx="6"/><text x="210" y="26.5">R$ 412,8 mil</text></g>
+                        <g class="chart__x">
+                          <text x="14" y="143">Jun</text><text x="62.7" y="143">Jul</text><text x="111.3" y="143">Ago</text><text x="160" y="143">Set</text><text x="208.7" y="143">Out</text><text x="257.3" y="143">Nov</text><text x="306" y="143">Dez</text>
+                        </g>
+                      </svg>
+                    </div>
+
+                    <div class="mcard">
+                      <div class="mcard__head"><span class="mcard__title">Contas a receber</span></div>
+                      <div class="donut">
+                        <svg viewBox="0 0 42 42">
+                          <circle class="donut__track" cx="21" cy="21" r="15.915"/>
+                          <circle class="donut__seg--a" cx="21" cy="21" r="15.915"/>
+                          <circle class="donut__seg--b" cx="21" cy="21" r="15.915"/>
+                          <circle class="donut__seg--c" cx="21" cy="21" r="15.915"/>
+                        </svg>
+                        <div class="donut__center"><strong>78%</strong><span>em dia</span></div>
+                      </div>
+                      <ul class="legend">
+                        <li><i class="sw sw--a"></i>Em dia<b>78%</b></li>
+                        <li><i class="sw sw--b"></i>A vencer<b>15%</b></li>
+                        <li><i class="sw sw--c"></i>Em atraso<b>7%</b></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="mock__row">
+                    <div class="mcard">
+                      <div class="mcard__head"><span class="mcard__title">Vendas por canal</span></div>
+                      <ul class="hbars">
+                        <li><span>Loja física</span><i style="--v:1"></i><b>46%</b></li>
+                        <li><span>WhatsApp</span><i style="--v:.61"></i><b>28%</b></li>
+                        <li><span>Representantes</span><i style="--v:.37"></i><b>17%</b></li>
+                        <li><span>Site</span><i style="--v:.2"></i><b>9%</b></li>
+                      </ul>
+                    </div>
+                    <div class="mcard mcard--insight">
+                      <div class="insight__head"><svg class="icon"><use href="#i-spark"/></svg>Insight da IA</div>
+                      <p>O frete subiu 18% no último mês, concentrado em dois fornecedores. Vale renegociar.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="chip chip--a" aria-hidden="true">
+              <span class="chip__icon"><svg class="icon"><use href="#i-check"/></svg></span>
+              <span><strong>Relatório semanal enviado</strong><small>Automático, toda segunda às 7h</small></span>
+            </div>
+            <div class="chip chip--b" aria-hidden="true">
+              <span class="chip__icon"><svg class="icon"><use href="#i-alert"/></svg></span>
+              <span><strong>3 itens abaixo do estoque mínimo</strong><small>Alerta gerado agora</small></span>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--white" id="problemas" aria-labelledby="problemas-title">
+    <div class="container">
+      <div class="section__head">
+        <h2 id="problemas-title">Problemas que resolvemos</h2>
+        <p class="section__lead">Situações comuns em empresas de todos os portes. Elas consomem tempo, geram retrabalho e escondem os números que realmente importam para decidir.</p>
+      </div>
+
+      <div class="compare">
+        <div class="compare__labels" aria-hidden="true"><span>O que acontece hoje</span><span>Como fica com a CHM Intelligence</span></div>
+        <ul class="compare__list">
+          <li class="compare__row">
+            <div class="compare__problem">
+              <h3>Informação espalhada</h3>
+              <p>Dados em planilhas diferentes, cadernos, sistemas e conversas de WhatsApp. Na hora de decidir, ninguém sabe qual número está certo.</p>
+            </div>
+            <div class="compare__solution">
+              <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>
+              <p><span class="sr-only">Como resolvemos: </span>Uma base única e organizada, com um painel que mostra a situação da empresa em poucos segundos.</p>
+            </div>
+          </li>
+          <li class="compare__row">
+            <div class="compare__problem">
+              <h3>Relatórios manuais</h3>
+              <p>Toda semana alguém para o que está fazendo para copiar, colar e montar relatório na mão.</p>
+            </div>
+            <div class="compare__solution">
+              <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>
+              <p><span class="sr-only">Como resolvemos: </span>Relatórios que se atualizam sozinhos e chegam prontos para a reunião, sem copiar e colar.</p>
+            </div>
+          </li>
+          <li class="compare__row">
+            <div class="compare__problem">
+              <h3>Propostas demoradas</h3>
+              <p>O cliente pede um orçamento e a proposta leva dias para sair, cada vez em um formato diferente.</p>
+            </div>
+            <div class="compare__solution">
+              <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>
+              <p><span class="sr-only">Como resolvemos: </span>Modelos profissionais e apoio de inteligência artificial para enviar propostas bem feitas em muito menos tempo.</p>
+            </div>
+          </li>
+          <li class="compare__row">
+            <div class="compare__problem">
+              <h3>Presença digital fraca</h3>
+              <p>Quem procura sua empresa na internet não encontra um site, vídeos ou materiais à altura do seu trabalho.</p>
+            </div>
+            <div class="compare__solution">
+              <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>
+              <p><span class="sr-only">Como resolvemos: </span>Site, vídeos e materiais com a identidade da sua marca, para transmitir confiança antes mesmo do primeiro contato.</p>
+            </div>
+          </li>
+          <li class="compare__row">
+            <div class="compare__problem">
+              <h3>Tarefas repetitivas</h3>
+              <p>Horas da equipe gastas digitando, conferindo e reenviando as mesmas informações.</p>
+            </div>
+            <div class="compare__solution">
+              <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>
+              <p><span class="sr-only">Como resolvemos: </span>Automações que cuidam do trabalho repetitivo e liberam a equipe para o que gera resultado.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="compare__cta">
+        <p>Reconheceu sua empresa em algum desses pontos?</p>
+        <a class="btn btn--navy" href="https://wa.me/5591993244514" target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>Falar no WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--paper" id="servicos" aria-labelledby="servicos-title">
+    <div class="container">
+      <div class="section__head">
+        <h2 id="servicos-title">Serviços</h2>
+        <p class="section__lead">Do painel de indicadores à automação de tarefas, cada entrega é pensada para ser simples de usar e fácil de manter no dia a dia.</p>
+      </div>
+
+      <ul class="services">
+        <li class="service">
+          <svg class="icon service__icon" aria-hidden="true"><use href="#i-dashboard"/></svg>
+          <h3>Dashboards em Power BI e Excel</h3>
+          <p>Painéis gerenciais com os indicadores que importam para o seu negócio, atualizados automaticamente e fáceis de acompanhar no computador ou no celular.</p>
+          <ul class="service__list"><li>Vendas, custos e estoque</li><li>Metas e alertas visuais</li><li>Atualização automática dos dados</li></ul>
+        </li>
+        <li class="service">
+          <svg class="icon service__icon" aria-hidden="true"><use href="#i-gantt"/></svg>
+          <h3>Planejamento e cronogramas em MS Project</h3>
+          <p>Cronogramas de obras e projetos com sequência lógica, caminho crítico e controle de avanço, para cumprir prazos com o custo sob controle.</p>
+          <ul class="service__list"><li>Cronograma e linha de base</li><li>Curva S e avanço físico</li><li>Programação semanal das equipes</li></ul>
+        </li>
+        <li class="service">
+          <svg class="icon service__icon" aria-hidden="true"><use href="#i-doc"/></svg>
+          <h3>Documentos e relatórios profissionais</h3>
+          <p>Relatórios gerenciais, procedimentos e documentos técnicos com linguagem clara, padrão visual e a identidade da sua empresa.</p>
+          <ul class="service__list"><li>Relatórios gerenciais e técnicos</li><li>Procedimentos e manuais</li><li>Modelos padronizados</li></ul>
+        </li>
+        <li class="service">
+          <svg class="icon service__icon" aria-hidden="true"><use href="#i-presentation"/></svg>
+          <h3>Apresentações e propostas comerciais</h3>
+          <p>Propostas e apresentações bem estruturadas, que transmitem profissionalismo e ajudam a fechar negócios.</p>
+          <ul class="service__list"><li>Propostas comerciais</li><li>Apresentações institucionais</li><li>Modelos reutilizáveis</li></ul>
+        </li>
+        <li class="service">
+          <svg class="icon service__icon" aria-hidden="true"><use href="#i-web"/></svg>
+          <h3>Sites e vídeos para sua marca</h3>
+          <p>Sites de uma página, vídeos curtos e materiais visuais que fortalecem a presença digital da sua empresa.</p>
+          <ul class="service__list"><li>Site de uma página</li><li>Vídeos para redes sociais</li><li>Materiais de divulgação</li></ul>
+        </li>
+        <li class="service">
+          <svg class="icon service__icon" aria-hidden="true"><use href="#i-nodes"/></svg>
+          <h3>Automações e rotinas com IA</h3>
+          <p>Inteligência artificial e automações para eliminar tarefas repetitivas: lançamentos, conferências, relatórios e documentos prontos em muito menos tempo.</p>
+          <ul class="service__list"><li>Rotinas automáticas em planilhas</li><li>Tratamento e organização de dados</li><li>IA aplicada à rotina da equipe</li></ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--white" id="para-quem" aria-labelledby="para-quem-title">
+    <div class="container">
+      <div class="section__head">
+        <h2 id="para-quem-title">Para quem trabalhamos</h2>
+        <p class="section__lead">Pequenas e médias empresas de Três Lagoas e região, em setores com muita operação e pouco tempo para planilha. Alguns exemplos do que dá para acompanhar em cada um:</p>
+      </div>
+
+      <ul class="sectors">
+        <li class="sector">
+          <svg class="icon sector__icon" aria-hidden="true"><use href="#i-crane"/></svg>
+          <h3>Construção civil</h3>
+          <ul class="tags"><li>Avanço físico</li><li>Medições</li><li>Custo por etapa</li></ul>
+        </li>
+        <li class="sector">
+          <svg class="icon sector__icon" aria-hidden="true"><use href="#i-beam"/></svg>
+          <h3>Montagem e caldeiraria</h3>
+          <ul class="tags"><li>Homem-hora</li><li>Apropriação</li><li>Prazos de fabricação</li></ul>
+        </li>
+        <li class="sector">
+          <svg class="icon sector__icon" aria-hidden="true"><use href="#i-wrench"/></svg>
+          <h3>Máquinas e manutenção</h3>
+          <ul class="tags"><li>Disponibilidade</li><li>Plano preventivo</li><li>Custo por equipamento</li></ul>
+        </li>
+        <li class="sector">
+          <svg class="icon sector__icon" aria-hidden="true"><use href="#i-truck"/></svg>
+          <h3>Transporte</h3>
+          <ul class="tags"><li>Custo por km</li><li>Consumo de combustível</li><li>Manutenção da frota</li></ul>
+        </li>
+        <li class="sector">
+          <svg class="icon sector__icon" aria-hidden="true"><use href="#i-tree"/></svg>
+          <h3>Silvicultura</h3>
+          <ul class="tags"><li>Produtividade das equipes</li><li>Horas-máquina</li><li>Área executada</li></ul>
+        </li>
+        <li class="sector">
+          <svg class="icon sector__icon" aria-hidden="true"><use href="#i-cart"/></svg>
+          <h3>Supermercados</h3>
+          <ul class="tags"><li>Vendas por seção</li><li>Margem</li><li>Perdas e ruptura</li></ul>
+        </li>
+        <li class="sector">
+          <svg class="icon sector__icon" aria-hidden="true"><use href="#i-car"/></svg>
+          <h3>Autopeças</h3>
+          <ul class="tags"><li>Curva ABC</li><li>Giro de estoque</li><li>Vendas por vendedor</li></ul>
+        </li>
+        <li class="sector">
+          <svg class="icon sector__icon" aria-hidden="true"><use href="#i-store"/></svg>
+          <h3>Comércio e serviços em geral</h3>
+          <ul class="tags"><li>Faturamento</li><li>Contas a pagar e receber</li><li>Metas</li></ul>
+        </li>
+      </ul>
+
+      <p class="sectors__note">Seu setor não está na lista? Se a sua empresa tem dados, rotina e decisões a tomar, a CHM Intelligence pode ajudar. <a href="https://wa.me/5591993244514" target="_blank" rel="noopener">Converse com a gente pelo WhatsApp</a>.</p>
+    </div>
+  </section>
+
+  <section class="section section--paper" id="como-funciona" aria-labelledby="como-funciona-title">
+    <div class="container">
+      <div class="section__head">
+        <h2 id="como-funciona-title">Como funciona</h2>
+        <p class="section__lead">Um processo simples, organizado como um cronograma de obra: cada etapa começa quando a anterior termina, e você vê o resultado antes de decidir.</p>
+      </div>
+
+      <div class="gantt">
+        <div class="gantt__head" aria-hidden="true"><span>Etapa</span><span class="gantt__time"><span>Início</span><span>Contínuo</span></span></div>
+        <ol class="gantt__list">
+          <li class="gantt__row" style="--s:0;--e:.2">
+            <div class="gantt__info">
+              <span class="gantt__num" aria-hidden="true">1</span>
+              <div><h3>Conversa inicial</h3><p>Entendemos sua rotina, seus desafios e o que você precisa acompanhar. Sem compromisso e sem linguagem técnica.</p></div>
+            </div>
+            <div class="gantt__track" aria-hidden="true"><div class="gantt__lane"><span class="gantt__bar"></span></div></div>
+          </li>
+          <li class="gantt__row gantt__row--free" style="--s:.2;--e:.44">
+            <div class="gantt__info">
+              <span class="gantt__num" aria-hidden="true">2</span>
+              <div><h3>Painel demonstrativo grátis</h3><p>Montamos um painel de demonstração com a cara da sua empresa, para você ver na prática como suas informações podem ficar.</p></div>
+            </div>
+            <div class="gantt__track" aria-hidden="true"><div class="gantt__lane"><span class="gantt__bar">Grátis</span></div></div>
+          </li>
+          <li class="gantt__row" style="--s:.44;--e:.76">
+            <div class="gantt__info">
+              <span class="gantt__num" aria-hidden="true">3</span>
+              <div><h3>Implantação</h3><p>Organizamos os dados, construímos a solução e treinamos sua equipe para usar no dia a dia.</p></div>
+            </div>
+            <div class="gantt__track" aria-hidden="true"><div class="gantt__lane"><span class="gantt__bar"></span></div></div>
+          </li>
+          <li class="gantt__row gantt__row--ongoing" style="--s:.76;--e:1">
+            <div class="gantt__info">
+              <span class="gantt__num" aria-hidden="true">4</span>
+              <div><h3>Acompanhamento</h3><p>Seguimos por perto com ajustes, melhorias e novas ideias conforme a empresa cresce.</p></div>
+            </div>
+            <div class="gantt__track" aria-hidden="true"><div class="gantt__lane"><span class="gantt__bar"></span></div></div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--navy on-dark" id="diferencial" aria-labelledby="diferencial-title">
+    <div class="container dif">
+      <div>
+        <h2 id="diferencial-title">Experiência de grandes projetos industriais, com a agilidade da inteligência artificial</h2>
+        <div class="dif__text">
+          <p>A CHM Intelligence nasceu da prática: <strong>7 anos planejando e controlando projetos industriais de grande porte</strong>, com cronogramas extensos, muitas frentes de trabalho, prazos apertados e gestores que precisam de respostas rápidas.</p>
+          <p>Esse método agora está a serviço da pequena e média empresa, com o apoio da inteligência artificial para entregar mais em menos tempo.</p>
+        </div>
+      </div>
+
+      <figure class="scurve">
+        <div class="scurve__head">
+          <span class="scurve__title">Avanço físico do projeto</span>
+          <span class="scurve__legend" aria-hidden="true"><span><i></i>Previsto</span><span><i class="is-act"></i>Realizado</span></span>
+        </div>
+        <svg viewBox="0 0 420 250" role="img" aria-label="Curva S comparando o avanço previsto e o realizado de um projeto, com o realizado alinhado ao previsto na data de hoje">
+          <path class="sc-grid" d="M48 28H396M48 74H396M48 120H396M48 166H396M48 212H396"/>
+          <g class="sc-y"><text x="38" y="32">100%</text><text x="38" y="124">50%</text><text x="38" y="216">0%</text></g>
+          <path class="sc-plan" d="M48 212L56.7 211.6L65.4 211.2L74.1 210.6L82.8 209.9L91.5 209L100.2 207.8L108.9 206.3L117.6 204.4L126.3 202L135 199.1L143.7 195.5L152.4 191L161.1 185.6L169.8 179.2L178.5 171.7L187.2 163.1L195.9 153.4L204.6 142.8L213.3 131.6L222 120L230.7 108.4L239.4 97.2L248.1 86.6L256.8 76.9L265.5 68.3L274.2 60.8L282.9 54.4L291.6 49L300.3 44.5L309 40.9L317.7 38L326.4 35.6L335.1 33.7L343.8 32.2L352.5 31L361.2 30.1L369.9 29.4L378.6 28.8L387.3 28.4L396 28"/>
+          <line class="sc-today" x1="263.8" y1="24" x2="263.8" y2="212"/>
+          <text class="sc-today-label" x="263.8" y="16">Hoje</text>
+          <path class="sc-act" d="M48 212L56.6 211.7L65.3 211.3L73.9 210.8L82.5 210.1L91.2 209.4L99.8 208.5L108.4 207.3L117 205.9L125.7 204.2L134.3 202L142.9 199.3L151.6 196L160.2 191.9L168.8 186.9L177.5 180.9L186.1 173.8L194.7 165.4L203.3 155.9L212 145.2L220.6 133.5L229.2 121.1L237.9 108.2L246.5 95.2L255.1 82.4L263.8 69.9"/>
+          <circle class="sc-dot" cx="263.8" cy="69.9" r="5.5"/>
+          <g class="sc-x"><text x="48" y="238">Início</text><text class="sc-end" x="396" y="238">Término</text></g>
+        </svg>
+        <figcaption>Curva S de avanço físico: o tipo de controle que usamos em grandes obras, agora aplicado ao dia a dia da sua empresa.</figcaption>
+      </figure>
+
+      <ul class="dif__points">
+        <li>
+          <h3>Método de quem planeja obra grande</h3>
+          <p>Rotinas de planejamento, controle e indicadores usadas em projetos industriais, adaptadas à realidade da sua empresa.</p>
+        </li>
+        <li>
+          <h3>Inteligência artificial com critério</h3>
+          <p>IA para organizar dados, produzir documentos e automatizar tarefas, sempre revisada por quem entende de gestão.</p>
+        </li>
+        <li>
+          <h3>Atendimento direto</h3>
+          <p>Você conversa com quem faz o trabalho, em linguagem simples e sem intermediários.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--white cta" id="contato" aria-labelledby="cta-title">
+    <div class="container cta__inner">
+      <div>
+        <h2 id="cta-title">Vamos colocar sua empresa no controle?</h2>
+        <p class="cta__text">Conte como funciona a sua rotina. A partir disso, preparamos um painel demonstrativo grátis, com a cara da sua empresa.</p>
+        <div class="cta__actions">
+          <a class="btn btn--primary btn--lg" href="https://wa.me/5591993244514" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>Falar no WhatsApp
+          </a>
+          <span class="cta__note">Sem compromisso. Atendimento para Três Lagoas e região.</span>
+        </div>
+      </div>
+      <svg class="cta__mark" viewBox="0 0 260 220" aria-hidden="true">
+        <path d="M6 126L250 12" stroke="#0B1F3A" stroke-width="14"/>
+        <path fill="#FF7A1A" d="M30 140.8L72 121.2V220H30zM88 113.7L130 94.1V220H88zM146 86.6L188 67V220H146zM204 59.5L246 39.9V220H204z"/>
+      </svg>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer on-dark">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <img src="data:image/png;base64,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" alt="CHM Intelligence" width="260" height="46">
+      <p>Dados, planejamento e inteligência artificial a serviço das pequenas e médias empresas de Três Lagoas e região.</p>
+    </div>
+    <nav class="footer__nav" aria-labelledby="rodape-nav">
+      <h2 id="rodape-nav">Navegação</h2>
+      <ul>
+        <li><a href="#problemas">Problemas que resolvemos</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#para-quem">Para quem</a></li>
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#diferencial">Diferencial</a></li>
+      </ul>
+    </nav>
+    <div class="footer__contact">
+      <h2>Contato</h2>
+      <p>Três Lagoas, Mato Grosso do Sul.<br>Atendimento pelo WhatsApp.</p>
+      <a class="btn btn--primary" href="https://wa.me/5591993244514" target="_blank" rel="noopener">
+        <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>Falar no WhatsApp
+      </a>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <p>© <span data-year>2026</span> CHM Intelligence. Todos os direitos reservados.</p>
+    <p>Três Lagoas, MS</p>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/5591993244514" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg><span>WhatsApp</span>
+</a>
+
+<script>
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* Cabeçalho com borda ao rolar */
+  var header = document.querySelector('.site-header');
+  function onScroll() { header.classList.toggle('is-scrolled', window.scrollY > 8); }
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  /* Menu do celular */
+  var toggle = document.querySelector('.menu-toggle');
+  var menu = document.getElementById('menu');
+  function setMenu(open) {
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+    menu.hidden = !open;
+  }
+  toggle.addEventListener('click', function () { setMenu(menu.hidden); });
+  menu.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !menu.hidden) { setMenu(false); toggle.focus(); }
+  });
+  var desktop = window.matchMedia('(min-width: 1024px)');
+  var closeOnDesktop = function (e) { if (e.matches) setMenu(false); };
+  if (desktop.addEventListener) desktop.addEventListener('change', closeOnDesktop);
+
+  /* Link ativo no menu conforme a seção visível */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+  if ('IntersectionObserver' in window) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        links.forEach(function (a) {
+          a.classList.toggle('is-active', a.getAttribute('href') === '#' + entry.target.id);
+        });
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    links.forEach(function (a) {
+      var target = document.querySelector(a.getAttribute('href'));
+      if (target) spy.observe(target);
+    });
+    var hero = document.getElementById('inicio');
+    new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting) links.forEach(function (a) { a.classList.remove('is-active'); });
+    }, { rootMargin: '-45% 0px -50% 0px' }).observe(hero);
+  }
+
+  /* Meses do gráfico e período do painel acompanham a data atual */
+  var curtos = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
+  var longos = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+  var hoje = new Date(), mes = hoje.getMonth(), ano = hoje.getFullYear();
+  Array.prototype.forEach.call(document.querySelectorAll('.chart__x text'), function (t, i) {
+    t.textContent = curtos[(mes - 5 + i + 12) % 12];
+  });
+  var periodo = document.querySelector('[data-period]');
+  if (periodo) periodo.textContent = longos[mes] + ' ' + ano;
+  Array.prototype.forEach.call(document.querySelectorAll('[data-year]'), function (el) { el.textContent = ano; });
+
+  /* Números do painel contando ao carregar */
+  function fmt(v, d) { return v.toLocaleString('pt-BR', { minimumFractionDigits: d, maximumFractionDigits: d }); }
+  Array.prototype.forEach.call(document.querySelectorAll('[data-count]'), function (el) {
+    var alvo = parseFloat(el.getAttribute('data-count'));
+    var dec = parseInt(el.getAttribute('data-dec') || '0', 10);
+    if (reduce) { el.textContent = fmt(alvo, dec); return; }
+    var inicio = null, atraso = 300, duracao = 1300;
+    el.textContent = fmt(0, dec);
+    function passo(t) {
+      if (inicio === null) inicio = t;
+      var p = Math.min(Math.max((t - inicio - atraso) / duracao, 0), 1);
+      el.textContent = fmt(alvo * (1 - Math.pow(1 - p, 3)), dec);
+      if (p < 1) requestAnimationFrame(passo);
+    }
+    requestAnimationFrame(passo);
+  });
+
+  /* Painel com o nome da empresa do visitante */
+  var campo = document.getElementById('empresa');
+  var nomes = document.querySelectorAll('[data-company]');
+  var siglas = document.querySelectorAll('[data-initials]');
+  var ignorar = ['de', 'da', 'do', 'das', 'dos', 'e', '&', 'ltda', 'ltda.', 'me', 'eireli', 's/a', 'sa'];
+  function sigla(nome) {
+    var partes = nome.trim().split(/\s+/).filter(Boolean);
+    var uteis = partes.filter(function (p) { return ignorar.indexOf(p.toLowerCase()) === -1; });
+    if (!uteis.length) uteis = partes;
+    var a = uteis[0] || 'S';
+    var b = uteis[1] ? uteis[1].charAt(0) : (a.charAt(1) || 'E');
+    return (a.charAt(0) + b).toUpperCase();
+  }
+  var timer;
+  if (campo) {
+    campo.addEventListener('input', function () {
+      var nome = campo.value.trim() || 'Sua Empresa';
+      Array.prototype.forEach.call(nomes, function (el) {
+        el.textContent = nome;
+        el.classList.add('is-updated');
+      });
+      Array.prototype.forEach.call(siglas, function (el) { el.textContent = sigla(nome); });
+      clearTimeout(timer);
+      timer = setTimeout(function () {
+        Array.prototype.forEach.call(nomes, function (el) { el.classList.remove('is-updated'); });
+      }, 450);
+    });
+  }
+
+  /* Botão flutuante: aparece depois do topo e some perto do contato */
+  var fab = document.querySelector('.fab');
+  if (fab && 'IntersectionObserver' in window) {
+    var heroVisivel = true, fimVisivel = new Set();
+    function atualizar() { fab.classList.toggle('is-visible', !heroVisivel && fimVisivel.size === 0); }
+    new IntersectionObserver(function (entries) {
+      heroVisivel = entries[0].isIntersecting; atualizar();
+    }).observe(document.getElementById('inicio'));
+    var fimObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) fimVisivel.add(e.target); else fimVisivel.delete(e.target); });
+      atualizar();
+    });
+    [document.getElementById('contato'), document.querySelector('.footer')].forEach(function (el) { if (el) fimObs.observe(el); });
+  } else if (fab) {
+    fab.classList.add('is-visible');
+  }
+})();
+</script>
+</body>
+</html>
