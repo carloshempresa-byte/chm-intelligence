@@ -374,6 +374,8 @@ def autocheck_export(video):
         problems.append('silêncio no áudio')
     if I and abs(float(I.group(1)) - (-14)) > 1.5:
         problems.append('loudness fora de -14 LUFS')
+    if tp and float(tp.group(1)) > -1.0:
+        problems.append(f'pico de {tp.group(1)} dBTP no arquivo final (acima de -1 dBTP; baixe audio.true_peak no config)')
     return lines, problems
 
 

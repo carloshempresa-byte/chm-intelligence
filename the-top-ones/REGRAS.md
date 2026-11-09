@@ -72,6 +72,11 @@ Os avisos do gerador (título, hashtags, clipes) também aparecem no checklist.
 | `clips[].source_type` | `"amador"` silencia falso alerta de conta oficial |
 | `audio.music_meta` | `{title, artist, source, license, url, license_url}`, obrigatório |
 | `audio.sfx_meta` | `{title, source, license, url}`, recomendado |
+| `audio.true_peak` | Teto do limitador. O AAC pode subir o pico em até ~3 dB; o checklist avisa se o arquivo final passar de -1 dBTP |
+| `audio.duck` | `true` (padrão): a música abaixa sob cada whoosh, para ele aparecer em trilhas densas |
+| `audio.aac_bitrate` | Padrão `256k` |
+| `clips[].replay` | `{start, end, speed (0.5), zoom, focus_x, focus_y}`: replay em câmera lenta anexado ao clipe (ex.: no #1) |
+| `clips[].zoom` | Zoom próprio do clipe (padrão: `zoom` global, 1,1) |
 
 ## Como rodar
 - `python3 -I tools/build.py <config.json>`: valida, renderiza e grava `post.txt` e `checklist.txt` na pasta do vídeo.

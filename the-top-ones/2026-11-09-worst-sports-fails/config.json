@@ -1,0 +1,191 @@
+{
+ "build_dir": "<scratch>/v2/build",
+ "output": "<scratch>/v2/build/the_top_ones_worst_sports_fails_1080p.mp4",
+ "font": "<scratch>/assets/ArchivoBlack-Regular.ttf",
+ "blue": "#44C9F0",
+ "title": [
+  [
+   [
+    "RANKING",
+    "w"
+   ],
+   [
+    "THE",
+    "w"
+   ],
+   [
+    "WORST",
+    "b"
+   ]
+  ],
+  [
+   [
+    "SPORTS",
+    "w"
+   ],
+   [
+    "FAILS",
+    "b"
+   ]
+  ]
+ ],
+ "zoom": 1.1,
+ "grade": {
+  "contrast": 1.07,
+  "brightness": 0.01,
+  "saturation": 1.14,
+  "gamma": 1.0
+ },
+ "layout": {
+  "title_top": 138,
+  "title_max_size": 86,
+  "title_max_width": 960,
+  "title_line_gap": 1.13,
+  "video_y": 318,
+  "video_h": 870,
+  "list_top": 1210,
+  "list_bottom": 1550,
+  "row_h_max": 68,
+  "list_font_ratio": 0.72,
+  "list_x": 78,
+  "name_max_x": 905
+ },
+ "audio": {
+  "music": "<scratch>/assets/music/407.mp3",
+  "music_offset": 15.35,
+  "whoosh": "<scratch>/assets/sfx/1490.mp3",
+  "whoosh_peak": 0.7,
+  "whoosh_gain_db": 6,
+  "fade_out": 2.0,
+  "lufs": -14,
+  "true_peak": -4.0,
+  "music_meta": {
+   "title": "K. K.",
+   "artist": "Arulo",
+   "source": "Mixkit",
+   "license": "Mixkit Stock Music Free License",
+   "url": "https://mixkit.co/free-stock-music/tag/trap/",
+   "license_url": "https://mixkit.co/license/#musicFree"
+  },
+  "sfx_meta": {
+   "title": "Fast whoosh transition",
+   "source": "Mixkit",
+   "license": "Mixkit Sound Effects Free License",
+   "url": "https://mixkit.co/free-sound-effects/whoosh/"
+  }
+ },
+ "post": {
+  "title": "Ranking the WORST Sports Fails 💀 #shorts",
+  "main_keyword": "WORST",
+  "hook": "Which fail hurt the most? Drop your #1 in the comments 👇",
+  "hashtags": [
+   "#fails",
+   "#sports",
+   "#funny"
+  ],
+  "niche_terms": [
+   "fails",
+   "sports",
+   "funny",
+   "dodgeball",
+   "football",
+   "soccer"
+  ]
+ },
+ "clips": [
+  {
+   "rank": 2,
+   "name": "Dive Gone Wrong",
+   "src": "<scratch>/dl/7360458216905493806/full.mp4",
+   "start": 0.0,
+   "end": 2.9,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y_keys": [
+    [
+     0,
+     0.55
+    ],
+    [
+     0.9,
+     0.65
+    ],
+    [
+     1.3,
+     0.85
+    ],
+    [
+     2.9,
+     0.85
+    ]
+   ]
+  },
+  {
+   "rank": 5,
+   "name": "Panic Floor Dive",
+   "src": "<scratch>/dl/7187459221380762926/full.mp4",
+   "start": 0.0,
+   "end": 5.05,
+   "flip": true,
+   "focus_x": 0.62,
+   "focus_y": 0.62,
+   "zoom": 1.25
+  },
+  {
+   "rank": 3,
+   "name": "Keeper Wipeout",
+   "src": "<scratch>/dl/7686179024397176097/full.mp4",
+   "start": 0.6,
+   "end": 7.25,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.62
+  },
+  {
+   "rank": 4,
+   "name": "Belly Flop Dodge",
+   "src": "<scratch>/dl/7106563110072225029/full.mp4",
+   "start": 0.0,
+   "end": 7.6,
+   "flip": true,
+   "focus_x": 0.5,
+   "focus_y": 0.55
+  },
+  {
+   "rank": 1,
+   "name": "Concrete Backflop",
+   "src": "<scratch>/dl/6982939680916491525/full.mp4",
+   "start": 0.0,
+   "end": 4.05,
+   "flip": false,
+   "focus_x": 0.5,
+   "replay": {
+    "start": 1.3,
+    "end": 3.0,
+    "speed": 0.5,
+    "zoom": 1.2,
+    "focus_y": 0.75
+   },
+   "source_type": "amador",
+   "focus_y_keys": [
+    [
+     0,
+     0.6
+    ],
+    [
+     1.6,
+     0.62
+    ],
+    [
+     2.0,
+     0.85
+    ],
+    [
+     4.05,
+     0.85
+    ]
+   ],
+   "creator_name": "G. Elias"
+  }
+ ]
+}

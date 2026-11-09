@@ -93,11 +93,18 @@ def clip_filter(c, idx):
     return ','.join(f)
 
 
+def replay_frames(c):
+    """optional slow-motion replay appended to a clip: "replay": {"start", "end", "speed" (0.5), "zoom", "focus_x", "focus_y"}"""
+    r = c.get('replay')
+    return int(round((r['end'] - r['start']) / r.get('speed', 0.5) * FPS)) if r else 0
+
+
 clips = cfg['clips']  # in playback order
 starts = []
 t = 0.0
 for c in clips:
-    c['frames'] = int(round((c['end'] - c['start']) * FPS))
+    c['main_frames'] = int(round((c['end'] - c['start']) * FPS))
+    c['frames'] = c['main_frames'] + replay_frames(c)
     starts.append(t)
     t += c['frames'] / FPS
 TOTAL = t
@@ -106,11 +113,23 @@ print(f'total duration {TOTAL:.2f}s, cuts at', [round(s, 2) for s in starts])
 # ---------------------------------------------------------------- clips
 if stage in ('clips', 'all'):
     lst = []
+    enc_clip = ['-c:v', 'libx264', '-preset', 'veryfast' if draft else 'medium', '-crf', '14']
     for i, c in enumerate(clips):
         out = f'{B}/clip_{i}.mp4'
+        main = f'{B}/clip_{i}_main.mp4' if c.get('replay') else out
         run(['ffmpeg', '-v', 'error', '-y', '-ss', f"{c['start']:.3f}", '-i', c['src'], '-an',
-             '-vf', clip_filter(c, i), '-frames:v', str(c['frames']), '-r', str(FPS),
-             '-c:v', 'libx264', '-preset', 'veryfast' if draft else 'medium', '-crf', '14', out])
+             '-vf', clip_filter(c, i), '-frames:v', str(c['main_frames']), '-r', str(FPS), *enc_clip, main])
+        if c.get('replay'):
+            r = c['replay']
+            rc = dict(c, zoom=r.get('zoom', c.get('zoom', cfg['zoom'])), focus_x=r.get('focus_x', c.get('focus_x', 0.5)),
+                      focus_y=r.get('focus_y', c.get('focus_y', 0.5)), focus_x_keys=None, focus_y_keys=None)
+            rep = f'{B}/clip_{i}_replay.mp4'
+            # slow motion: trim the moment, stretch timestamps, then the usual crop/zoom/grade chain
+            run(['ffmpeg', '-v', 'error', '-y', '-ss', f"{r['start']:.3f}", '-t', f"{r['end'] - r['start']:.3f}", '-i', c['src'], '-an',
+                 '-vf', f"setpts=PTS/{r.get('speed', 0.5)}," + clip_filter(rc, i), '-frames:v', str(replay_frames(c)),
+                 '-r', str(FPS), *enc_clip, rep])
+            open(f'{B}/concat_{i}.txt', 'w').write(f"file '{main}'\nfile '{rep}'\n")
+            run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', f'{B}/concat_{i}.txt', '-c', 'copy', out])
         lst.append(f"file '{out}'")
     open(f'{B}/concat.txt', 'w').write('\n'.join(lst) + '\n')
     run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', f'{B}/concat.txt', '-c', 'copy',
@@ -134,12 +153,24 @@ if stage in ('compose', 'all'):
         inputs += ['-i', a['whoosh']]
     fc = [f"[0:a]aresample=48000,atrim=0:{TOTAL:.3f},asetpts=PTS-STARTPTS,"
           f"afade=t=out:st={TOTAL - a['fade_out']:.3f}:d={a['fade_out']:.3f}[m]"]
-    mix = ['[m]']
+    ws = []
     for i, wt in enumerate(whoosh_times):
         d = max(0, int(round(wt * 1000)))
-        fc.append(f"[{i + 1}:a]aresample=48000,volume={a['whoosh_gain_db']}dB,adelay={d}|{d}[w{i}]")
-        mix.append(f'[w{i}]')
-    fc.append(f"{''.join(mix)}amix=inputs={len(mix)}:normalize=0:duration=first[mx]")
+        fc.append(f"[{i + 1}:a]aresample=48000,aformat=channel_layouts=stereo,volume={a['whoosh_gain_db']}dB,"
+                  f"adelay={d}|{d},apad=whole_dur={TOTAL:.3f}[w{i}]")
+        ws.append(f'[w{i}]')
+    if ws:
+        # all whooshes on one bus; the music ducks a few dB under each whoosh so it cuts through dense tracks
+        fc.append(f"{''.join(ws)}amix=inputs={len(ws)}:normalize=0:duration=longest[wsum]")
+        if a.get('duck', True):
+            fc.append('[wsum]asplit[wsc][wmix]')
+            fc.append('[m]aformat=channel_layouts=stereo[ms];'
+                      '[ms][wsc]sidechaincompress=threshold=0.015:ratio=5:attack=5:release=180:makeup=1[md]')
+            fc.append('[md][wmix]amix=inputs=2:normalize=0:duration=first[mx]')
+        else:
+            fc.append('[m][wsum]amix=inputs=2:normalize=0:duration=first[mx]')
+    else:
+        fc.append('[m]anull[mx]')
     run(['ffmpeg', '-v', 'error', '-y', *inputs, '-filter_complex', ';'.join(fc), '-map', '[mx]',
          '-c:a', 'pcm_s24le', '-ar', '48000', '-ac', '2', f'{B}/mix_raw.wav'])
     # loudness: gain + peak limiter, iterated until integrated loudness hits the target
@@ -154,12 +185,16 @@ if stage in ('compose', 'all'):
     print(f'raw mix: {I0} LUFS, true peak {tp0} dBFS')
     gain = a['lufs'] - I0
     lim = 10 ** ((a['true_peak'] - 0.5) / 20)
-    for it in range(4):
+    for it in range(6):
         run(['ffmpeg', '-v', 'error', '-y', '-i', f'{B}/mix_raw.wav', '-af',
-             f"volume={gain:.2f}dB,alimiter=limit={lim:.4f}:attack=2:release=60:level=false,aresample=48000",
+             # 4x oversampled limiting so inter-sample (true) peaks stay under the target too
+             f"aresample=192000,volume={gain:.2f}dB,alimiter=limit={lim:.4f}:attack=2:release=60:level=false,aresample=48000",
              '-c:a', 'pcm_s24le', f'{B}/mix.wav'])
         I, tp = measure(f'{B}/mix.wav')
         print(f'  iter {it}: gain {gain:+.2f} dB -> {I} LUFS, TP {tp} dBFS')
+        if tp > a['true_peak']:
+            lim *= 10 ** ((a['true_peak'] - tp - 0.2) / 20)
+            continue
         if abs(I - a['lufs']) <= 0.15:
             break
         gain += a['lufs'] - I
@@ -194,7 +229,7 @@ if stage in ('compose', 'all'):
            '-profile:v', 'high', '-level', '4.2', '-pix_fmt', 'yuv420p', '-r', str(FPS),
            '-g', str(FPS * 2), '-bf', '2', '-movflags', '+faststart']
     run(['ffmpeg', '-v', 'error', '-y', *vin, '-filter_complex', ';'.join(fc), '-map', '[vout]',
-         '-map', f'{3 + 2 * N}:a', *enc, '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-ac', '2',
+         '-map', f'{3 + 2 * N}:a', *enc, '-c:a', 'aac', '-b:a', cfg['audio'].get('aac_bitrate', '256k'), '-ar', '48000', '-ac', '2',
          '-t', f'{TOTAL:.3f}', out])
     json.dump({'starts': starts, 'total': TOTAL, 'order': [c['rank'] for c in clips]},
               open(f'{B}/timeline.json', 'w'), indent=1)

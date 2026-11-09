@@ -85,7 +85,7 @@
   "subscribe_line": "Subscribe to The Top Ones for more rankings!"
  },
  "clips": {
-  "advice": "Prefira gravações amadoras (arquibancada, celular, pelada, treino aberto): o risco de Content ID é menor que o de clubes, emissoras e ligas.",
+  "advice": "Prefira gravações amadoras (arquibancada, celular, pelada, treino aberto, vídeo caseiro do próprio autor): o risco de Content ID é menor que o de clubes, emissoras, ligas e licenciadoras de vídeo viral (FailArmy, ViralHog, Jukin).",
   "broadcasters_media": [
    "tntsportsbr",
    "tntsports",
@@ -146,7 +146,21 @@
    "pubitysport",
    "pubity",
    "sportbible",
-   "ladbible"
+   "ladbible",
+   "failarmy",
+   "failarmyshorts",
+   "viralhog",
+   "jukinmedia",
+   "jukinvideo",
+   "newsflare",
+   "storyful",
+   "collab",
+   "rumbleviral",
+   "unilad",
+   "daily_dose",
+   "dailydoseofinternet",
+   "funnyvideos",
+   "tiktok_fails"
   ],
   "leagues_federations": [
    "fifaworldcup",
@@ -252,7 +266,10 @@
    "\\buefa",
    "\\b(nba|nfl|nhl|mlb|ufc|wwe)\\b",
    "highlights",
-   "^(nba|nfl|nhl|mlb|ufc|wwe|fifa|uefa|espn)"
+   "^(nba|nfl|nhl|mlb|ufc|wwe|fifa|uefa|espn)",
+   "failarmy",
+   "viralhog",
+   "jukin"
   ]
  },
  "music": {
