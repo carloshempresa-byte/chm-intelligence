@@ -1,0 +1,214 @@
+{
+ "build_dir": "<scratch>/v6/build",
+ "output": "<scratch>/v6/build/the_top_ones_worst_trampoline_fails_1080p.mp4",
+ "font": "<scratch>/assets/ArchivoBlack-Regular.ttf",
+ "blue": "#44C9F0",
+ "title": [
+  [
+   [
+    "RANKING",
+    "w"
+   ],
+   [
+    "THE",
+    "w"
+   ],
+   [
+    "WORST",
+    "b"
+   ]
+  ],
+  [
+   [
+    "TRAMPOLINE",
+    "b"
+   ],
+   [
+    "FAILS",
+    "w"
+   ]
+  ]
+ ],
+ "zoom": 1.1,
+ "grade": {
+  "contrast": 1.07,
+  "brightness": 0.01,
+  "saturation": 1.14,
+  "gamma": 1.0
+ },
+ "layout": {
+  "title_top": 138,
+  "title_max_size": 86,
+  "title_max_width": 960,
+  "title_line_gap": 1.13,
+  "video_y": 318,
+  "video_h": 870,
+  "list_top": 1205,
+  "list_bottom": 1600,
+  "row_h_max": 58,
+  "list_font_ratio": 0.72,
+  "list_x": 78,
+  "name_max_x": 905
+ },
+ "audio": {
+  "music": "<scratch>/assets/music/1103.mp3",
+  "music_offset": 0.3,
+  "whoosh": "<scratch>/assets/sfx/1490.mp3",
+  "whoosh_peak": 0.7,
+  "whoosh_gain_db": 4,
+  "fade_out": 2.0,
+  "lufs": -14,
+  "true_peak": -3.5,
+  "music_meta": {
+   "title": "K.O. Games",
+   "artist": "Michael Ramir C.",
+   "source": "Mixkit",
+   "license": "Mixkit Stock Music Free License",
+   "url": "https://mixkit.co/free-stock-music/tag/energetic/",
+   "license_url": "https://mixkit.co/license/#musicFree"
+  },
+  "sfx_meta": {
+   "title": "Fast whoosh transition",
+   "source": "Mixkit",
+   "license": "Mixkit Sound Effects Free License",
+   "url": "https://mixkit.co/free-sound-effects/whoosh/"
+  }
+ },
+ "post": {
+  "title": "Ranking the WORST Trampoline Fails 💀 #shorts",
+  "main_keyword": "WORST",
+  "hook": "Which trampoline fail hurt the most? Drop your #1 👇",
+  "hashtags": [
+   "#trampoline",
+   "#fails",
+   "#funnyfails"
+  ],
+  "niche_terms": [
+   "trampoline",
+   "fails",
+   "funnyfails",
+   "fail"
+  ]
+ },
+ "clips": [
+  {
+   "rank": 4,
+   "name": "Frame Snaps Under Him",
+   "src": "<scratch>/dl/7621506629808246047/full.mp4",
+   "start": 0.0,
+   "end": 4.5,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.5,
+   "source_type": "amador",
+   "replay": {
+    "start": 1.8,
+    "end": 3.2,
+    "speed": 0.3,
+    "zoom": 1.25,
+    "focus_y": 0.6
+   }
+  },
+  {
+   "rank": 7,
+   "name": "Neck-Saver Flip",
+   "src": "<scratch>/dl/7508292389061102870/full.mp4",
+   "start": 0.8,
+   "end": 7.65,
+   "flip": true,
+   "focus_x": 0.5,
+   "focus_y": 0.62,
+   "source_type": "amador",
+   "replay": {
+    "start": 2.2,
+    "end": 3.8,
+    "speed": 0.3,
+    "zoom": 1.2,
+    "focus_y": 0.62
+   }
+  },
+  {
+   "rank": 2,
+   "name": "Wall-to-Grass Crash",
+   "src": "<scratch>/dl/6990030393533582597/full.mp4",
+   "start": 0.0,
+   "end": 10.75,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.5,
+   "source_type": "amador",
+   "replay": {
+    "start": 9.4,
+    "end": 10.75,
+    "speed": 0.3,
+    "zoom": 1.15,
+    "focus_y": 0.55
+   }
+  },
+  {
+   "rank": 5,
+   "name": "Mat Gives Way",
+   "src": "<scratch>/dl/7667534782066068766/full.mp4",
+   "start": 0.05,
+   "end": 4.15,
+   "flip": true,
+   "focus_x": 0.5,
+   "focus_y": 0.5,
+   "source_type": "amador",
+   "replay": {
+    "start": 1.2,
+    "end": 2.1,
+    "speed": 0.3,
+    "zoom": 1.2,
+    "focus_y": 0.55
+   }
+  },
+  {
+   "rank": 3,
+   "name": "Trampoline Flips Over",
+   "src": "<scratch>/dl/7667534782066068766/full.mp4",
+   "start": 8.45,
+   "end": 12.65,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.5,
+   "source_type": "amador",
+   "replay": {
+    "start": 10.0,
+    "end": 11.7,
+    "speed": 0.3,
+    "zoom": 1.15,
+    "focus_y": 0.55
+   }
+  },
+  {
+   "rank": 6,
+   "name": "Faceplant Flip",
+   "src": "<scratch>/dl/7663600375924313366/full.mp4",
+   "start": 0.0,
+   "end": 3.25,
+   "flip": true,
+   "focus_x": 0.5,
+   "focus_y": 0.3,
+   "source_type": "amador",
+   "replay": {
+    "start": 1.8,
+    "end": 3.1,
+    "speed": 0.3,
+    "zoom": 1.2,
+    "focus_y": 0.32
+   }
+  },
+  {
+   "rank": 1,
+   "name": "Rooftop Tramp Bloopers",
+   "src": "<scratch>/dl/6939601784046357765/full.mp4",
+   "start": 0.0,
+   "end": 19.8,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.5,
+   "source_type": "amador"
+  }
+ ]
+}
