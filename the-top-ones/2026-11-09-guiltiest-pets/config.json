@@ -1,0 +1,165 @@
+{
+ "build_dir": "<scratch>/v5/build",
+ "output": "<scratch>/v5/build/the_top_ones_guiltiest_pets_1080p.mp4",
+ "font": "<scratch>/assets/ArchivoBlack-Regular.ttf",
+ "blue": "#44C9F0",
+ "title": [
+  [
+   [
+    "RANKING",
+    "w"
+   ],
+   [
+    "THE",
+    "w"
+   ]
+  ],
+  [
+   [
+    "GUILTIEST",
+    "b"
+   ],
+   [
+    "PETS",
+    "b"
+   ]
+  ]
+ ],
+ "zoom": 1.1,
+ "grade": {
+  "contrast": 1.07,
+  "brightness": 0.01,
+  "saturation": 1.14,
+  "gamma": 1.0
+ },
+ "layout": {
+  "title_top": 138,
+  "title_max_size": 86,
+  "title_max_width": 960,
+  "title_line_gap": 1.13,
+  "video_y": 318,
+  "video_h": 870,
+  "list_top": 1205,
+  "list_bottom": 1600,
+  "row_h_max": 58,
+  "list_font_ratio": 0.72,
+  "list_x": 78,
+  "name_max_x": 905
+ },
+ "audio": {
+  "music": "<scratch>/assets/music/410.mp3",
+  "music_offset": 15.36,
+  "whoosh": "<scratch>/assets/sfx/1490.mp3",
+  "whoosh_peak": 0.7,
+  "whoosh_gain_db": 4,
+  "fade_out": 2.0,
+  "lufs": -14,
+  "true_peak": -3.5,
+  "music_meta": {
+   "title": "Lil Pump Type",
+   "artist": "Arulo",
+   "source": "Mixkit",
+   "license": "Mixkit Stock Music Free License",
+   "url": "https://mixkit.co/free-stock-music/tag/trap/",
+   "license_url": "https://mixkit.co/license/#musicFree"
+  },
+  "sfx_meta": {
+   "title": "Fast whoosh transition",
+   "source": "Mixkit",
+   "license": "Mixkit Sound Effects Free License",
+   "url": "https://mixkit.co/free-sound-effects/whoosh/"
+  }
+ },
+ "post": {
+  "title": "Ranking the GUILTIEST Pets 😳 #shorts",
+  "main_keyword": "GUILTIEST",
+  "hook": "Which pet looks the guiltiest? Drop your #1 in the comments 👇",
+  "hashtags": [
+   "#pets",
+   "#guiltydog",
+   "#funnypets"
+  ],
+  "niche_terms": [
+   "pets",
+   "guilty",
+   "guiltydog",
+   "dog",
+   "cat",
+   "funnypets",
+   "funny"
+  ]
+ },
+ "clips": [
+  {
+   "rank": 4,
+   "name": "TV Wrecking Cat",
+   "src": "<scratch>/dl/7090690852669967662/full.mp4",
+   "start": 0.0,
+   "end": 12.0,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.35
+  },
+  {
+   "rank": 7,
+   "name": "Lab Avoids Eye Contact",
+   "src": "<scratch>/dl/7409258128975334674/full.mp4",
+   "start": 3.0,
+   "end": 13.0,
+   "flip": true,
+   "focus_x": 0.5,
+   "focus_y": 0.45
+  },
+  {
+   "rank": 3,
+   "name": "Plate Thief Golden",
+   "src": "<scratch>/dl/7278292255826283818/full.mp4",
+   "start": 0.0,
+   "end": 12.0,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.4,
+   "source_type": "amador"
+  },
+  {
+   "rank": 6,
+   "name": "Crate Confession",
+   "src": "<scratch>/dl/7610126520761339166/full.mp4",
+   "start": 10.0,
+   "end": 21.0,
+   "flip": true,
+   "focus_x": 0.5,
+   "focus_y": 0.3
+  },
+  {
+   "rank": 2,
+   "name": "Cable Chewer Hugs It Out",
+   "src": "<scratch>/dl/7204279363666251051/full.mp4",
+   "start": 0.0,
+   "end": 13.0,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.45
+  },
+  {
+   "rank": 5,
+   "name": "2AM Chip Raid",
+   "src": "<scratch>/dl/7679839852203887886/full.mp4",
+   "start": 0.0,
+   "end": 11.5,
+   "flip": true,
+   "focus_x": 0.5,
+   "focus_y": 0.45
+  },
+  {
+   "rank": 1,
+   "name": "The Stairs of Shame",
+   "src": "<scratch>/dl/7640519423756946701/full.mp4",
+   "start": 6.0,
+   "end": 21.4,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.45
+  }
+ ]
+}
