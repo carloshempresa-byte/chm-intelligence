@@ -1,0 +1,54 @@
+{
+ "collected_at_utc": "2026-11-09T03:22:59Z",
+ "source": "yt-dlp 2026.10.26 (sem curl_cffi); metadados via --ignore-no-formats-error (YouTube bloqueia download de vídeo neste IP)",
+ "channel": {
+  "name": "The top Ones ",
+  "handle": "@TheTopOnesRank",
+  "channel_id": "UCxST8pkgVz-kSK6Fra5Dtcw",
+  "url": "https://www.youtube.com/@TheTopOnesRank",
+  "subscribers": 7
+ },
+ "shorts": [
+  {
+   "id": "npJfuNaFKI0",
+   "url": "https://www.youtube.com/shorts/npJfuNaFKI0",
+   "title": "Ranking the WORST Dodgeball Fails 😭💀 #shorts",
+   "upload_date": "20261109",
+   "published_utc": "2026-11-09 00:24",
+   "age_hours_at_collection": 3.0,
+   "views": 705,
+   "likes": 22,
+   "comments": 0,
+   "duration_s": 39,
+   "availability": "public",
+   "category": "People & Blogs"
+  },
+  {
+   "id": "SyWJDmrvrXQ",
+   "url": "https://www.youtube.com/shorts/SyWJDmrvrXQ",
+   "title": "Ranking Neymar's BEST Skills 🇧🇷🔥 Rainbow, Nutmegs & More #shorts",
+   "upload_date": "20261109",
+   "published_utc": "2026-11-09 01:39",
+   "age_hours_at_collection": 1.7,
+   "views": 415,
+   "likes": 23,
+   "comments": 1,
+   "duration_s": 91,
+   "availability": "public",
+   "category": "People & Blogs"
+  }
+ ],
+ "checks": {
+  "shorts_tab_count": 2,
+  "uploads_playlist_UU_count": 2,
+  "shorts_playlist_UUSH_count": 2,
+  "videos_tab": "não existe (canal só tem Shorts)",
+  "missing_or_blocked": [],
+  "notes": [
+   "Os 3 inventários públicos batem (2 = 2 = 2): nenhum vídeo público sumiu.",
+   "availability=public nos 2 Shorts.",
+   "Não dá para ver daqui bloqueio regional nem reivindicação de Content ID: isso só aparece no YouTube Studio (Conteúdo > Direitos autorais).",
+   "RSS do canal (feeds/videos.xml) devolve 404; não foi usado."
+  ]
+ }
+}
