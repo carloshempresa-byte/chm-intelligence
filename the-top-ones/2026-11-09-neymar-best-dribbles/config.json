@@ -1,0 +1,212 @@
+{
+ "build_dir": "<scratch>/build/final",
+ "output": "<scratch>/build/final/the_top_ones_neymar_best_dribbles_1080p.mp4",
+ "font": "<scratch>/assets/ArchivoBlack-Regular.ttf",
+ "blue": "#44C9F0",
+ "title": [
+  [
+   [
+    "RANKING",
+    "w"
+   ],
+   [
+    "NEYMAR'S",
+    "b"
+   ]
+  ],
+  [
+   [
+    "BEST",
+    "w"
+   ],
+   [
+    "DRIBBLES",
+    "b"
+   ]
+  ]
+ ],
+ "zoom": 1.1,
+ "grade": {
+  "contrast": 1.07,
+  "brightness": 0.01,
+  "saturation": 1.14,
+  "gamma": 1.0
+ },
+ "layout": {
+  "title_top": 138,
+  "title_max_size": 86,
+  "title_max_width": 960,
+  "title_line_gap": 1.13,
+  "video_y": 318,
+  "video_h": 870,
+  "list_top": 1210,
+  "list_bottom": 1550,
+  "row_h_max": 68,
+  "list_font_ratio": 0.72,
+  "list_x": 78,
+  "name_max_x": 905
+ },
+ "audio": {
+  "music": "<scratch>/assets/music/293.mp3",
+  "music_offset": 11.08,
+  "whoosh": "<scratch>/assets/sfx/1490.mp3",
+  "whoosh_peak": 0.7,
+  "whoosh_gain_db": 0,
+  "fade_out": 2.2,
+  "lufs": -14,
+  "true_peak": -1.5
+ },
+ "clips": [
+  {
+   "rank": 4,
+   "name": "Street 1v1 Nutmeg",
+   "src": "<scratch>/dl/7100561997737037061/full.mp4",
+   "start": 0.0,
+   "end": 8.2,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y_keys": [
+    [
+     0,
+     0.5
+    ],
+    [
+     6.0,
+     0.5
+    ],
+    [
+     7.2,
+     0.42
+    ]
+   ]
+  },
+  {
+   "rank": 2,
+   "name": "Solo Goal at the Parc",
+   "src": "<scratch>/dl/7574376911711866134/full.mp4",
+   "start": 6.334,
+   "end": 17.1,
+   "flip": true,
+   "focus_x": 0.5,
+   "focus_y_keys": [
+    [
+     0,
+     0.35
+    ],
+    [
+     5.07,
+     0.45
+    ],
+    [
+     7.47,
+     0.4
+    ],
+    [
+     8.67,
+     0.75
+    ],
+    [
+     9.9,
+     0.75
+    ],
+    [
+     9.93,
+     0.35
+    ]
+   ]
+  },
+  {
+   "rank": 5,
+   "name": "Touchline Escape",
+   "src": "<scratch>/dl/7677422195269766418/full.mp4",
+   "start": 0.0,
+   "end": 10.0,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y_keys": [
+    [
+     0,
+     0.42
+    ],
+    [
+     1.2,
+     0.42
+    ],
+    [
+     1.25,
+     0.62
+    ],
+    [
+     4.5,
+     0.62
+    ],
+    [
+     6.0,
+     0.55
+    ]
+   ]
+  },
+  {
+   "rank": 3,
+   "name": "Slalom vs Corinthians",
+   "src": "<scratch>/dl/7470740189044854071/full.mp4",
+   "start": 0.0,
+   "end": 13.45,
+   "flip": true,
+   "focus_x": 0.5,
+   "focus_y": 0.5,
+   "grade": {
+    "contrast": 1.03,
+    "saturation": 0.96,
+    "brightness": -0.015
+   }
+  },
+  {
+   "rank": 1,
+   "name": "Sombrero vs Fluminense",
+   "src": "<scratch>/dl/7698456430050954504/full.mp4",
+   "start": 0.0,
+   "end": 18.2,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y_keys": [
+    [
+     0,
+     0.35
+    ],
+    [
+     1.5,
+     0.48
+    ],
+    [
+     3.0,
+     0.45
+    ],
+    [
+     5.0,
+     0.4
+    ],
+    [
+     8.0,
+     0.42
+    ],
+    [
+     11.0,
+     0.5
+    ],
+    [
+     13.0,
+     0.52
+    ],
+    [
+     16.0,
+     0.5
+    ],
+    [
+     18.2,
+     0.48
+    ]
+   ]
+  }
+ ]
+}
