@@ -1,0 +1,350 @@
+{
+ "_doc": "Regras de publicação do canal The Top Ones, lidas por post_kit.py e build.py. Versão legível: the-top-ones/REGRAS.md",
+ "channel": "The Top Ones",
+ "title": {
+  "max_words": 6,
+  "suffix": "#shorts",
+  "max_chars": 100,
+  "require_uppercase_keyword": true,
+  "max_uppercase_words": 2,
+  "auto_keywords": [
+   "BEST",
+   "WORST",
+   "FUNNIEST",
+   "CRAZIEST",
+   "MOST",
+   "BIGGEST",
+   "WILDEST",
+   "SCARIEST",
+   "DUMBEST",
+   "GREATEST",
+   "INSANE",
+   "EPIC",
+   "LUCKIEST",
+   "STRONGEST",
+   "FASTEST",
+   "WEIRDEST",
+   "SMARTEST",
+   "TOP"
+  ]
+ },
+ "hashtags": {
+  "min": 2,
+  "max": 3,
+  "title_only": [
+   "#shorts"
+  ],
+  "banned_viral": [
+   "#fyp",
+   "#fypシ",
+   "#fypage",
+   "#foryou",
+   "#foryoupage",
+   "#fy",
+   "#4u",
+   "#4you",
+   "#parati",
+   "#pourtoi",
+   "#viral",
+   "#viralvideo",
+   "#viralvideos",
+   "#viralshorts",
+   "#goviral",
+   "#blowthisup",
+   "#trending",
+   "#trend",
+   "#explore",
+   "#explorepage",
+   "#tiktok",
+   "#tiktokviral",
+   "#reels",
+   "#reelsinstagram",
+   "#instagram",
+   "#capcut",
+   "#xyzbca",
+   "#creatorsearchinsights",
+   "#shortsfeed",
+   "#shortsvideo",
+   "#shortvideo",
+   "#youtubeshorts",
+   "#ytshorts",
+   "#youtube",
+   "#subscribe",
+   "#like",
+   "#likes",
+   "#likeforlikes",
+   "#follow",
+   "#followme",
+   "#followforfollowback"
+  ]
+ },
+ "description": {
+  "require_question_hook": true,
+  "default_hook": "Which one deserves the #1 spot? Drop yours in the comments 👇",
+  "credits_header": "🎥 Clips (all rights belong to the original creators):",
+  "subscribe_line": "Subscribe to The Top Ones for more rankings!"
+ },
+ "clips": {
+  "advice": "Prefira gravações amadoras (arquibancada, celular, pelada, treino aberto): o risco de Content ID é menor que o de clubes, emissoras e ligas.",
+  "broadcasters_media": [
+   "tntsportsbr",
+   "tntsports",
+   "tntsportsmx",
+   "espn",
+   "espnbrasil",
+   "espnfc",
+   "espnfutbol",
+   "sportscenter",
+   "sportv",
+   "geglobo",
+   "globoesporte",
+   "globoplay",
+   "canalpremiere",
+   "premiere",
+   "cazetv",
+   "bandsports",
+   "recordtv",
+   "sbt",
+   "foxsports",
+   "foxsoccer",
+   "telemundodeportes",
+   "tudn",
+   "tudnusa",
+   "univision",
+   "beinsports",
+   "beinsportsusa",
+   "skysports",
+   "skysportsnews",
+   "skysportsfootball",
+   "dazn",
+   "daznfootball",
+   "daznbrasil",
+   "nbcsports",
+   "nbcsportssoccer",
+   "cbssports",
+   "cbssportsgolazo",
+   "primevideosport",
+   "primevideobr",
+   "hbomaxbr",
+   "canalplus",
+   "canalplussport",
+   "rmcsport",
+   "movistarplus",
+   "marca",
+   "marca.en",
+   "lance",
+   "lancenet",
+   "desimpedidos",
+   "onefootball",
+   "onefootballbr",
+   "goal",
+   "goalbrasil",
+   "433",
+   "houseofhighlights",
+   "bleacherreport",
+   "brfootball",
+   "pubitysport",
+   "pubity",
+   "sportbible",
+   "ladbible"
+  ],
+  "leagues_federations": [
+   "fifaworldcup",
+   "fifa",
+   "fifacom",
+   "uefa",
+   "championsleague",
+   "europaleague",
+   "premierleague",
+   "laliga",
+   "laligaen",
+   "seriea",
+   "ligue1",
+   "ligue1ubereats",
+   "bundesliga",
+   "mls",
+   "nba",
+   "nfl",
+   "nhl",
+   "mlb",
+   "ufc",
+   "wwe",
+   "f1",
+   "brasileirao",
+   "brasileiraobetano",
+   "paulistao",
+   "cbf",
+   "cbf_futebol",
+   "cbffutebol",
+   "selecaobrasileira",
+   "conmebol",
+   "libertadores",
+   "copadobrasil",
+   "concacaf",
+   "afc",
+   "caf",
+   "kingsleague"
+  ],
+  "clubs": [
+   "santosfc",
+   "psg",
+   "alhilal",
+   "alnassr",
+   "alittihad",
+   "fcbarcelona",
+   "realmadrid",
+   "manutd",
+   "mancity",
+   "chelseafc",
+   "liverpoolfc",
+   "arsenal",
+   "spursofficial",
+   "juventus",
+   "acmilan",
+   "inter",
+   "fcbayern",
+   "bvb",
+   "atleticodemadrid",
+   "flamengo",
+   "palmeiras",
+   "corinthians",
+   "saopaulofc",
+   "fluminensefc",
+   "vascodagama",
+   "botafogo",
+   "gremio",
+   "scinternacional",
+   "cruzeiro",
+   "atletico",
+   "bahia",
+   "fortalezaec",
+   "intermiamicf",
+   "om_officiel",
+   "napoli",
+   "asroma",
+   "benfica",
+   "fcporto",
+   "sportingcp",
+   "ajax",
+   "galatasaray",
+   "bocajuniors",
+   "riverplate",
+   "lagalaxy"
+  ],
+  "official_name_patterns": [
+   "fc$",
+   "^fc[._]",
+   "\\bfc\\b",
+   "futebol clube",
+   "football club",
+   "f[uú]tbol club",
+   "sports?",
+   "esportes?",
+   "deportes?",
+   "\\btv\\b",
+   "tv$",
+   "official",
+   "oficial",
+   "officiel",
+   "ufficiale",
+   "\\bespn",
+   "\\bfifa",
+   "\\buefa",
+   "\\b(nba|nfl|nhl|mlb|ufc|wwe)\\b",
+   "highlights",
+   "^(nba|nfl|nhl|mlb|ufc|wwe|fifa|uefa|espn)"
+  ]
+ },
+ "music": {
+  "rule": "Só música livre de direitos, de biblioteca permitida e com licença declarada. Nada de música em alta (sons do TikTok, Spotify, YouTube Music, remixes/sped up).",
+  "allowed_sources": {
+   "mixkit": {
+    "domains": [
+     "mixkit.co",
+     "assets.mixkit.co"
+    ],
+    "licenses": [
+     "Mixkit Stock Music Free License"
+    ]
+   },
+   "youtube audio library": {
+    "domains": [
+     "studio.youtube.com",
+     "youtube.com"
+    ],
+    "licenses": [
+     "YouTube Audio Library License"
+    ]
+   },
+   "pixabay": {
+    "domains": [
+     "pixabay.com",
+     "cdn.pixabay.com"
+    ],
+    "licenses": [
+     "Pixabay Content License"
+    ]
+   }
+  },
+  "allowed_sfx_sources": {
+   "mixkit": {
+    "domains": [
+     "mixkit.co",
+     "assets.mixkit.co"
+    ],
+    "licenses": [
+     "Mixkit Sound Effects Free License"
+    ]
+   },
+   "youtube audio library": {
+    "domains": [
+     "studio.youtube.com",
+     "youtube.com"
+    ],
+    "licenses": [
+     "YouTube Audio Library License"
+    ]
+   },
+   "pixabay": {
+    "domains": [
+     "pixabay.com",
+     "cdn.pixabay.com"
+    ],
+    "licenses": [
+     "Pixabay Content License"
+    ]
+   }
+  },
+  "banned_domains": [
+   "tiktok.com",
+   "spotify.com",
+   "music.youtube.com",
+   "music.apple.com",
+   "soundcloud.com",
+   "deezer.com",
+   "shazam.com",
+   "instagram.com"
+  ],
+  "banned_keywords": [
+   "trending",
+   "viral sound",
+   "tiktok sound",
+   "tiktok audio",
+   "sped up",
+   "speed up",
+   "slowed",
+   "nightcore",
+   "phonk remix",
+   "original sound"
+  ]
+ },
+ "checklist": [
+  "Revisar o export do começo ao fim: sem tela preta, áudio ok",
+  "Subir como NÃO LISTADO, esperar 10–20 min e conferir direitos autorais (copyright) no YouTube Studio",
+  "Escolher a capa pelo app do YouTube no celular",
+  "Público: \"Não, não é conteúdo para crianças\"; sem restrição de idade",
+  "Comentários abertos, Remix ativado, sem tags e sem local",
+  "Preencher \"Vídeo relacionado\" com outro Short do canal",
+  "Só então deixar PÚBLICO"
+ ]
+}

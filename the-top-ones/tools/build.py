@@ -1,16 +1,24 @@
 """Build the ranking Short from a JSON config.
 
-usage: python3 -I build.py <config.json> [--stage clips|compose|all] [--draft]
+usage: python3 -I build.py <config.json> [--stage clips|compose|all|post] [--draft]
 
 Pipeline:
+  0. preflight (post_kit.py + rules.json): title, hashtags, clip sources (official/broadcast warning)
+     and music licence. A music that is not royalty-free from an allowed library ABORTS the build.
   1. every clip -> trimmed, 30fps, zoomed ~1.1x, cropped to the video window,
-     mirrored on alternate clips, light colour/contrast grade, NO audio
+     mirrored on alternate clips, light colour/contrast grade, NO audio (original audio is never used)
   2. overlays.py renders title + ranking-list layers
   3. compose: black 1080x1920 canvas + clip window + title + animated list
-  4. audio: Mixkit track (starts on an energetic part at 0s) + whoosh on every cut,
-     fade-out at the end, two-pass loudnorm to -14 LUFS / -1.5 dBTP
+  4. audio: royalty-free track (starts on an energetic part at 0s) + whoosh on every cut,
+     fade-out at the end, gain + limiter to -14 LUFS / -1.5 dBTP
+  5. post_kit writes post.txt (title + description) and checklist.txt next to the output video
+     (--stage post regenerates only these two files)
+Rules: the-top-ones/REGRAS.md
 """
 import json, math, os, subprocess, sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import post_kit  # noqa: E402  (tools dir, not the downloaded-clip dirs)
 
 cfg_path = sys.argv[1]
 stage = 'all'
@@ -18,6 +26,16 @@ if '--stage' in sys.argv:
     stage = sys.argv[sys.argv.index('--stage') + 1]
 draft = '--draft' in sys.argv
 cfg = json.load(open(cfg_path))
+
+pre = post_kit.preflight(cfg)
+pre.print('preflight')
+if pre.errors:
+    sys.exit('preflight falhou (veja ERRO acima); nada foi renderizado')
+if stage == 'post':
+    post_txt, checklist_txt, _ = post_kit.write_outputs(cfg, cfg['output'])
+    print('wrote', post_txt, '\nwrote', checklist_txt)
+    sys.exit(0)
+
 B = cfg['build_dir']
 os.makedirs(B, exist_ok=True)
 FPS = 30
@@ -181,3 +199,5 @@ if stage in ('compose', 'all'):
     json.dump({'starts': starts, 'total': TOTAL, 'order': [c['rank'] for c in clips]},
               open(f'{B}/timeline.json', 'w'), indent=1)
     print('wrote', out)
+    post_txt, checklist_txt, rep = post_kit.write_outputs(cfg, out)
+    print('wrote', post_txt, '\nwrote', checklist_txt)
