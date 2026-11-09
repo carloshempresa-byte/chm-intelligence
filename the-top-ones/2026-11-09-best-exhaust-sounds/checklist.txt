@@ -1,0 +1,17 @@
+CHECKLIST DE POSTAGEM: The Top Ones
+Vídeo: the_top_ones_best_exhaust_sounds_1080p.mp4   (gerado em 2026-11-09 19:02)
+
+Verificação automática do export (confira assistindo mesmo assim):
+  - Duração 85.3 s | 1080x1920 | 30 fps
+  - Tela preta: nenhum trecho de 0,5 s ou mais
+  - Áudio: -14.1 LUFS, pico -3.7 dBTP, sem silêncio de 1 s ou mais
+  => nada de errado encontrado
+
+Antes de publicar:
+[ ] 1. Revisar o export do começo ao fim: sem tela preta, áudio ok
+[ ] 2. Subir como NÃO LISTADO, esperar 10–20 min e conferir direitos autorais (copyright) no YouTube Studio
+[ ] 3. Escolher a capa pelo app do YouTube no celular
+[ ] 4. Público: "Não, não é conteúdo para crianças"; sem restrição de idade
+[ ] 5. Comentários abertos, Remix ativado, sem tags e sem local
+[ ] 6. Preencher "Vídeo relacionado" com outro Short do canal
+[ ] 7. Só então deixar PÚBLICO

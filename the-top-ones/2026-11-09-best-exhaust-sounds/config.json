@@ -1,0 +1,170 @@
+{
+ "build_dir": "<scratch>/v4/build",
+ "output": "<scratch>/v4/build/the_top_ones_best_exhaust_sounds_1080p.mp4",
+ "font": "<scratch>/assets/ArchivoBlack-Regular.ttf",
+ "blue": "#44C9F0",
+ "title": [
+  [
+   [
+    "RANKING",
+    "w"
+   ],
+   [
+    "THE",
+    "w"
+   ],
+   [
+    "BEST",
+    "b"
+   ]
+  ],
+  [
+   [
+    "EXHAUST",
+    "w"
+   ],
+   [
+    "SOUNDS",
+    "b"
+   ]
+  ]
+ ],
+ "zoom": 1.1,
+ "grade": {
+  "contrast": 1.07,
+  "brightness": 0.01,
+  "saturation": 1.14,
+  "gamma": 1.0
+ },
+ "layout": {
+  "title_top": 138,
+  "title_max_size": 86,
+  "title_max_width": 960,
+  "title_line_gap": 1.13,
+  "video_y": 318,
+  "video_h": 870,
+  "list_top": 1205,
+  "list_bottom": 1600,
+  "row_h_max": 58,
+  "list_font_ratio": 0.72,
+  "list_x": 78,
+  "name_max_x": 905
+ },
+ "audio": {
+  "music": "<scratch>/assets/music/460.mp3",
+  "music_offset": 15.98,
+  "whoosh": "<scratch>/assets/sfx/1490.mp3",
+  "whoosh_peak": 0.7,
+  "whoosh_gain_db": -2,
+  "fade_out": 1.5,
+  "lufs": -14,
+  "true_peak": -3.5,
+  "music_meta": {
+   "title": "Arab Nights",
+   "artist": "Arulo",
+   "source": "Mixkit",
+   "license": "Mixkit Stock Music Free License",
+   "url": "https://mixkit.co/free-stock-music/tag/trap/",
+   "license_url": "https://mixkit.co/license/#musicFree"
+  },
+  "sfx_meta": {
+   "title": "Fast whoosh transition",
+   "source": "Mixkit",
+   "license": "Mixkit Sound Effects Free License",
+   "url": "https://mixkit.co/free-sound-effects/whoosh/"
+  },
+  "keep_clip_audio": true,
+  "clip_lufs": -16,
+  "music_bed_db": -24
+ },
+ "post": {
+  "title": "Ranking the BEST Exhaust Sounds 🔊 #shorts",
+  "main_keyword": "BEST",
+  "hook": "Which car sounds the best? Drop your #1 in the comments 👇",
+  "hashtags": [
+   "#cars",
+   "#exhaust",
+   "#enginesound"
+  ],
+  "niche_terms": [
+   "cars",
+   "exhaust",
+   "enginesound",
+   "engine",
+   "sound",
+   "revs"
+  ]
+ },
+ "clips": [
+  {
+   "rank": 4,
+   "name": "Leon Pops & Bangs",
+   "src": "<scratch>/dl/7038706624625659142/full.mp4",
+   "start": 0.0,
+   "end": 15.3,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.5
+  },
+  {
+   "rank": 7,
+   "name": "Street Meet Revs",
+   "src": "<scratch>/dl/7696018012561771808/full.mp4",
+   "start": 0.0,
+   "end": 9.4,
+   "flip": true,
+   "focus_x": 0.5,
+   "focus_y": 0.62
+  },
+  {
+   "rank": 3,
+   "name": "Supra Backfire",
+   "src": "<scratch>/dl/7227353589985971458/full.mp4",
+   "start": 0.0,
+   "end": 11.3,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.55
+  },
+  {
+   "rank": 6,
+   "name": "Diesel Cold Start",
+   "src": "<scratch>/dl/7606764776827473165/full.mp4",
+   "start": 0.0,
+   "end": 14.0,
+   "flip": true,
+   "focus_x": 0.5,
+   "focus_y": 0.6
+  },
+  {
+   "rank": 2,
+   "name": "Hellcat Revs",
+   "src": "<scratch>/dl/7632308163991080223/full.mp4",
+   "start": 0.0,
+   "end": 12.25,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.5
+  },
+  {
+   "rank": 5,
+   "name": "TRX Highway Flyby",
+   "src": "<scratch>/dl/7642465056306859285/full.mp4",
+   "start": 0.0,
+   "end": 10.5,
+   "flip": true,
+   "focus_x": 0.5,
+   "focus_y": 0.55
+  },
+  {
+   "rank": 1,
+   "name": "GT3 RS Flames",
+   "src": "<scratch>/dl/7538024581894769942/full.mp4",
+   "start": 0.0,
+   "end": 12.5,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.88
+  }
+ ]
+}

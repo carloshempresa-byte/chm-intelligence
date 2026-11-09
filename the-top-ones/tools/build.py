@@ -147,11 +147,46 @@ if stage in ('compose', 'all'):
 
     # ------------------------------------------------------------ audio
     a = cfg['audio']
+    keep = a.get('keep_clip_audio', False)
+    if keep:
+        # nichos em que o som do clipe É o conteúdo (ex.: ronco de motor): monta um bus com o áudio original
+        # de cada clipe, cortado igual ao vídeo, normalizado por clipe e com micro-fades nas emendas
+        def has_audio(src):
+            return bool(subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'a', '-show_entries', 'stream=index',
+                                        '-of', 'csv=p=0', src], capture_output=True, text=True).stdout.strip())
+        parts = []
+        for i, c in enumerate(clips):
+            segs = [(c['start'], c['main_frames'] / FPS, 1.0)]
+            if c.get('replay'):
+                r = c['replay']
+                segs.append((r['start'], replay_frames(c) / FPS, r.get('speed', 0.5)))
+            for k, (ss, dur, sp) in enumerate(segs):
+                outw = f'{B}/aclip_{i}_{k}.wav'
+                src_dur = dur * sp
+                if c.get('mute_audio') or not has_audio(c['src']):
+                    run(['ffmpeg', '-v', 'error', '-y', '-f', 'lavfi', '-i', 'anullsrc=r=48000:cl=stereo',
+                         '-t', f'{dur:.4f}', '-c:a', 'pcm_s24le', outw])
+                else:
+                    tempo = f'atempo={sp},' if sp != 1.0 else ''
+                    run(['ffmpeg', '-v', 'error', '-y', '-ss', f'{ss:.3f}', '-t', f'{src_dur:.3f}', '-i', c['src'], '-vn', '-af',
+                         f"aresample=48000,aformat=channel_layouts=stereo,{tempo}"
+                         f"loudnorm=I={c.get('clip_lufs', a.get('clip_lufs', -16))}:TP=-2:LRA=15,aresample=48000,"
+                         f"volume={c.get('clip_gain_db', 0)}dB,apad=whole_dur={dur:.4f},atrim=0:{dur:.4f},"
+                         f"afade=t=in:d=0.03,afade=t=out:st={max(0, dur - 0.06):.4f}:d=0.06",
+                         '-c:a', 'pcm_s24le', '-ar', '48000', outw])
+                parts.append(outw)
+        open(f'{B}/aconcat.txt', 'w').write(''.join(f"file '{p}'\n" for p in parts))
+        run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', f'{B}/aconcat.txt',
+             '-c:a', 'pcm_s24le', f'{B}/clipbus.wav'])
     whoosh_times = [s - a['whoosh_peak'] for s in starts[1:]]
     inputs = ['-ss', f"{a['music_offset']:.3f}", '-t', f'{TOTAL + 0.5:.3f}', '-i', a['music']]
     for _ in whoosh_times:
         inputs += ['-i', a['whoosh']]
-    fc = [f"[0:a]aresample=48000,atrim=0:{TOTAL:.3f},asetpts=PTS-STARTPTS,"
+    if keep:
+        inputs += ['-i', f'{B}/clipbus.wav']
+    # com áudio dos clipes, a música vira só uma cama baixa (audio.music_bed_db, padrão -22 dB)
+    bed = f"volume={a.get('music_bed_db', -22)}dB," if keep else ''
+    fc = [f"[0:a]aresample=48000,atrim=0:{TOTAL:.3f},asetpts=PTS-STARTPTS,{bed}"
           f"afade=t=out:st={TOTAL - a['fade_out']:.3f}:d={a['fade_out']:.3f}[m]"]
     ws = []
     for i, wt in enumerate(whoosh_times):
@@ -171,6 +206,11 @@ if stage in ('compose', 'all'):
             fc.append('[m][wsum]amix=inputs=2:normalize=0:duration=first[mx]')
     else:
         fc.append('[m]anull[mx]')
+    if keep:
+        n_in = 1 + len(whoosh_times)
+        fc[-1] = fc[-1].replace('[mx]', '[mx0]')
+        fc.append(f"[{n_in}:a]aformat=channel_layouts=stereo,afade=t=out:st={TOTAL - a['fade_out']:.3f}:d={a['fade_out']:.3f}[cb];"
+                  f"[cb][mx0]amix=inputs=2:normalize=0:duration=first[mx]")
     run(['ffmpeg', '-v', 'error', '-y', *inputs, '-filter_complex', ';'.join(fc), '-map', '[mx]',
          '-c:a', 'pcm_s24le', '-ar', '48000', '-ac', '2', f'{B}/mix_raw.wav'])
     # loudness: gain + peak limiter, iterated until integrated loudness hits the target

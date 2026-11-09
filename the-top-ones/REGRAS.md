@@ -45,7 +45,7 @@ Os avisos do gerador (título, hashtags, clipes) também aparecem no checklist.
 - **Só música livre de direitos**, de biblioteca permitida (Mixkit, YouTube Audio Library, Pixabay), com fonte, licença e link declarados em `audio.music_meta`.
 - **Nada de música em alta**: sons do TikTok, Spotify, YouTube Music, sped up ou remix.
 - Se a música não cumprir, o **build aborta** antes de renderizar.
-- O áudio original dos clipes nunca é usado.
+- O áudio original dos clipes não é usado, **exceto** nos nichos em que o som é o conteúdo (ex.: ronco de motor), com `audio.keep_clip_audio: true`. Nesse caso a música vira só uma cama baixa (`audio.music_bed_db`, padrão -22 dB) e o código avisa todo clipe cujo áudio no TikTok não seja "original sound" (risco de música comercial).
 
 ## Regras de produção (já no build.py, do pedido original)
 - 1080x1920, 30 fps.
@@ -77,6 +77,9 @@ Os avisos do gerador (título, hashtags, clipes) também aparecem no checklist.
 | `audio.aac_bitrate` | Padrão `256k` |
 | `clips[].replay` | `{start, end, speed (0.5), zoom, focus_x, focus_y}`: replay em câmera lenta anexado ao clipe (ex.: no #1) |
 | `clips[].zoom` | Zoom próprio do clipe (padrão: `zoom` global, 1,1) |
+| `audio.keep_clip_audio` | `true` mantém o som original dos clipes (normalizado por clipe em `audio.clip_lufs`, padrão -16) |
+| `audio.music_bed_db` | Volume da cama musical quando o som dos clipes é mantido (padrão -22 dB) |
+| `clips[].mute_audio` / `audio_ok` / `clip_gain_db` | Silencia o som de um clipe / confirma que o áudio dele não tem música comercial / ajuste fino de volume |
 
 ## Como rodar
 - `python3 -I tools/build.py <config.json>`: valida, renderiza e grava `post.txt` e `checklist.txt` na pasta do vídeo.

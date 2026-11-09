@@ -209,10 +209,32 @@ def classify_source(handle, name=''):
     return None, ''
 
 
-def check_clips(clips):
+def clip_track(clip):
+    """faixa de áudio do TikTok (yt-dlp: track/artists), para saber se o clipe tem música comercial por cima"""
+    src = clip.get('src') or ''
+    for p in (os.path.splitext(src)[0] + '.info.json', os.path.join(os.path.dirname(src), 'full.info.json')):
+        if src and os.path.exists(p):
+            try:
+                d = json.load(open(p, encoding='utf-8'))
+                return (d.get('track') or ''), ', '.join(d.get('artists') or [])
+            except Exception:
+                return '', ''
+    return '', ''
+
+
+ORIGINAL_SOUND_RE = re.compile(r'original sound|som original|sonido original|son original|suono originale|originalton|оригинальный звук|оригінальний аудіозапис|оригинальное аудио', re.I)
+
+
+def check_clips(clips, keep_audio=False):
     r = Report()
     flagged = 0
     for c in sorted(clips, key=lambda c: c.get('rank', 0)):
+        if keep_audio and not c.get('mute_audio'):
+            track, artists = clip_track(c)
+            if track and not ORIGINAL_SOUND_RE.search(track) and not c.get('audio_ok'):
+                r.warn(f'clipe #{c.get("rank", "?")} {c.get("name", "")}: o áudio do TikTok é "{track}"'
+                       f'{" (" + artists + ")" if artists else ""}, não "original sound". Pode ter música comercial: '
+                       f'risco de Content ID. Confira e marque "audio_ok": true ou "mute_audio": true')
         cr = clip_credit(c)
         tag = f"#{c.get('rank', '?')} {c.get('name', '')}".strip()
         if not cr['handle'] or not cr['url']:
@@ -333,7 +355,7 @@ def check_post(cfg):
 
 def preflight(cfg):
     """roda antes de renderizar: post, clipes e música (erro de música aborta o build)"""
-    return Report().merge(check_post(cfg)).merge(check_clips(cfg['clips'])).merge(check_music(cfg.get('audio')))
+    return Report().merge(check_post(cfg)).merge(check_clips(cfg['clips'], (cfg.get('audio') or {}).get('keep_clip_audio', False))).merge(check_music(cfg.get('audio')))
 
 
 # ------------------------------------------------------------------ verificação do export + checklist
