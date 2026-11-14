@@ -143,7 +143,7 @@ def draw_pill(base, d, p, t, fr):
     s = anim_scale(t, p['t_in'], p['t_out'])
     if s <= 0:
         return
-    img = pill_img(p['text'], p.get('style', 'white'), p.get('size', 54))
+    img = pill_img(p['text'], p.get('style', 'white'), p.get('size', 60))
     if p.get('anchor'):
         ax, ay, vis = anchor_xy(p['anchor'], fr)
         if not vis:
@@ -153,6 +153,10 @@ def draw_pill(base, d, p, t, fr):
         m = 30
         px = min(max(px, img.width / 2 + m), W - img.width / 2 - m)
         py = min(max(py, img.height / 2 + 150), H - img.height / 2 - 420)
+        # não deixa a pílula cobrir a faixa da legenda: sobe para cima dela
+        band0, band1 = CAP_Y - 150, CAP_Y + 140
+        if py + img.height / 2 > band0 and py - img.height / 2 < band1:
+            py = band0 - img.height / 2 - 10
         # linha guia + ponto
         if s > 0.5 and p.get('line', True):
             lw = 9
