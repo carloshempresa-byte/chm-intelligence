@@ -4,7 +4,7 @@ Mesmo estilo e paleta do piloto EP01: low-poly, cores chapadas, sombra suave e f
 
 | Arquivo | Uso |
 |---|---|
-| `perfil_800x800.png` | Foto de perfil. É o mascote com o selo **EA** no capacete, sobre fundo azul com raios e anel amarelo. Funciona recortada em círculo pequeno. |
+| `perfil_800x800.png` | Foto de perfil. É o mascote **Eng. Carlin** com o nome escrito numa faixa branca em volta do capacete, curvada acompanhando a cúpula, sobre fundo azul com raios e anel amarelo. O nome a usar fica em `HELMET_NAME`, no `cena_identidade.py`. |
 | `banner_2560x1440.png` | Capa do canal. Título, faixa de slogan, mascote e caldeira ficam dentro da área segura central (1546x423). Guindaste, viga caixão e contêineres ficam de fora e só aparecem no desktop ou na TV. |
 | `previas/perfil_em_circulo.jpg` | O perfil recortado em círculo, em 800, 176, 88 e 48 px. |
 | `previas/banner_guia_area_segura.jpg` | Banner com as marcações da área segura e da faixa do desktop. |

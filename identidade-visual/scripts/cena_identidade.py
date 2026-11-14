@@ -1,6 +1,6 @@
 """Identidade visual do canal Engenharia Animada — cenas 3D low-poly (mesma paleta do EP01).
 Uso:  blender -b --factory-startup -P cena_identidade.py -- <perfil|banner> <saida.png> [escala_res]
-- perfil: mascote em close com o selo "EA" no capacete, fundo transparente (o fundo é feito no Pillow)
+- perfil: mascote em close com o nome "Eng. Carlin" na faixa do capacete, fundo transparente (o fundo é feito no Pillow)
 - banner: diorama da obra (caldeira, guindaste, viga caixão, mascote) 2560x1440"""
 import bpy, sys, os, math, random
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -75,16 +75,54 @@ def text3d(name, txt, loc, size, material, parent=None, rot=(math.pi / 2, 0, 0),
     return ob
 
 
-def helmet_badge(m):
-    """Selo azul com 'EA' na frente do capacete do mascote."""
+HELMET_NAME = 'Eng. Carlin'  # nome do mascote, escrito na faixa do capacete
+
+
+def helmet_band(m, txt=HELMET_NAME, size=0.16):
+    """Faixa branca em volta da cúpula do capacete com o nome do mascote curvado acompanhando a cúpula.
+    O texto é convertido em malha e cada vértice é enrolado na superfície (sem cortar letras)."""
+    import bmesh
     H = m.headpivot
-    piv = empty('SeloPiv', (0, -0.355, 0.53), H)  # frente da cúpula, logo acima da aba
-    piv.rotation_euler.x = math.radians(-22)  # inclina acompanhando a cúpula
-    d = prim('cyl', 'Selo', (0, 0, 0), P['badge'], piv, rot=(math.pi / 2, 0, 0), vertices=32, radius=0.19, depth=0.05)
-    d.scale = (1.4, 0.78, 1)
-    t = text3d('SeloTxt', 'EA', (0, -0.03, -0.005), 0.2, P['badge_txt'], piv, extrude=0.012)
+    piv = empty('FaixaPiv', (0, 0, 0.47), H)  # centro da cúpula (raio 0.39, achatada 0.8 em Z)
+    RX, RZ = 0.39, 0.39 * 0.8
+    H0, H1 = 0.02, 0.19  # altura da faixa acima da aba
+    rdome = lambda h: RX * math.sqrt(max(0.0, 1 - (h / RZ) ** 2)) + 0.012
+    # faixa: anel com o perfil da cúpula
+    me = bpy.data.meshes.new('Faixa'); bm = bmesh.new()
+    N, ROWS = 72, 6
+    rings = []
+    for r in range(ROWS + 1):
+        h = H0 + (H1 - H0) * r / ROWS
+        rings.append([bm.verts.new((rdome(h) * math.sin(2 * math.pi * i / N), -rdome(h) * math.cos(2 * math.pi * i / N), h)) for i in range(N)])
+    for r in range(ROWS):
+        for i in range(N):
+            j = (i + 1) % N
+            bm.faces.new((rings[r][i], rings[r][j], rings[r + 1][j], rings[r + 1][i]))
+    bm.to_mesh(me); bm.free()
+    band = link(bpy.data.objects.new('Faixa', me)); band.parent = piv; me.materials.append(P['badge'])
+    sol = band.modifiers.new('Esp', 'SOLIDIFY'); sol.thickness = 0.012; sol.offset = -1
+    # texto -> malha -> enrolado na faixa
+    cu = bpy.data.curves.new('NomeTxt', 'FONT'); cu.body = txt; cu.size = size; cu.extrude = 0.006
+    cu.align_x = 'CENTER'; cu.align_y = 'CENTER'; cu.font = bpy.data.fonts.load(FONT)
+    t = link(bpy.data.objects.new('NomeTxt', cu))
+    bpy.context.view_layer.objects.active = t; t.select_set(True)
+    bpy.ops.object.convert(target='MESH')
+    t = bpy.context.object
+    xs = [v.co.x for v in t.data.vertices]; ys = [v.co.y for v in t.data.vertices]
+    xc, yc = (min(xs) + max(xs)) / 2, (min(ys) + max(ys)) / 2
+    hc = (H0 + H1) / 2
+    R0 = rdome(hc)
+    for v in t.data.vertices:
+        x, y, z = v.co.x - xc, v.co.y - yc, v.co.z
+        h = hc + y
+        R = rdome(h) + 0.004 + (z + 0.006)
+        th = x / R0
+        v.co = (R * math.sin(th), -R * math.cos(th), h)
+    t.parent = piv; t.data.materials.clear(); t.data.materials.append(P['badge_txt'])
+    half_arc = math.degrees((max(xs) - min(xs)) / 2 / R0)
+    print('FAIXA texto', txt, 'largura', round(max(xs) - min(xs), 3), 'arco ±%.0f°' % half_arc)
     bpy.data.objects[m.headpivot.name.replace('_headpivot', '_hatridge')].hide_render = True
-    return d, t
+    return band, t
 
 
 def smile(m):
@@ -175,8 +213,8 @@ if MODE == 'perfil':
     sc.render.resolution_x = sc.render.resolution_y = int(800 * RES)
     sc.render.film_transparent = True
     m = Mascot('Mascote', (0, 0, 0), rotz=0.0)
-    helmet_badge(m)
-    m.headpivot.rotation_euler = (math.radians(4), 0, math.radians(-8))
+    helmet_band(m)
+    m.headpivot.rotation_euler = (math.radians(4), 0, math.radians(-2))
     # joinha: braço direito (lado +X) levantado
     m.arms[0].rotation_euler = (0, math.radians(-25), 0)
     m.arms[1].rotation_euler = (math.radians(-20), math.radians(150), math.radians(10))
