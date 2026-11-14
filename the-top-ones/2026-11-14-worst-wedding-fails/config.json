@@ -1,0 +1,204 @@
+{
+ "build_dir": "<scratch>/v7/build",
+ "output": "<scratch>/v7/build/the_top_ones_worst_wedding_fails_1080p.mp4",
+ "font": "<scratch>/assets/ArchivoBlack-Regular.ttf",
+ "blue": "#44C9F0",
+ "title": [
+  [
+   [
+    "RANKING",
+    "w"
+   ],
+   [
+    "THE",
+    "w"
+   ],
+   [
+    "WORST",
+    "b"
+   ]
+  ],
+  [
+   [
+    "WEDDING",
+    "b"
+   ],
+   [
+    "FAILS",
+    "w"
+   ]
+  ]
+ ],
+ "zoom": 1.1,
+ "grade": {
+  "contrast": 1.07,
+  "brightness": 0.01,
+  "saturation": 1.14,
+  "gamma": 1.0
+ },
+ "layout": {
+  "title_top": 138,
+  "title_max_size": 86,
+  "title_max_width": 960,
+  "title_line_gap": 1.13,
+  "video_y": 318,
+  "video_h": 870,
+  "list_top": 1205,
+  "list_bottom": 1600,
+  "row_h_max": 58,
+  "list_font_ratio": 0.72,
+  "list_x": 78,
+  "name_max_x": 905
+ },
+ "audio": {
+  "music": "<scratch>/assets/music/1068.mp3",
+  "music_offset": 0.0,
+  "whoosh": "<scratch>/assets/sfx/1490.mp3",
+  "whoosh_peak": 0.7,
+  "whoosh_gain_db": 4,
+  "fade_out": 2.0,
+  "lufs": -14,
+  "true_peak": -3.5,
+  "music_meta": {
+   "title": "K.O.",
+   "artist": "Michael Ramir C.",
+   "source": "Mixkit",
+   "license": "Mixkit Stock Music Free License",
+   "url": "https://mixkit.co/free-stock-music/tag/sport/",
+   "license_url": "https://mixkit.co/license/#musicFree"
+  },
+  "sfx_meta": {
+   "title": "Fast whoosh transition",
+   "source": "Mixkit",
+   "license": "Mixkit Sound Effects Free License",
+   "url": "https://mixkit.co/free-sound-effects/whoosh/"
+  }
+ },
+ "post": {
+  "title": "Ranking the WORST Wedding Fails 💀 #shorts",
+  "main_keyword": "WORST",
+  "hook": "Which wedding fail would ruin your big day? Drop your #1 👇",
+  "hashtags": [
+   "#weddingfails",
+   "#bride",
+   "#fails"
+  ],
+  "niche_terms": [
+   "weddingfails",
+   "wedding",
+   "bride",
+   "fails",
+   "fail"
+  ]
+ },
+ "clips": [
+  {
+   "rank": 4,
+   "name": "The Dip Disaster",
+   "src": "<scratch>/dl/7545224681297661215/full.mp4",
+   "start": 9.95,
+   "end": 17.9,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.45,
+   "source_type": "amador",
+   "replay": {
+    "start": 10.0,
+    "end": 12.5,
+    "speed": 0.4,
+    "zoom": 1.15,
+    "focus_y": 0.5
+   }
+  },
+  {
+   "rank": 6,
+   "name": "Tripped Down the Aisle",
+   "src": "<scratch>/dl/7689306611529075982/full.mp4",
+   "start": 15.5,
+   "end": 25.0,
+   "flip": true,
+   "focus_x": 0.5,
+   "focus_y": 0.15,
+   "source_type": "amador",
+   "replay": {
+    "start": 18.0,
+    "end": 20.0,
+    "speed": 0.5,
+    "zoom": 1.0,
+    "focus_y": 0.15
+   },
+   "src_crop": [
+    0,
+    610,
+    1080,
+    1040
+   ],
+   "zoom": 1.0
+  },
+  {
+   "rank": 2,
+   "name": "Bridesmaid Wipeout",
+   "src": "<scratch>/dl/7643427262343220502/full.mp4",
+   "start": 0.0,
+   "end": 9.6,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.5,
+   "source_type": "amador",
+   "replay": {
+    "start": 2.0,
+    "end": 4.2,
+    "speed": 0.4,
+    "zoom": 1.15,
+    "focus_y": 0.55
+   }
+  },
+  {
+   "rank": 5,
+   "name": "The Runaway Bride",
+   "src": "<scratch>/dl/7345256261123837227/full.mp4",
+   "start": 0.0,
+   "end": 15.3,
+   "flip": true,
+   "focus_x": 0.5,
+   "focus_y": 1.0,
+   "source_type": "amador",
+   "src_crop": [
+    0,
+    0,
+    1080,
+    1200
+   ],
+   "zoom": 1.0
+  },
+  {
+   "rank": 3,
+   "name": "Flower Girl Gives Up",
+   "src": "<scratch>/dl/7656134108224998686/full.mp4",
+   "start": 0.0,
+   "end": 12.9,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.6,
+   "source_type": "amador"
+  },
+  {
+   "rank": 1,
+   "name": "Dad Falls in the Pool",
+   "src": "<scratch>/dl/7679470660422241549/full.mp4",
+   "start": 10.5,
+   "end": 25.3,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.4,
+   "source_type": "amador",
+   "replay": {
+    "start": 15.8,
+    "end": 18.0,
+    "speed": 0.4,
+    "zoom": 1.2,
+    "focus_y": 0.4
+   }
+  }
+ ]
+}
