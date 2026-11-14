@@ -1,0 +1,207 @@
+{
+ "build_dir": "<scratch>/v8/build",
+ "output": "<scratch>/v8/build/the_top_ones_worst_gym_fails_1080p.mp4",
+ "font": "<scratch>/assets/ArchivoBlack-Regular.ttf",
+ "blue": "#44C9F0",
+ "title": [
+  [
+   [
+    "RANKING",
+    "w"
+   ],
+   [
+    "THE",
+    "w"
+   ],
+   [
+    "WORST",
+    "b"
+   ]
+  ],
+  [
+   [
+    "GYM",
+    "b"
+   ],
+   [
+    "FAILS",
+    "w"
+   ]
+  ]
+ ],
+ "zoom": 1.1,
+ "grade": {
+  "contrast": 1.07,
+  "brightness": 0.01,
+  "saturation": 1.14,
+  "gamma": 1.0
+ },
+ "layout": {
+  "title_top": 138,
+  "title_max_size": 86,
+  "title_max_width": 960,
+  "title_line_gap": 1.13,
+  "video_y": 318,
+  "video_h": 870,
+  "list_top": 1205,
+  "list_bottom": 1600,
+  "row_h_max": 58,
+  "list_font_ratio": 0.72,
+  "list_x": 78,
+  "name_max_x": 905
+ },
+ "audio": {
+  "music": "<scratch>/assets/music/706.mp3",
+  "music_offset": 1.0,
+  "whoosh": "<scratch>/assets/sfx/1490.mp3",
+  "whoosh_peak": 0.7,
+  "whoosh_gain_db": 4,
+  "fade_out": 2.0,
+  "lufs": -14,
+  "true_peak": -3.5,
+  "music_meta": {
+   "title": "Games Music",
+   "artist": "Grigoriy Nuzhny",
+   "source": "Mixkit",
+   "license": "Mixkit Stock Music Free License",
+   "url": "https://mixkit.co/free-stock-music/tag/sport/",
+   "license_url": "https://mixkit.co/license/#musicFree"
+  },
+  "sfx_meta": {
+   "title": "Fast whoosh transition",
+   "source": "Mixkit",
+   "license": "Mixkit Sound Effects Free License",
+   "url": "https://mixkit.co/free-sound-effects/whoosh/"
+  }
+ },
+ "post": {
+  "title": "Ranking the WORST Gym Fails 💀 #shorts",
+  "main_keyword": "WORST",
+  "hook": "Which gym fail would make you cancel your membership? Drop your #1 👇",
+  "hashtags": [
+   "#gymfails",
+   "#gym",
+   "#fails"
+  ],
+  "niche_terms": [
+   "gymfails",
+   "gym",
+   "fails",
+   "fail",
+   "workout"
+  ]
+ },
+ "clips": [
+  {
+   "rank": 4,
+   "name": "Bench Press Pileup",
+   "src": "<scratch>/dl/7693364410269682974/full.mp4",
+   "start": 0.0,
+   "end": 10.0,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.5,
+   "source_type": "amador"
+  },
+  {
+   "rank": 6,
+   "name": "Dumbbell Rack Collapse",
+   "src": "<scratch>/dl/7701108802917043488/full.mp4",
+   "start": 0.0,
+   "end": 4.4,
+   "flip": true,
+   "focus_x": 0.5,
+   "focus_y": 0.5,
+   "source_type": "amador",
+   "replay": {
+    "start": 1.5,
+    "end": 3.6,
+    "speed": 0.4,
+    "zoom": 1.15,
+    "focus_y": 0.55
+   }
+  },
+  {
+   "rank": 2,
+   "name": "Squat Sends Her Flying",
+   "src": "<scratch>/dl/7654730443522084129/full.mp4",
+   "start": 0.0,
+   "end": 7.5,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.5,
+   "source_type": "amador",
+   "src_crop": [
+    0,
+    360,
+    720,
+    920
+   ],
+   "replay": {
+    "start": 1.0,
+    "end": 3.6,
+    "speed": 0.4,
+    "zoom": 1.1,
+    "focus_y": 0.5
+   }
+  },
+  {
+   "rank": 5,
+   "name": "Curved Treadmill Launch",
+   "src": "<scratch>/dl/7702839535767440672/full.mp4",
+   "start": 0.0,
+   "end": 9.0,
+   "flip": true,
+   "focus_x": 0.5,
+   "focus_y": 0.5,
+   "source_type": "amador",
+   "src_crop": [
+    0,
+    215,
+    720,
+    1065
+   ],
+   "replay": {
+    "start": 0.8,
+    "end": 3.0,
+    "speed": 0.4,
+    "zoom": 1.15,
+    "focus_y": 0.55
+   }
+  },
+  {
+   "rank": 3,
+   "name": "The Pull-Up Bar Bail",
+   "src": "<scratch>/dl/7312121218897825067/full.mp4",
+   "start": 0.0,
+   "end": 13.0,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.4,
+   "source_type": "amador",
+   "src_crop": [
+    0,
+    380,
+    1080,
+    1540
+   ]
+  },
+  {
+   "rank": 1,
+   "name": "The One-Arm Rescue",
+   "src": "<scratch>/dl/7659781050503040270/full.mp4",
+   "start": 2.5,
+   "end": 21.5,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.0,
+   "source_type": "amador",
+   "src_crop": [
+    0,
+    460,
+    1080,
+    1260
+   ]
+  }
+ ]
+}
