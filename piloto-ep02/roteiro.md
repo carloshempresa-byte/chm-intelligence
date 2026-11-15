@@ -12,7 +12,7 @@
 **Duração estimada:** ~66–70 s de narração. São 213 palavras, mais os números falados por extenso. Se o TTS passar de 70 s, corto antes de renderizar.
 **Voz:** edge-tts `pt-BR-AntonioNeural`, +20%, pausas cortadas para ≤ 0,22 s.
 
-**Revisão 2:** já inclui as respostas do Carlos (lista abaixo).
+**Revisão 3 (aprovada pelo Carlos):** inclui as respostas dele (lista abaixo). A única mudança em relação à revisão 2 é que não aparece marca nenhuma nos guindastes. Sinaleiro, fixação final e desnível continuam genéricos.
 
 ### Dados confirmados pelo Carlos
 | Dado | Valor / resposta |
@@ -20,7 +20,7 @@
 | O que é o drum | Balão de vapor da caldeira. O termo usado é **"drum"**. "Onde a água e o vapor se separam" pode ficar. |
 | Peso do drum | **320 t** |
 | Altura de içamento | **75 m** (comparação "prédio de 25 andares" aprovada) |
-| Guindastes | **2 guindastes de 700 t cada**, marca **Liebherr** |
+| Guindastes | **2 guindastes de 700 t cada**. A marca não aparece no vídeo (decisão do Carlos). |
 | Por que 2 guindastes | Quanto mais alto se iça a carga, menor fica a capacidade do guindaste |
 | Como foi içado | **Na horizontal**, **um guindaste em cada ponta**, com **cabos de aço da grossura de uma perna** |
 | Planejamento do içamento | **5 meses** |
@@ -57,9 +57,9 @@ Ainda sem resposta (no texto ficam genéricos ou fora): sinaleiro/rádio, forma 
 | 1 | 6,5–12,5 | "Essa peça é o drum, o balão de vapor da caldeira de recuperação: o cilindro gigante lá no topo, onde a água e o vapor se separam." | A caldeira estilizada do EP01, com a estrutura aberta no topo. O "fantasma" translúcido do drum aparece no lugar dele, lá em cima. Close em corte esquemático: dentro do drum, a metade de baixo azul (água) e bolhas subindo para a metade de cima branca (vapor). | DRUM = BALÃO DE VAPOR · ÁGUA · VAPOR | pop, bolhas |
 | 2 | 12,5–15,0 | "75 metros é um prédio de 25 andares." | Um prediozinho low-poly cresce andar por andar ao lado da caldeira até a mesma altura. O Carlin olha pra cima, boquiaberto. | 75 m = 25 ANDARES | "tic" a cada andar, whoosh |
 | 3 | 15,0–19,5 | "Só pra chegar do porto até a obra, foram 2 meses de estrada, num caminhão especial." | Estrada low-poly (como a do EP01): caminhão especial com prancha comprida levando o drum, que ocupa a pista inteira. Placas passando ("PORTO", "OBRA"), dia e noite alternando rápido (sol e lua girando) para mostrar o tempo. O Carlin vai sentado na cabine. | **2 MESES** · CAMINHÃO ESPECIAL | caminhão acelerando, buzina, "tic-tac" |
-| 4 | 19,5–22,5 | "Aí você chama um guindaste de 700 toneladas. Resolvido? Não." | Um guindaste de esteiras com lança treliçada amarela entra no quadro e para com um quique. **LIEBHERR** está escrito na casa de máquinas (só o nome em texto simples, sem reproduzir o logotipo). No "Resolvido?" o Carlin faz joinha; no "Não." a música corta e aparece um X vermelho. | GUINDASTE **700 t** · LIEBHERR | motor, clang, "fail" |
+| 4 | 19,5–22,5 | "Aí você chama um guindaste de 700 toneladas. Resolvido? Não." | Um guindaste de esteiras com lança treliçada amarela entra no quadro e para com um quique. Guindaste genérico, **sem marca nenhuma**. No "Resolvido?" o Carlin faz joinha; no "Não." a música corta e aparece um X vermelho. | GUINDASTE **700 t** | motor, clang, "fail" |
 | 5 | 22,5–28,0 | "Quanto mais alto você iça a carga, menor fica a capacidade do guindaste, e lá em cima um só não dá conta." | A carga sobe e uma barra de capacidade ao lado do guindaste vai do verde (embaixo) ao vermelho (no alto), sem números. O guindaste range e as esteiras de trás levantam um pouco (exagero didático). O Carlin, apavorado, segura a esteira. | + ALTURA = – CAPACIDADE · UM SÓ NÃO DÁ | rangido metálico, bipes de alarme |
-| 6 | 28,0–34,5 | "Então você usa dois guindastes de 700 toneladas, um em cada ponta, com o drum na horizontal, pendurado em cabos de aço da grossura de uma perna." | O segundo guindaste LIEBHERR entra espelhado. Plano aberto: um guindaste em cada ponta e o drum na horizontal, saindo do chão. **Close no cabo de aço ao lado da perna do Carlin**: mesma grossura. O Carlin compara, aponta e arregala os olhos. | 2 × **700 t** · NA HORIZONTAL · CABO = UMA PERNA | motor ×2, clang, boing |
+| 6 | 28,0–34,5 | "Então você usa dois guindastes de 700 toneladas, um em cada ponta, com o drum na horizontal, pendurado em cabos de aço da grossura de uma perna." | O segundo guindaste (genérico, sem marca) entra espelhado. Plano aberto: um guindaste em cada ponta e o drum na horizontal, saindo do chão. **Close no cabo de aço ao lado da perna do Carlin**: mesma grossura. O Carlin compara, aponta e arregala os olhos. | 2 × **700 t** · NA HORIZONTAL · CABO = UMA PERNA | motor ×2, clang, boing |
 | 7 | 34,5–39,5 | "Mas se um guindaste sobe mais rápido que o outro, o drum inclina e o peso vai todo pra um lado." | Simulação do erro (exagerada): o gancho da esquerda sobe rápido, o drum inclina, e uma seta vermelha de peso escorrega para o lado do outro guindaste, que range e balança. O Carlin cobre os olhos e sua. | DESNÍVEL · SOBRECARGA | rangido, "fail", boing |
 | 8 | 39,5–43,5 | "Não dá pra improvisar: foram 5 meses planejando esse içamento." | Rebobina (efeito rewind rápido) e o drum volta ao chão, nivelado. Mesa com plantas, prancheta e o calendário de novo, agora folheando os 5 meses até um carimbo "APROVADO". O Carlin de óculos estudando a planta. | **5 MESES** · PLANO DE IÇAMENTO | rewind, papel, carimbo, "ding" |
 | 9 | 43,5–48,0 | "No dia, os dois sobem juntos, bem devagar, comandados por um sinaleiro." | Os dois ganchos sobem em sincronia; as barras de capacidade dos dois ficam iguais e verdes. O Carlin é o sinaleiro, com o gesto de braço do EP01. **Sem rádio na mão até o Carlos confirmar.** | JUNTOS E DEVAGAR · SINALEIRO | motor ×2 (baixo, constante), apito curto |
@@ -79,7 +79,7 @@ Ainda sem resposta (no texto ficam genéricos ou fora): sinaleiro/rádio, forma 
   - barras de capacidade sem números
   - cabo de aço grosso, para o close ao lado da perna do Carlin
   - estrutura do topo sem teto, com as peças do teto caindo no fim
-- **Marca Liebherr:** só o nome em letras simples na casa de máquinas, sem logotipo, fonte ou desenho oficial da marca. Num canal monetizado, usar o nome do fabricante que aparece no equipamento real costuma ser aceitável. Reproduzir o logotipo exigiria autorização da Liebherr. Se preferir zero risco, tiro o nome.
+- **Marca dos guindastes:** nenhuma. Os guindastes são genéricos, sem nome nem logotipo de fabricante (decisão do Carlos).
 - **Mascote:** o Carlin usa a faixa **"Eng. Carlin"** no capacete (função `helmet_band` da identidade visual).
 - **Escala:** é estilizada. Para caber no vertical, a caldeira, os guindastes e o drum não ficam em escala real (como no EP01).
 
@@ -94,7 +94,7 @@ Ainda sem resposta (no texto ficam genéricos ou fora): sinaleiro/rádio, forma 
 5. **Barra de capacidade "do verde ao vermelho" e esteiras levantando:** são exageros visuais para explicar o princípio, sem números. Ok?
 6. **Caminhão especial:** a cena mostra uma prancha comprida (carreta do EP01). Ok genérico? (Sem número de eixos.)
 7. **"Do porto até a obra" num mapinha:** o mapa é ilustrativo, sem cidades nem distância. Ok?
-8. **Marca Liebherr no visual:** confirmar que pode aparecer o nome escrito (sem logotipo). Os guindastes do vídeo são genéricos e não reproduzem o modelo real.
+8. ~~Marca no visual~~: **resolvido**. Sem marca nenhuma nos guindastes.
 9. **"Bem devagar":** é só expressão, sem velocidade no texto. Se o Carlos quiser, pode passar a duração real do içamento.
 10. **"A maior caldeira de recuperação do mundo":** continua sem números além dos confirmados (320 t, 75 m, 2 × 700 t, 5 meses, 2 meses, 25 andares).
 11. **Visual estilizado:** caldeira, estrutura, guindastes e canteiro não representam o layout real e não estão em escala. Ok para o canal?
