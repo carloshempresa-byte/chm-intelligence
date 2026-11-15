@@ -1,5 +1,5 @@
 # Como montar a maior caldeira de recuperação do mundo
-## Episódio 2: "O drum (tubulão)"
+## Episódio 2: "O drum"
 
 **Canal:** Engenharia Animada
 **Formato:** Short vertical 9:16, 1080x1920, 30 fps, com o mesmo estilo e pipeline do EP01:
@@ -9,29 +9,43 @@
 - legendas palavra a palavra
 - etiquetas em pílula apontando as peças
 
-**Duração estimada:** ~62–66 s de narração. Os tempos exatos saem do TTS, como no EP01.
+**Duração estimada:** ~66–70 s de narração. São 213 palavras, mais os números falados por extenso. Se o TTS passar de 70 s, corto antes de renderizar.
 **Voz:** edge-tts `pt-BR-AntonioNeural`, +20%, pausas cortadas para ≤ 0,22 s.
 
-### Dados confirmados pelo Carlos (únicos números do vídeo)
-| Dado | Valor |
-|---|---|
-| Peso do drum | **320 t** |
-| Altura de içamento | **75 m** |
-| Guindastes | **2 guindastes de 700 t cada** |
+**Revisão 2:** já inclui as respostas do Carlos (lista abaixo).
 
-Qualquer outro número ou detalhe técnico abaixo está marcado **[CONFIRMAR COM CARLOS]**. A comparação "prédio de 25 andares" é uma conta minha (75 m ÷ ~3 m por andar) e também precisa de aprovação.
+### Dados confirmados pelo Carlos
+| Dado | Valor / resposta |
+|---|---|
+| O que é o drum | Balão de vapor da caldeira. O termo usado é **"drum"**. "Onde a água e o vapor se separam" pode ficar. |
+| Peso do drum | **320 t** |
+| Altura de içamento | **75 m** (comparação "prédio de 25 andares" aprovada) |
+| Guindastes | **2 guindastes de 700 t cada**, marca **Liebherr** |
+| Por que 2 guindastes | Quanto mais alto se iça a carga, menor fica a capacidade do guindaste |
+| Como foi içado | **Na horizontal**, **um guindaste em cada ponta**, com **cabos de aço da grossura de uma perna** |
+| Planejamento do içamento | **5 meses** |
+| Transporte | **Do porto até a obra, 2 meses, pela estrada, num caminhão especial** |
+| Entrada na estrutura | **Por cima, antes de fechar o teto** |
+
+Ainda sem resposta (no texto ficam genéricos ou fora): sinaleiro/rádio, forma de fixação final e o termo "tandem". Ver a lista no fim.
 
 ---
 
 ## Narração completa (texto para o TTS)
 
-> Você precisa colocar uma peça de 320 toneladas a 75 metros de altura. Essa peça é o drum, o tubulão da caldeira de recuperação: um cilindro gigante lá no topo, onde a água e o vapor se separam. 75 metros é mais ou menos um prédio de 25 andares. Então você chama um guindaste de 700 toneladas. Resolvido? Não. Esses 700 são a capacidade com a lança curta e a carga pertinho. Quanto mais alto e mais longe, menos o guindaste aguenta. Então você chama dois guindastes de 700 toneladas, um em cada ponta do drum. Isso é um içamento em tandem. Mas aí, se um guindaste sobe mais rápido que o outro, o drum inclina e o peso vai todo pra um lado só. Então tudo segue um plano de içamento, e os dois sobem juntos, bem devagar, comandados por um sinaleiro no rádio. Mas lá em cima o drum precisa entrar certinho no meio da estrutura. Então ele sobe metro por metro, até os 75 metros, e encaixa no lugar dele. Parabéns, você montou o drum de uma caldeira de recuperação. Se você sabia, comente Engenheiro. Se não sabia, comente Estagiário.
+> 5 meses de planejamento e 2 meses de estrada, tudo pra levantar uma peça só: 320 toneladas, a 75 metros de altura. Essa peça é o drum, o balão de vapor da caldeira de recuperação: o cilindro gigante lá no topo, onde a água e o vapor se separam. 75 metros é um prédio de 25 andares. Só pra chegar do porto até a obra, foram 2 meses de estrada, num caminhão especial. Aí você chama um guindaste de 700 toneladas. Resolvido? Não. Quanto mais alto você iça a carga, menor fica a capacidade do guindaste, e lá em cima um só não dá conta. Então você usa dois guindastes de 700 toneladas, um em cada ponta, com o drum na horizontal, pendurado em cabos de aço da grossura de uma perna. Mas se um guindaste sobe mais rápido que o outro, o drum inclina e o peso vai todo pra um lado. Não dá pra improvisar: foram 5 meses planejando esse içamento. No dia, os dois sobem juntos, bem devagar, comandados por um sinaleiro. E lá em cima o teto ainda está aberto: o drum entra por cima, desce até o lugar dele, e só depois o teto é fechado. Parabéns, você montou o drum. Se você sabia, comente Engenheiro. Se não sabia, comente Estagiário.
 
-(~205 palavras. No EP01, 213 palavras deram 66 s.)
+**O que mudou em relação à revisão 1**
+- **Gancho:** passa a abrir com "5 meses de planejamento e 2 meses de estrada".
+- **Drum:** fica "drum, o balão de vapor". Saiu "tubulão".
+- **Novas frases:** o transporte, os guindastes içando na horizontal, um em cada ponta, com cabos da grossura de uma perna, e o teto aberto.
+- **Termo "tandem":** saiu da narração, porque ainda não foi confirmado.
+- **Sinaleiro:** ficou genérico ("comandados por um sinaleiro"); saiu "no rádio".
+- **Fixação final:** ficou genérica ("desce até o lugar dele").
 
 **Notas de produção da voz**
-- **Números:** vou testar se o TTS lê "320 toneladas" como "trezentas e vinte". Se ler errado ("trezentos"), escrevo por extenso no TTS e mantenho os algarismos na legenda (**320 TONELADAS**, **75 METROS**, **700 TONELADAS**).
-- **"Drum":** vou conferir se o TTS pronuncia como na obra ("drâm"). Se não pronunciar, uso grafia fonética só no áudio.
+- **Números:** vou testar se o TTS lê "320 toneladas" como "trezentas e vinte". Se não ler, escrevo por extenso só no áudio e a legenda continua em algarismos (**320 TONELADAS**, **75 METROS**, **700 TONELADAS**, **5 MESES**, **2 MESES**).
+- **"Drum":** vou conferir se o TTS pronuncia "drâm". Se não, uso grafia fonética só no áudio.
 
 ---
 
@@ -39,55 +53,51 @@ Qualquer outro número ou detalhe técnico abaixo está marcado **[CONFIRMAR COM
 
 | # | Tempo | Narração | Visual / câmera | Etiquetas (pílulas) | SFX |
 |---|---|---|---|---|---|
-| 0 | 0,0–4,5 | "Você precisa colocar uma peça de 320 toneladas a 75 metros de altura." | **Gancho já com problema:** o drum (cilindro vermelho com tampos arredondados, mesmo vermelho do EP01) está no chão do pátio. A câmera sobe na vertical, seguindo uma régua/trena amarela que cresce até o topo da estrutura da caldeira. Lá de cima, olha para baixo: o Eng. Carlin minúsculo ao lado do drum leva susto e sua. Títulos do episódio no topo por 3,5 s. | EP. 2 · O DRUM (TUBULÃO) · **320 t** · **75 m** | whoosh subindo, boing, pop |
-| 1 | 4,5–10,5 | "Essa peça é o drum, o tubulão da caldeira de recuperação: um cilindro gigante lá no topo, onde a água e o vapor se separam." | Corte para a caldeira estilizada do EP01, com a estrutura aberta no topo. O "fantasma" translúcido do drum aparece no lugar dele, lá em cima. Close em corte esquemático: dentro do drum, a metade de baixo azul (água) e bolhas subindo para a metade de cima branca (vapor). **[CONFIRMAR COM CARLOS: essa explicação simplificada]** | DRUM (TUBULÃO) · ÁGUA · VAPOR | pop, bolhas |
-| 2 | 10,5–13,5 | "75 metros é mais ou menos um prédio de 25 andares." | Um prediozinho low-poly cresce andar por andar ao lado da caldeira até a mesma altura. O Carlin olha pra cima, boquiaberto. **[CONFIRMAR COM CARLOS: comparação]** | 75 m ≈ 25 ANDARES | "tic" a cada andar, whoosh |
-| 3 | 13,5–17,0 | "Então você chama um guindaste de 700 toneladas. Resolvido? Não." | Um guindaste de esteiras com lança treliçada amarela (o do EP01) entra no quadro e para com um quique. Plaquinha na lança. No "Resolvido?" o Carlin faz joinha; no "Não." a música corta e aparece um X vermelho. | GUINDASTE **700 t** | caminhão/motor, clang, "fail" |
-| 4 | 17,0–24,0 | "Esses 700 são a capacidade com a lança curta e a carga pertinho. Quanto mais alto e mais longe, menos o guindaste aguenta." | Explicação visual sem números: a lança começa curta e quase vertical, com uma barra de capacidade cheia (verde). A lança se alonga e abaixa, a carga vai para longe e a barra esvazia até o vermelho. O guindaste range e as esteiras de trás levantam um pouco (exagero didático). O Carlin, apavorado, segura a esteira. **[CONFIRMAR COM CARLOS: princípio e se esse foi o motivo dos 2 guindastes]** | CAPACIDADE · LANÇA CURTA = MAIS · ALTO E LONGE = MENOS | rangido metálico, alarme curto (bipes) |
-| 5 | 24,0–29,5 | "Então você chama dois guindastes de 700 toneladas, um em cada ponta do drum. Isso é um içamento em tandem." | Corte para o plano aberto: o segundo guindaste entra espelhado. Os dois ficam um de cada lado do drum, com lingas descendo até as pontas. O drum sai do chão alguns centímetros e fica nivelado. **[CONFIRMAR COM CARLOS: posição dos guindastes, pontos de pega e termo "tandem"]** | 2 × **700 t** · IÇAMENTO EM TANDEM | whoosh, motor ×2, clang |
-| 6 | 29,5–35,5 | "Mas aí, se um guindaste sobe mais rápido que o outro, o drum inclina e o peso vai todo pra um lado só." | Simulação do erro (exagerada): o gancho da esquerda sobe rápido, o drum inclina, e uma seta vermelha de peso escorrega para o lado do outro guindaste, que range e balança. O Carlin cobre os olhos e sua. Barra de carga de cada guindaste: uma esvazia, a outra estoura no vermelho. | DESNÍVEL · SOBRECARGA | rangido, "fail", boing |
-| 7 | 35,5–43,5 | "Então tudo segue um plano de içamento, e os dois sobem juntos, bem devagar, comandados por um sinaleiro no rádio." | Rebobina (efeito rewind rápido) e o drum volta nivelado. Uma prancheta "PLANO DE IÇAMENTO" pousa na tela com um check. O Carlin vira sinaleiro (gesto de braço do EP01, com rádio na mão). Os dois ganchos sobem em sincronia; ondinhas de rádio saem do Carlin para as duas cabines. As barras de carga ficam iguais e verdes. **[CONFIRMAR COM CARLOS: sinaleiro/rádio, plano de rigging, monitoramento de carga]** | PLANO DE IÇAMENTO · SINALEIRO · JUNTOS E DEVAGAR | papel, "ding", chiado de rádio, motor ×2 |
-| 8 | 43,5–47,5 | "Mas lá em cima o drum precisa entrar certinho no meio da estrutura." | Câmera alta, olhando de cima para baixo: a abertura no topo da estrutura, com vigas por todos os lados. O drum subindo parece grande demais para o vão. O Carlin (miniatura lá embaixo) sua. **[CONFIRMAR COM CARLOS: o drum entra por cima, antes de fechar o topo? Por onde passa?]** | VÃO DA ESTRUTURA | suspense curto, rangido |
-| 9 | 47,5–53,5 | "Então ele sobe metro por metro, até os 75 metros, e encaixa no lugar dele." | Plano herói lateral: a régua de altura conta subindo (contador de metros vai até 75) enquanto o drum sobe. Ele passa pelo vão com folga mínima, desce um pouquinho e assenta no lugar com um baque e poeira low-poly. As lingas afrouxam. **[CONFIRMAR COM CARLOS: como o drum é fixado/apoiado no topo]** | **75 m** · ENCAIXADO! | contador "tic-tic", baque grave + clang |
-| 10 | 53,5–57,5 | "Parabéns, você montou o drum de uma caldeira de recuperação." | Chuva de confete. O Carlin pula e comemora. Câmera orbitando o topo da caldeira com o drum no lugar e os dois guindastes ao fundo. | PARABÉNS! · DRUM MONTADO | torcida, sino |
-| 11 | 57,5–~63 | "Se você sabia, comente Engenheiro. Se não sabia, comente Estagiário." | A órbita continua e o Carlin comemora. CTA em pílulas grandes no topo, igual ao EP01. | SABIA? COMENTE **ENGENHEIRO** · NÃO SABIA? COMENTE **ESTAGIÁRIO** | "win" ×2 |
+| 0 | 0,0–6,5 | "5 meses de planejamento e 2 meses de estrada, tudo pra levantar uma peça só: 320 toneladas, a 75 metros de altura." | **Gancho rápido, três batidas:** **(a)** um calendário low-poly folheia 5 páginas em segundos, com pranchetas e plantas voando; **(b)** um mapinha com o caminhão andando do porto até a obra; **(c)** corte para o drum no chão do pátio e a câmera sobe na vertical, seguindo uma trena amarela até o topo da estrutura. Lá de cima, olha para baixo: o Eng. Carlin minúsculo ao lado do drum leva susto e sua. Títulos do episódio no topo por 3,5 s. | EP. 2 · O DRUM · **5 MESES** · **2 MESES** · **320 t** · **75 m** | folhas de calendário, whoosh, buzina, whoosh subindo, boing |
+| 1 | 6,5–12,5 | "Essa peça é o drum, o balão de vapor da caldeira de recuperação: o cilindro gigante lá no topo, onde a água e o vapor se separam." | A caldeira estilizada do EP01, com a estrutura aberta no topo. O "fantasma" translúcido do drum aparece no lugar dele, lá em cima. Close em corte esquemático: dentro do drum, a metade de baixo azul (água) e bolhas subindo para a metade de cima branca (vapor). | DRUM = BALÃO DE VAPOR · ÁGUA · VAPOR | pop, bolhas |
+| 2 | 12,5–15,0 | "75 metros é um prédio de 25 andares." | Um prediozinho low-poly cresce andar por andar ao lado da caldeira até a mesma altura. O Carlin olha pra cima, boquiaberto. | 75 m = 25 ANDARES | "tic" a cada andar, whoosh |
+| 3 | 15,0–19,5 | "Só pra chegar do porto até a obra, foram 2 meses de estrada, num caminhão especial." | Estrada low-poly (como a do EP01): caminhão especial com prancha comprida levando o drum, que ocupa a pista inteira. Placas passando ("PORTO", "OBRA"), dia e noite alternando rápido (sol e lua girando) para mostrar o tempo. O Carlin vai sentado na cabine. | **2 MESES** · CAMINHÃO ESPECIAL | caminhão acelerando, buzina, "tic-tac" |
+| 4 | 19,5–22,5 | "Aí você chama um guindaste de 700 toneladas. Resolvido? Não." | Um guindaste de esteiras com lança treliçada amarela entra no quadro e para com um quique. **LIEBHERR** está escrito na casa de máquinas (só o nome em texto simples, sem reproduzir o logotipo). No "Resolvido?" o Carlin faz joinha; no "Não." a música corta e aparece um X vermelho. | GUINDASTE **700 t** · LIEBHERR | motor, clang, "fail" |
+| 5 | 22,5–28,0 | "Quanto mais alto você iça a carga, menor fica a capacidade do guindaste, e lá em cima um só não dá conta." | A carga sobe e uma barra de capacidade ao lado do guindaste vai do verde (embaixo) ao vermelho (no alto), sem números. O guindaste range e as esteiras de trás levantam um pouco (exagero didático). O Carlin, apavorado, segura a esteira. | + ALTURA = – CAPACIDADE · UM SÓ NÃO DÁ | rangido metálico, bipes de alarme |
+| 6 | 28,0–34,5 | "Então você usa dois guindastes de 700 toneladas, um em cada ponta, com o drum na horizontal, pendurado em cabos de aço da grossura de uma perna." | O segundo guindaste LIEBHERR entra espelhado. Plano aberto: um guindaste em cada ponta e o drum na horizontal, saindo do chão. **Close no cabo de aço ao lado da perna do Carlin**: mesma grossura. O Carlin compara, aponta e arregala os olhos. | 2 × **700 t** · NA HORIZONTAL · CABO = UMA PERNA | motor ×2, clang, boing |
+| 7 | 34,5–39,5 | "Mas se um guindaste sobe mais rápido que o outro, o drum inclina e o peso vai todo pra um lado." | Simulação do erro (exagerada): o gancho da esquerda sobe rápido, o drum inclina, e uma seta vermelha de peso escorrega para o lado do outro guindaste, que range e balança. O Carlin cobre os olhos e sua. | DESNÍVEL · SOBRECARGA | rangido, "fail", boing |
+| 8 | 39,5–43,5 | "Não dá pra improvisar: foram 5 meses planejando esse içamento." | Rebobina (efeito rewind rápido) e o drum volta ao chão, nivelado. Mesa com plantas, prancheta e o calendário de novo, agora folheando os 5 meses até um carimbo "APROVADO". O Carlin de óculos estudando a planta. | **5 MESES** · PLANO DE IÇAMENTO | rewind, papel, carimbo, "ding" |
+| 9 | 43,5–48,0 | "No dia, os dois sobem juntos, bem devagar, comandados por um sinaleiro." | Os dois ganchos sobem em sincronia; as barras de capacidade dos dois ficam iguais e verdes. O Carlin é o sinaleiro, com o gesto de braço do EP01. **Sem rádio na mão até o Carlos confirmar.** | JUNTOS E DEVAGAR · SINALEIRO | motor ×2 (baixo, constante), apito curto |
+| 10 | 48,0–55,5 | "E lá em cima o teto ainda está aberto: o drum entra por cima, desce até o lugar dele, e só depois o teto é fechado." | Câmera alta olhando para baixo: o topo da estrutura ainda **sem teto**. Uma trena com contador sobe até 75 m enquanto o drum chega. Ele passa por cima, desce no vão e assenta no lugar de forma genérica (baque e poeira, sem mostrar o tipo de fixação). As lingas afrouxam e saem. As vigas e chapas do teto caem no lugar uma a uma, fechando tudo. | TETO ABERTO · **75 m** · NO LUGAR! · TETO FECHADO | contador "tic-tic", baque grave, clangs em sequência |
+| 11 | 55,5–58,0 | "Parabéns, você montou o drum." | Chuva de confete. O Carlin pula e comemora. Câmera orbitando o topo da caldeira, com os dois guindastes ao fundo. | PARABÉNS! · DRUM MONTADO | torcida, sino |
+| 12 | 58,0–~68 | "Se você sabia, comente Engenheiro. Se não sabia, comente Estagiário." | A órbita continua e o Carlin comemora. CTA em pílulas grandes no topo, igual ao EP01. | SABIA? COMENTE **ENGENHEIRO** · NÃO SABIA? COMENTE **ESTAGIÁRIO** | "win" ×2 |
 
 **Trilha:** a mesma do EP01 ("Feeling Happy", Mixkit), bem baixa e com ducking. Pop automático em cada etiqueta.
 
-### O que muda em relação ao EP01 (produção)
+### Produção (o que muda em relação ao EP01)
 - **Novos elementos 3D:**
-  - drum: cilindro com tampos semiesféricos e corte esquemático água/vapor
-  - régua/contador de altura e prediozinho de 25 andares
-  - segundo guindaste espelhado, com ganchos independentes
-  - barras de capacidade sobre cada guindaste
-  - topo da estrutura com o vão
-  - rádio na mão do Carlin
-- **Mascote:** o mascote do vídeo passa a usar a faixa **"Eng. Carlin"** no capacete (função `helmet_band` da identidade visual). Ela é legível nos closes.
-- **Escala:** é estilizada. Para caber num vídeo vertical, a caldeira, os guindastes e o drum não ficam em escala real (como no EP01).
+  - drum: cilindro com tampos arredondados, vermelho como no EP01, com corte esquemático água/vapor
+  - calendário que folheia, mapinha porto→obra e trena/contador de altura
+  - prediozinho de 25 andares
+  - caminhão especial com prancha, reaproveitando a carreta do EP01
+  - segundo guindaste espelhado com ganchos independentes
+  - barras de capacidade sem números
+  - cabo de aço grosso, para o close ao lado da perna do Carlin
+  - estrutura do topo sem teto, com as peças do teto caindo no fim
+- **Marca Liebherr:** só o nome em letras simples na casa de máquinas, sem logotipo, fonte ou desenho oficial da marca. Num canal monetizado, usar o nome do fabricante que aparece no equipamento real costuma ser aceitável. Reproduzir o logotipo exigiria autorização da Liebherr. Se preferir zero risco, tiro o nome.
+- **Mascote:** o Carlin usa a faixa **"Eng. Carlin"** no capacete (função `helmet_band` da identidade visual).
+- **Escala:** é estilizada. Para caber no vertical, a caldeira, os guindastes e o drum não ficam em escala real (como no EP01).
 
 ---
 
-## Pontos para o Carlos conferir [CONFIRMAR COM CARLOS]
+## Pontos que ainda faltam confirmar [CONFIRMAR COM CARLOS]
 
-1. **"Drum" e "tubulão":** qual termo a equipe usa na obra? A narração usa os dois ("o drum, o tubulão"). Confirmar também a pronúncia ("drâm").
-2. **Função do drum, de forma simplificada:** "um cilindro gigante lá no topo, onde a água e o vapor se separam". Essa simplificação está ok?
-3. **Posição:** o drum fica no topo da caldeira, dentro da estrutura? A cena mostra ele entrando pelo vão do topo.
-4. **Fixação final:** como o drum fica no lugar? Suspenso por tirantes, apoiado em selas ou outro? A narração diz só "encaixa no lugar dele", e a animação mostra ele assentando, de forma genérica.
-5. **Comparação "prédio de 25 andares":** 75 m ÷ ~3 m por andar. Pode usar?
-6. **Por que 2 guindastes:** a explicação é que a capacidade de 700 t vale com a lança curta e a carga perto, e cai com altura e raio. Confirmar que esse foi o motivo real, e não só um dos motivos (disponibilidade, espaço no canteiro, equilíbrio da carga etc.).
-7. **"700 t":** é a capacidade nominal de cada guindaste (o "nome" do guindaste)? Confirmar que a frase "esses 700 são a capacidade com a lança curta e a carga pertinho" está correta para os modelos usados.
-8. **Tipo e configuração dos guindastes:** de esteiras, com lança treliçada? Usaram contrapeso extra ou superlift? A animação mostra o modelo genérico do EP01.
-9. **Termo "içamento em tandem":** é o termo usado na obra?
-10. **Pontos de pega:** um guindaste em cada ponta do drum? Como o drum é preso (olhais, munhões, viga de içamento/balancim, lingas)? Ele foi içado na horizontal?
-11. **Risco de desnível:** a frase "se um sobe mais rápido, o peso vai todo pra um lado só" é uma simplificação didática (na animação é exagerada). Ok usar?
-12. **Controle do içamento:** existe plano de içamento (rigging)? Sinaleiro comandando por rádio? Houve monitoramento de carga nos guindastes (indicador de momento de carga, célula de carga)? A narração cita só "plano de içamento" e "sinaleiro no rádio".
-13. **"Bem devagar" e "metro por metro":** são só expressões. Se quiser, o Carlos pode passar a duração real do içamento.
-14. **Sequência de montagem:** o drum entra por cima antes de fechar o topo da estrutura? A frase "precisa entrar certinho no meio da estrutura" está ok? Tinha alguma folga apertada que valha mostrar?
-15. **Vento e clima:** não está na narração. Se o Carlos quiser, dá para incluir um problema→solução "e se ventar?", mas só com o critério real da obra.
-16. **"A maior caldeira de recuperação do mundo":** continua sem números além dos três confirmados (320 t, 75 m, 2 × 700 t).
-17. **Visual estilizado:** caldeira, estrutura, guindastes e canteiro não representam o layout real, e as proporções não são em escala. Ok para o canal?
-
----
+1. **Sinaleiro:** o içamento foi comandado por um sinaleiro? Por rádio? A narração diz só "comandados por um sinaleiro" e a animação não mostra rádio.
+2. **Fixação final:** como o drum fica preso no lugar (suspenso, apoiado em selas ou outro)? A narração diz só "desce até o lugar dele" e a animação mostra só ele assentando, sem detalhe.
+3. **Termo "tandem":** é o termo usado na obra? Por enquanto saiu da narração. Se o Carlos confirmar, pode voltar como etiqueta ("IÇAMENTO EM TANDEM").
+4. **Desnível entre os guindastes:** a cena 7 mostra o drum inclinando e o peso indo todo para um lado. É uma simplificação didática, exagerada na animação. Ok usar? A frase "o planejamento levou 5 meses" vem logo depois. Confirmar que não fica parecendo que os 5 meses foram só por causa disso.
+5. **Barra de capacidade "do verde ao vermelho" e esteiras levantando:** são exageros visuais para explicar o princípio, sem números. Ok?
+6. **Caminhão especial:** a cena mostra uma prancha comprida (carreta do EP01). Ok genérico? (Sem número de eixos.)
+7. **"Do porto até a obra" num mapinha:** o mapa é ilustrativo, sem cidades nem distância. Ok?
+8. **Marca Liebherr no visual:** confirmar que pode aparecer o nome escrito (sem logotipo). Os guindastes do vídeo são genéricos e não reproduzem o modelo real.
+9. **"Bem devagar":** é só expressão, sem velocidade no texto. Se o Carlos quiser, pode passar a duração real do içamento.
+10. **"A maior caldeira de recuperação do mundo":** continua sem números além dos confirmados (320 t, 75 m, 2 × 700 t, 5 meses, 2 meses, 25 andares).
+11. **Visual estilizado:** caldeira, estrutura, guindastes e canteiro não representam o layout real e não estão em escala. Ok para o canal?
 
 ## Próximo passo
-Com o ok do Carlos (ou ajustes no texto), eu gero a voz, amarro os tempos das cenas na narração, monto a cena 3D (`piloto-ep02/scripts/cena_ep02.py`, reaproveitando `lowpoly_lib.py`), renderizo e monto o vídeo final com legendas, etiquetas, SFX e música, como no EP01.
+Com o ok desta revisão, eu gero a voz e confiro a duração (meta de 60–70 s), amarro os tempos das cenas, monto `piloto-ep02/scripts/cena_ep02.py` (reaproveitando `lowpoly_lib.py`), renderizo e monto o vídeo final.
