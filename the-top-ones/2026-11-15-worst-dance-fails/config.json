@@ -1,0 +1,235 @@
+{
+ "build_dir": "<scratch>/v9/build",
+ "output": "<scratch>/v9/build/the_top_ones_worst_dance_fails_1080p.mp4",
+ "font": "<scratch>/assets/ArchivoBlack-Regular.ttf",
+ "blue": "#44C9F0",
+ "title": [
+  [
+   [
+    "RANKING",
+    "w"
+   ],
+   [
+    "THE",
+    "w"
+   ],
+   [
+    "WORST",
+    "b"
+   ]
+  ],
+  [
+   [
+    "DANCE",
+    "b"
+   ],
+   [
+    "FAILS",
+    "w"
+   ]
+  ]
+ ],
+ "zoom": 1.1,
+ "grade": {
+  "contrast": 1.07,
+  "brightness": 0.01,
+  "saturation": 1.14,
+  "gamma": 1.0
+ },
+ "layout": {
+  "title_top": 138,
+  "title_max_size": 86,
+  "title_max_width": 960,
+  "title_line_gap": 1.13,
+  "video_y": 318,
+  "video_h": 870,
+  "list_top": 1205,
+  "list_bottom": 1600,
+  "row_h_max": 58,
+  "list_font_ratio": 0.72,
+  "list_x": 78,
+  "name_max_x": 905
+ },
+ "audio": {
+  "music": "<scratch>/assets/music/777.mp3",
+  "music_offset": 0.5,
+  "whoosh": "<scratch>/assets/sfx/1490.mp3",
+  "whoosh_peak": 0.7,
+  "whoosh_gain_db": 4,
+  "fade_out": 2.0,
+  "lufs": -14,
+  "true_peak": -5.0,
+  "music_meta": {
+   "title": "A Game",
+   "artist": "Michael Ramir C.",
+   "source": "Mixkit",
+   "license": "Mixkit Stock Music Free License",
+   "url": "https://mixkit.co/free-stock-music/tag/sport/",
+   "license_url": "https://mixkit.co/license/#musicFree"
+  },
+  "sfx_meta": {
+   "title": "Fast whoosh transition",
+   "source": "Mixkit",
+   "license": "Mixkit Sound Effects Free License",
+   "url": "https://mixkit.co/free-sound-effects/whoosh/"
+  }
+ },
+ "post": {
+  "title": "Ranking the WORST Dance Fails 💀 #shorts",
+  "main_keyword": "WORST",
+  "hook": "Which dance fail would you never recover from? Drop your #1 👇",
+  "hashtags": [
+   "#dancefails",
+   "#fails",
+   "#funnyfails"
+  ],
+  "niche_terms": [
+   "dancefails",
+   "fails",
+   "funnyfails",
+   "dance"
+  ]
+ },
+ "clips": [
+  {
+   "rank": 4,
+   "name": "Ballerina Spins Out",
+   "src": "<scratch>/dl/7633228512673025294/full.mp4",
+   "start": 0.0,
+   "end": 8.7,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.5,
+   "source_type": "amador",
+   "src_crop": [
+    330,
+    600,
+    700,
+    565
+   ],
+   "zoom": 1.0,
+   "replay": {
+    "start": 1.6,
+    "end": 3.0,
+    "speed": 0.4,
+    "zoom": 1.1,
+    "focus_y": 0.5
+   }
+  },
+  {
+   "rank": 6,
+   "name": "Sunset Dance Collision",
+   "src": "<scratch>/dl/7704412835001961758/full.mp4",
+   "start": 0.0,
+   "end": 15.0,
+   "flip": true,
+   "focus_x": 0.5,
+   "focus_y": 0.5,
+   "source_type": "amador",
+   "src_crop": [
+    0,
+    180,
+    1080,
+    1740
+   ],
+   "replay": {
+    "start": 5.5,
+    "end": 6.8,
+    "speed": 0.4,
+    "zoom": 1.15,
+    "focus_y": 0.5
+   }
+  },
+  {
+   "rank": 2,
+   "name": "Flyer Gets Forgotten",
+   "src": "<scratch>/dl/7704453660478131470/full.mp4",
+   "start": 0.0,
+   "end": 6.5,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.55,
+   "source_type": "amador",
+   "src_crop": [
+    0,
+    520,
+    1080,
+    1400
+   ],
+   "replay": {
+    "start": 0.4,
+    "end": 2.4,
+    "speed": 0.4,
+    "zoom": 1.15,
+    "focus_y": 0.6
+   }
+  },
+  {
+   "rank": 5,
+   "name": "Stunt Pyramid Collapse",
+   "src": "<scratch>/dl/7700650328219340046/full.mp4",
+   "start": 0.0,
+   "end": 7.4,
+   "flip": true,
+   "focus_x": 0.5,
+   "focus_y": 0.5,
+   "source_type": "amador",
+   "src_crop": [
+    220,
+    560,
+    420,
+    340
+   ],
+   "zoom": 1.0,
+   "replay": {
+    "start": 1.0,
+    "end": 2.6,
+    "speed": 0.4,
+    "zoom": 1.1,
+    "focus_y": 0.5
+   }
+  },
+  {
+   "rank": 3,
+   "name": "Ballet Solo Wipeout",
+   "src": "<scratch>/dl/7216769893130095918/full.mp4",
+   "start": 0.0,
+   "end": 12.0,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.6,
+   "source_type": "amador",
+   "replay": {
+    "start": 0.8,
+    "end": 3.0,
+    "speed": 0.4,
+    "zoom": 1.15,
+    "focus_y": 0.65
+   }
+  },
+  {
+   "rank": 1,
+   "name": "Wedding Dance Faceplant",
+   "src": "<scratch>/dl/7187425232305622277/full.mp4",
+   "start": 0.0,
+   "end": 6.8,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.5,
+   "source_type": "amador",
+   "src_crop": [
+    0,
+    500,
+    1080,
+    900
+   ],
+   "replay": {
+    "start": 1.6,
+    "end": 3.2,
+    "speed": 0.4,
+    "zoom": 1.15,
+    "focus_y": 0.55
+   }
+  }
+ ]
+}
