@@ -1,0 +1,229 @@
+{
+ "build_dir": "<scratch>/v10/build",
+ "output": "<scratch>/v10/build/the_top_ones_worst_car_fails_1080p.mp4",
+ "font": "<scratch>/assets/ArchivoBlack-Regular.ttf",
+ "blue": "#44C9F0",
+ "title": [
+  [
+   [
+    "RANKING",
+    "w"
+   ],
+   [
+    "THE",
+    "w"
+   ],
+   [
+    "WORST",
+    "b"
+   ]
+  ],
+  [
+   [
+    "CAR",
+    "b"
+   ],
+   [
+    "FAILS",
+    "w"
+   ]
+  ]
+ ],
+ "zoom": 1.1,
+ "grade": {
+  "contrast": 1.07,
+  "brightness": 0.01,
+  "saturation": 1.14,
+  "gamma": 1.0
+ },
+ "layout": {
+  "title_top": 138,
+  "title_max_size": 86,
+  "title_max_width": 960,
+  "title_line_gap": 1.13,
+  "video_y": 318,
+  "video_h": 870,
+  "list_top": 1205,
+  "list_bottom": 1600,
+  "row_h_max": 58,
+  "list_font_ratio": 0.72,
+  "list_x": 78,
+  "name_max_x": 905
+ },
+ "audio": {
+  "music": "<scratch>/assets/music/369.mp3",
+  "music_offset": 12.3,
+  "whoosh": "<scratch>/assets/sfx/1490.mp3",
+  "whoosh_peak": 0.7,
+  "whoosh_gain_db": 4,
+  "fade_out": 2.0,
+  "lufs": -14,
+  "true_peak": -5.0,
+  "music_meta": {
+   "title": "Need for speed",
+   "artist": "Arulo",
+   "source": "Mixkit",
+   "license": "Mixkit Stock Music Free License",
+   "url": "https://mixkit.co/free-stock-music/tag/trap/",
+   "license_url": "https://mixkit.co/license/#musicFree"
+  },
+  "sfx_meta": {
+   "title": "Fast whoosh transition",
+   "source": "Mixkit",
+   "license": "Mixkit Sound Effects Free License",
+   "url": "https://mixkit.co/free-sound-effects/whoosh/"
+  }
+ },
+ "post": {
+  "title": "Ranking the WORST Car Fails 💀 #shorts",
+  "main_keyword": "WORST",
+  "hook": "Which driver should lose their license first? Drop your #1 👇",
+  "hashtags": [
+   "#carfails",
+   "#parkingfail",
+   "#carwash"
+  ],
+  "niche_terms": [
+   "carfails",
+   "parkingfail",
+   "carwash",
+   "car",
+   "parking",
+   "driving",
+   "fails"
+  ]
+ },
+ "clips": [
+  {
+   "rank": 3,
+   "name": "Endless Parking Struggle",
+   "src": "<scratch>/dl/7692810042084478216/full.mp4",
+   "start": 12.0,
+   "end": 30.8,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.5,
+   "source_type": "amador",
+   "zoom": 1.0,
+   "focus_y_keys": [
+    [
+     0,
+     0.2
+    ],
+    [
+     2.5,
+     0.45
+    ],
+    [
+     9,
+     0.5
+    ],
+    [
+     10.5,
+     0.75
+    ],
+    [
+     18.8,
+     0.9
+    ]
+   ]
+  },
+  {
+   "rank": 5,
+   "name": "Dashcam Near Miss",
+   "src": "<scratch>/dl/7706347346254204191/full.mp4",
+   "start": 0.0,
+   "end": 6.8,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.5,
+   "source_type": "amador",
+   "src_crop": [
+    0,
+    690,
+    1080,
+    870
+   ],
+   "zoom": 1.05,
+   "replay": {
+    "start": 3.4,
+    "end": 5.4,
+    "speed": 0.5,
+    "zoom": 1.15,
+    "focus_y": 0.5
+   }
+  },
+  {
+   "rank": 4,
+   "name": "Worst Parallel Park Ever",
+   "src": "<scratch>/dl/7654334044196424991/full.mp4",
+   "start": 5.0,
+   "end": 22.0,
+   "flip": true,
+   "focus_x": 0.5,
+   "focus_y": 0.5,
+   "source_type": "amador",
+   "src_crop": [
+    0,
+    290,
+    720,
+    580
+   ],
+   "zoom": 1.05
+  },
+  {
+   "rank": 2,
+   "name": "Runaway Car Wash Exit",
+   "src": "<scratch>/dl/7218639998520790318/full.mp4",
+   "start": 13.0,
+   "end": 29.8,
+   "flip": true,
+   "focus_x": 0.5,
+   "focus_y": 0.3,
+   "source_type": "amador",
+   "focus_y_keys": [
+    [
+     0,
+     0.3
+    ],
+    [
+     9,
+     0.15
+    ],
+    [
+     14,
+     0.5
+    ],
+    [
+     16.8,
+     0.6
+    ]
+   ]
+  },
+  {
+   "rank": 1,
+   "name": "Range Rover Car Wash Wreck",
+   "src": "<scratch>/dl/7194475637195771178/full.mp4",
+   "start": 13.0,
+   "end": 30.5,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.5,
+   "source_type": "amador",
+   "src_crop": [
+    0,
+    285,
+    576,
+    345
+   ],
+   "zoom": 1.0,
+   "replay": {
+    "start": 27.6,
+    "end": 29.2,
+    "speed": 0.5,
+    "zoom": 1.15,
+    "focus_y": 0.5
+   }
+  }
+ ]
+}
