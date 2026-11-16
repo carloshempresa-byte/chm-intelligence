@@ -1,0 +1,630 @@
+{
+ "font": "../piloto-ep01/assets/fonts/Montserrat.ttf",
+ "words": "audio/narracao_tight.json",
+ "anchors": "build/anchors.json",
+ "frames": "build/frames",
+ "frame_ext": "jpg",
+ "n_frames": 3331,
+ "out_video": "build/video_sem_audio.mp4",
+ "caption_y": 1330,
+ "highlight": [
+  "MONTANHAS",
+  "BAGGER",
+  "288",
+  "96 METROS",
+  "CRISTOS",
+  "225 METROS",
+  "CAMPOS",
+  "13 MIL",
+  "8 MIL",
+  "CARROS",
+  "CARVÃO",
+  "CAMADAS",
+  "RODA",
+  "21,6 METROS",
+  "18",
+  "CAÇAMBAS",
+  "DENTES",
+  "PROBLEMA",
+  "CORREIA",
+  "TRANSPORTADORA",
+  "CORREIAS",
+  "240 MIL",
+  "10 MIL",
+  "CAMINHÕES",
+  "ESTEIRAS",
+  "12",
+  "3,8 METROS",
+  "2 A 10 METROS",
+  "DIESEL",
+  "ELÉTRICA",
+  "16,56",
+  "MEGAWATTS",
+  "CINCO",
+  "EM 2001",
+  "22 QUILÔMETROS",
+  "RODOVIA",
+  "RIO",
+  "FERROVIA",
+  "PARABÉNS",
+  "ENGENHEIRO",
+  "ESTAGIÁRIO",
+  "AMIGO",
+  "SEGUE",
+  "GIGANTES"
+ ],
+ "pills": [
+  {
+   "text": "CARVÃO",
+   "anchor": "a_carvao",
+   "t_in": 22.37,
+   "t_out": 25.3,
+   "off": [
+    150,
+    -220
+   ],
+   "style": "white",
+   "size": 60
+  },
+  {
+   "text": "CABINE",
+   "anchor": "a_cab",
+   "t_in": 82.51,
+   "t_out": 84.9,
+   "off": [
+    -120,
+    -300
+   ],
+   "style": "white",
+   "size": 54
+  },
+  {
+   "text": "CABO DE ENERGIA",
+   "anchor": "a_cabo",
+   "t_in": 81.36,
+   "t_out": 81.85,
+   "off": [
+    0,
+    -260
+   ],
+   "style": "cyan",
+   "size": 50
+  }
+ ],
+ "blocks": [
+  {
+   "text": "ENGOLE",
+   "pos": [
+    540,
+    330
+   ],
+   "t_in": 0.0,
+   "t_out": 1.8,
+   "big": true,
+   "size": 160,
+   "color": "#ffd23f"
+  },
+  {
+   "text": "MONTANHAS",
+   "pos": [
+    540,
+    500
+   ],
+   "t_in": 0.25,
+   "t_out": 1.8,
+   "big": true,
+   "size": 150,
+   "color": "#ffffff"
+  },
+  {
+   "text": "BAGGER 288",
+   "pos": [
+    540,
+    330
+   ],
+   "t_in": 1.99,
+   "t_out": 6.25,
+   "big": true,
+   "size": 130,
+   "color": "#ffd23f"
+  },
+  {
+   "text": "ESCAVADEIRA DE RODA DE CAÇAMBAS",
+   "pos": [
+    540,
+    470
+   ],
+   "t_in": 3.72,
+   "t_out": 6.25,
+   "style": "white",
+   "size": 40
+  },
+  {
+   "text": "ALEMANHA",
+   "pos": [
+    540,
+    560
+   ],
+   "t_in": 5.66,
+   "t_out": 6.25,
+   "style": "orange",
+   "size": 52
+  },
+  {
+   "text": "96 m",
+   "pos": [
+    540,
+    300
+   ],
+   "t_in": 6.65,
+   "t_out": 10.5,
+   "big": true,
+   "size": 190,
+   "color": "#ffd23f"
+  },
+  {
+   "text": "2 × CRISTO (38 m) = 76 m",
+   "pos": [
+    540,
+    470
+   ],
+   "t_in": 8.53,
+   "t_out": 10.5,
+   "style": "white",
+   "size": 50
+  },
+  {
+   "text": "225 m",
+   "pos": [
+    540,
+    280
+   ],
+   "t_in": 10.72,
+   "t_out": 14.55,
+   "big": true,
+   "size": 180,
+   "color": "#ffd23f"
+  },
+  {
+   "text": "MAIS DE 2 CAMPOS",
+   "pos": [
+    540,
+    440
+   ],
+   "t_in": 13.21,
+   "t_out": 14.55,
+   "style": "green",
+   "size": 62
+  },
+  {
+   "text": "~13 MIL t",
+   "pos": [
+    540,
+    300
+   ],
+   "t_in": 15.33,
+   "t_out": 18.35,
+   "big": true,
+   "size": 150,
+   "color": "#ffd23f"
+  },
+  {
+   "text": "= MAIS DE 8 MIL CARROS",
+   "pos": [
+    540,
+    460
+   ],
+   "t_in": 17.34,
+   "t_out": 18.35,
+   "style": "white",
+   "size": 54
+  },
+  {
+   "text": "MINA A CÉU ABERTO",
+   "pos": [
+    540,
+    300
+   ],
+   "t_in": 20.94,
+   "t_out": 25.3,
+   "style": "white",
+   "size": 60
+  },
+  {
+   "text": "CAMADAS DE TERRA",
+   "pos": [
+    540,
+    420
+   ],
+   "t_in": 23.84,
+   "t_out": 25.3,
+   "style": "orange",
+   "size": 56
+  },
+  {
+   "text": "TIRAR A TERRA DE CIMA",
+   "pos": [
+    540,
+    330
+   ],
+   "t_in": 27.1,
+   "t_out": 29.0,
+   "style": "red",
+   "size": 56
+  },
+  {
+   "text": "A RODA",
+   "pos": [
+    540,
+    330
+   ],
+   "t_in": 29.7,
+   "t_out": 30.2,
+   "big": true,
+   "size": 170,
+   "color": "#ffd23f"
+  },
+  {
+   "text": "21,6 m",
+   "pos": [
+    540,
+    290
+   ],
+   "t_in": 32.42,
+   "t_out": 39.45,
+   "big": true,
+   "size": 170,
+   "color": "#ffd23f"
+  },
+  {
+   "text": "18 CAÇAMBAS",
+   "pos": [
+    540,
+    450
+   ],
+   "t_in": 34.53,
+   "t_out": 39.45,
+   "style": "white",
+   "size": 66
+  },
+  {
+   "text": "COM DENTES",
+   "pos": [
+    540,
+    560
+   ],
+   "t_in": 37.6,
+   "t_out": 39.45,
+   "style": "orange",
+   "size": 54
+  },
+  {
+   "text": "INDO E VOLTANDO?",
+   "pos": [
+    540,
+    360
+   ],
+   "t_in": 44.44,
+   "t_out": 45.33,
+   "style": "red",
+   "size": 66
+  },
+  {
+   "text": "CORREIA",
+   "pos": [
+    540,
+    300
+   ],
+   "t_in": 48.06,
+   "t_out": 50.9,
+   "big": true,
+   "size": 140,
+   "color": "#ffd23f"
+  },
+  {
+   "text": "BRAÇO → CORPO → DESCARGA",
+   "pos": [
+    540,
+    440
+   ],
+   "t_in": 50.32,
+   "t_out": 53.15,
+   "style": "white",
+   "size": 46
+  },
+  {
+   "text": "PRA FORA DA MINA",
+   "pos": [
+    540,
+    330
+   ],
+   "t_in": 54.91,
+   "t_out": 55.7,
+   "style": "green",
+   "size": 58
+  },
+  {
+   "text": "CAVA + DESPEJA",
+   "pos": [
+    540,
+    320
+   ],
+   "t_in": 56.68,
+   "t_out": 59.0,
+   "big": true,
+   "size": 110,
+   "color": "#ffffff"
+  },
+  {
+   "text": "240 MIL m³/DIA",
+   "pos": [
+    540,
+    320
+   ],
+   "t_in": 59.27,
+   "t_out": 64.9,
+   "big": true,
+   "size": 105,
+   "color": "#ffd23f"
+  },
+  {
+   "text": "= MAIS DE 10 MIL CAMINHÕES",
+   "pos": [
+    540,
+    470
+   ],
+   "t_in": 63.14,
+   "t_out": 64.9,
+   "style": "white",
+   "size": 50
+  },
+  {
+   "text": "12 ESTEIRAS",
+   "pos": [
+    540,
+    300
+   ],
+   "t_in": 67.74,
+   "t_out": 73.05,
+   "big": true,
+   "size": 120,
+   "color": "#ffd23f"
+  },
+  {
+   "text": "3,8 m CADA",
+   "pos": [
+    540,
+    450
+   ],
+   "t_in": 69.25,
+   "t_out": 73.05,
+   "style": "white",
+   "size": 60
+  },
+  {
+   "text": "PESO ESPALHADO",
+   "pos": [
+    540,
+    550
+   ],
+   "t_in": 71.03,
+   "t_out": 73.05,
+   "style": "orange",
+   "size": 52
+  },
+  {
+   "text": "2 a 10 m/min",
+   "pos": [
+    540,
+    320
+   ],
+   "t_in": 75.13,
+   "t_out": 76.8,
+   "big": true,
+   "size": 110,
+   "color": "#ffd23f"
+  },
+  {
+   "text": "SEM DIESEL",
+   "pos": [
+    540,
+    320
+   ],
+   "t_in": 77.68,
+   "t_out": 78.5,
+   "style": "red",
+   "size": 66
+  },
+  {
+   "text": "ELÉTRICA",
+   "pos": [
+    540,
+    300
+   ],
+   "t_in": 78.53,
+   "t_out": 81.85,
+   "big": true,
+   "size": 130,
+   "color": "#ffd23f"
+  },
+  {
+   "text": "16,56 MW",
+   "pos": [
+    540,
+    450
+   ],
+   "t_in": 79.32,
+   "t_out": 81.85,
+   "style": "cyan",
+   "size": 72
+  },
+  {
+   "text": "SÓ 5 PESSOAS",
+   "pos": [
+    540,
+    330
+   ],
+   "t_in": 84.08,
+   "t_out": 84.9,
+   "big": true,
+   "size": 120,
+   "color": "#ffd23f"
+  },
+  {
+   "text": "2001",
+   "pos": [
+    540,
+    280
+   ],
+   "t_in": 86.66,
+   "t_out": 98.1,
+   "big": true,
+   "size": 170,
+   "color": "#ffd23f"
+  },
+  {
+   "text": "22 km EM 3 SEMANAS",
+   "pos": [
+    540,
+    440
+   ],
+   "t_in": 91.41,
+   "t_out": 98.1,
+   "style": "white",
+   "size": 56
+  },
+  {
+   "text": "RODOVIA",
+   "pos": [
+    540,
+    560
+   ],
+   "t_in": 93.93,
+   "t_out": 94.6,
+   "style": "orange",
+   "size": 60
+  },
+  {
+   "text": "RIO",
+   "pos": [
+    540,
+    560
+   ],
+   "t_in": 94.8,
+   "t_out": 95.15,
+   "style": "blue",
+   "size": 64
+  },
+  {
+   "text": "FERROVIA",
+   "pos": [
+    540,
+    560
+   ],
+   "t_in": 95.2,
+   "t_out": 98.1,
+   "style": "orange",
+   "size": 60
+  },
+  {
+   "text": "CAMINHO PREPARADO",
+   "pos": [
+    540,
+    660
+   ],
+   "t_in": 96.0,
+   "t_out": 98.1,
+   "style": "white",
+   "size": 50
+  },
+  {
+   "text": "PARABÉNS!",
+   "pos": [
+    540,
+    330
+   ],
+   "t_in": 98.14,
+   "t_out": 101.85,
+   "big": true,
+   "size": 130,
+   "color": "#ffd23f"
+  },
+  {
+   "text": "SABIA? COMENTE",
+   "pos": [
+    540,
+    250
+   ],
+   "t_in": 101.91,
+   "t_out": 105.95,
+   "style": "white",
+   "size": 46
+  },
+  {
+   "text": "ENGENHEIRO",
+   "pos": [
+    540,
+    360
+   ],
+   "t_in": 103.13,
+   "t_out": 105.95,
+   "style": "green",
+   "size": 84
+  },
+  {
+   "text": "NÃO SABIA? COMENTE",
+   "pos": [
+    540,
+    510
+   ],
+   "t_in": 103.83,
+   "t_out": 105.95,
+   "style": "white",
+   "size": 46
+  },
+  {
+   "text": "ESTAGIÁRIO",
+   "pos": [
+    540,
+    620
+   ],
+   "t_in": 105.19,
+   "t_out": 105.95,
+   "style": "orange",
+   "size": 84
+  },
+  {
+   "text": "COMENTE O QUE ACHOU",
+   "pos": [
+    540,
+    280
+   ],
+   "t_in": 106.0,
+   "t_out": 111.0,
+   "style": "white",
+   "size": 56
+  },
+  {
+   "text": "MANDA PRO AMIGO",
+   "pos": [
+    540,
+    400
+   ],
+   "t_in": 106.11,
+   "t_out": 111.0,
+   "style": "yellow",
+   "size": 70
+  },
+  {
+   "text": "SEGUE PRA MAIS MÁQUINAS GIGANTES",
+   "pos": [
+    540,
+    520
+   ],
+   "t_in": 107.77,
+   "t_out": 111.0,
+   "style": "green",
+   "size": 44
+  }
+ ]
+}
