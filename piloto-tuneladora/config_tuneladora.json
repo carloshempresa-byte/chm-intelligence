@@ -1,0 +1,675 @@
+{
+ "font": "../piloto-ep01/assets/fonts/Montserrat.ttf",
+ "words": "audio/narracao_tight.json",
+ "anchors": "build/anchors.json",
+ "frames": "build/frames",
+ "n_frames": 3409,
+ "out_video": "build/video_sem_audio.mp4",
+ "caption_y": 1330,
+ "highlight": [
+  "133 METROS",
+  "2.600 TONELADAS",
+  "TUNELADORA",
+  "TBM",
+  "TATUZÃO",
+  "MINHOCA",
+  "RODA",
+  "CORTE",
+  "11,67 METROS",
+  "DESABA",
+  "ESCUDO",
+  "AÇO",
+  "CÂMARA",
+  "PRESSÃO",
+  "ROSCA",
+  "VELOCIDADE",
+  "ESTEIRAS",
+  "BACKUP",
+  "VENTILAÇÃO",
+  "HIPERBÁRICA",
+  "COMPRIMIDO",
+  "ADUELAS",
+  "ANEL",
+  "RODAS",
+  "PISTÕES",
+  "HIDRÁULICOS",
+  "15 METROS",
+  "10 METROS",
+  "SOLO",
+  "ROCHA",
+  "7 QUILÔMETROS",
+  "PENHA",
+  "DUTRA",
+  "GUARULHOS",
+  "MULHER",
+  "BÁRBARA",
+  "BERTHA",
+  "17,5 METROS",
+  "PARABÉNS",
+  "ENGENHEIRO",
+  "ESTAGIÁRIO",
+  "AMIGO",
+  "SEGUE",
+  "GIGANTES",
+  "NÃO"
+ ],
+ "pills": [
+  {
+   "text": "133 m",
+   "anchor": "a_tbm",
+   "t_in": 1.56,
+   "t_out": 7.6,
+   "off": [
+    0,
+    -330
+   ],
+   "style": "yellow",
+   "size": 92
+  },
+  {
+   "text": "2.600 t",
+   "anchor": "a_tbm",
+   "t_in": 3.09,
+   "t_out": 7.6,
+   "off": [
+    0,
+    -190
+   ],
+   "style": "red",
+   "size": 80,
+   "line": false
+  },
+  {
+   "text": "CAVA + MONTA AS PAREDES",
+   "anchor": "a_aneis",
+   "t_in": 7.68,
+   "t_out": 10.1,
+   "off": [
+    80,
+    280
+   ],
+   "style": "white",
+   "size": 52
+  },
+  {
+   "text": "TUNELADORA = TBM",
+   "anchor": "a_tbm",
+   "t_in": 10.34,
+   "t_out": 17.7,
+   "off": [
+    0,
+    -330
+   ],
+   "style": "yellow",
+   "size": 62
+  },
+  {
+   "text": "\"TATUZÃO\"",
+   "anchor": "a_tbm",
+   "t_in": 14.19,
+   "t_out": 17.7,
+   "off": [
+    0,
+    -200
+   ],
+   "style": "orange",
+   "size": 78,
+   "line": false
+  },
+  {
+   "text": "A CIDADE NÃO PARA",
+   "anchor": "a_rua",
+   "t_in": 16.14,
+   "t_out": 17.7,
+   "off": [
+    0,
+    -230
+   ],
+   "style": "white",
+   "size": 52
+  },
+  {
+   "text": "RODA DE CORTE",
+   "anchor": "a_roda",
+   "t_in": 18.62,
+   "t_out": 24.0,
+   "off": [
+    -170,
+    -300
+   ],
+   "style": "yellow",
+   "size": 64
+  },
+  {
+   "text": "11,67 m",
+   "anchor": "a_frente",
+   "t_in": 21.78,
+   "t_out": 24.0,
+   "off": [
+    -150,
+    320
+   ],
+   "style": "yellow",
+   "size": 96
+  },
+  {
+   "text": "ESCUDO DE AÇO",
+   "anchor": "a_escudo",
+   "t_in": 28.13,
+   "t_out": 29.05,
+   "off": [
+    0,
+    -280
+   ],
+   "style": "yellow",
+   "size": 64
+  },
+  {
+   "text": "CÂMARA DE TERRA",
+   "anchor": "a_camara",
+   "t_in": 30.97,
+   "t_out": 33.3,
+   "off": [
+    -220,
+    -360
+   ],
+   "style": "orange",
+   "size": 60
+  },
+  {
+   "text": "PRESSÃO",
+   "anchor": "a_frente",
+   "t_in": 32.38,
+   "t_out": 33.3,
+   "off": [
+    -120,
+    300
+   ],
+   "style": "yellow",
+   "size": 70
+  },
+  {
+   "text": "VELOCIDADE DA ROSCA",
+   "anchor": "a_botoes",
+   "t_in": 35.14,
+   "t_out": 37.6,
+   "off": [
+    -60,
+    -330
+   ],
+   "style": "red",
+   "size": 50
+  },
+  {
+   "text": "VELOCIDADE DE AVANÇO",
+   "anchor": "a_botoes",
+   "t_in": 37.82,
+   "t_out": 39.5,
+   "off": [
+    60,
+    -330
+   ],
+   "style": "green",
+   "size": 50
+  },
+  {
+   "text": "EQUILÍBRIO",
+   "anchor": "a_mano",
+   "t_in": 38.99,
+   "t_out": 39.5,
+   "off": [
+    0,
+    -230
+   ],
+   "style": "green",
+   "size": 64
+  },
+  {
+   "text": "ROSCA",
+   "anchor": "a_rosca",
+   "t_in": 39.62,
+   "t_out": 41.0,
+   "off": [
+    0,
+    -280
+   ],
+   "style": "yellow",
+   "size": 70
+  },
+  {
+   "text": "ESTEIRAS",
+   "anchor": "a_esteira",
+   "t_in": 42.03,
+   "t_out": 43.85,
+   "off": [
+    0,
+    -280
+   ],
+   "style": "white",
+   "size": 64
+  },
+  {
+   "text": "BACKUP",
+   "anchor": "a_tbm",
+   "t_in": 46.06,
+   "t_out": 51.3,
+   "off": [
+    0,
+    -300
+   ],
+   "style": "yellow",
+   "size": 74
+  },
+  {
+   "text": "VENTILAÇÃO",
+   "anchor": "a_duto",
+   "t_in": 47.38,
+   "t_out": 51.3,
+   "off": [
+    -60,
+    -200
+   ],
+   "style": "orange",
+   "size": 54
+  },
+  {
+   "text": "ESTRUTURA DAS ADUELAS",
+   "anchor": "a_estrut",
+   "t_in": 48.29,
+   "t_out": 51.3,
+   "off": [
+    0,
+    260
+   ],
+   "style": "white",
+   "size": 48
+  },
+  {
+   "text": "CÂMARA HIPERBÁRICA",
+   "anchor": "a_caps",
+   "t_in": 50.26,
+   "t_out": 55.55,
+   "off": [
+    0,
+    -300
+   ],
+   "style": "cyan",
+   "size": 54
+  },
+  {
+   "text": "TROCA DE FERRAMENTAS",
+   "anchor": "a_caps",
+   "t_in": 52.91,
+   "t_out": 55.55,
+   "off": [
+    0,
+    -180
+   ],
+   "style": "white",
+   "size": 48,
+   "line": false
+  },
+  {
+   "text": "AR COMPRIMIDO",
+   "anchor": "a_frente",
+   "t_in": 55.89,
+   "t_out": 57.85,
+   "off": [
+    -200,
+    -560
+   ],
+   "style": "blue",
+   "size": 60
+  },
+  {
+   "text": "BRAÇO MECÂNICO",
+   "anchor": "a_eretor",
+   "t_in": 62.19,
+   "t_out": 66.9,
+   "off": [
+    60,
+    340
+   ],
+   "style": "yellow",
+   "size": 56
+  },
+  {
+   "text": "ADUELAS (CONCRETO PRÉ-MOLDADO)",
+   "anchor": "a_anel_novo",
+   "t_in": 64.88,
+   "t_out": 66.9,
+   "off": [
+    0,
+    -330
+   ],
+   "style": "white",
+   "size": 44
+  },
+  {
+   "text": "ANEL",
+   "anchor": "a_anel_novo",
+   "t_in": 66.1,
+   "t_out": 66.9,
+   "off": [
+    0,
+    -200
+   ],
+   "style": "green",
+   "size": 70,
+   "line": false
+  },
+  {
+   "text": "PISTÕES HIDRÁULICOS",
+   "anchor": "a_pistao",
+   "t_in": 69.05,
+   "t_out": 77.3,
+   "off": [
+    0,
+    -330
+   ],
+   "style": "yellow",
+   "size": 56
+  },
+  {
+   "text": "ÚLTIMO ANEL",
+   "anchor": "a_anel_novo",
+   "t_in": 70.71,
+   "t_out": 77.3,
+   "off": [
+    -120,
+    300
+   ],
+   "style": "white",
+   "size": 56
+  },
+  {
+   "text": "ATÉ 15 m/DIA EM SOLO",
+   "anchor": "a_tbm",
+   "t_in": 79.53,
+   "t_out": 83.35,
+   "off": [
+    0,
+    -360
+   ],
+   "style": "yellow",
+   "size": 58
+  },
+  {
+   "text": "~10 m/DIA EM ROCHA",
+   "anchor": "a_tbm",
+   "t_in": 81.82,
+   "t_out": 83.35,
+   "off": [
+    0,
+    -230
+   ],
+   "style": "white",
+   "size": 54,
+   "line": false
+  },
+  {
+   "text": "~7 km",
+   "anchor": "a_linha",
+   "t_in": 85.55,
+   "t_out": 89.85,
+   "off": [
+    160,
+    -150
+   ],
+   "style": "yellow",
+   "size": 90
+  },
+  {
+   "text": "PENHA",
+   "anchor": "a_penha",
+   "t_in": 87.75,
+   "t_out": 89.85,
+   "off": [
+    -60,
+    -160
+   ],
+   "style": "white",
+   "size": 54
+  },
+  {
+   "text": "DUTRA",
+   "anchor": "a_dutra",
+   "t_in": 87.99,
+   "t_out": 89.85,
+   "off": [
+    0,
+    -170
+   ],
+   "style": "white",
+   "size": 54
+  },
+  {
+   "text": "DIVISA COM GUARULHOS",
+   "anchor": "a_gru",
+   "t_in": 89.14,
+   "t_out": 89.85,
+   "off": [
+    -150,
+    -140
+   ],
+   "style": "red",
+   "size": 46
+  },
+  {
+   "text": "NOME DE MULHER",
+   "anchor": "a_rodaSP",
+   "t_in": 92.06,
+   "t_out": 95.85,
+   "off": [
+    0,
+    -380
+   ],
+   "style": "orange",
+   "size": 60
+  },
+  {
+   "text": "11,67 m",
+   "anchor": "a_rodaSP",
+   "t_in": 99.4,
+   "t_out": 101.25,
+   "off": [
+    -60,
+    -150
+   ],
+   "style": "yellow",
+   "size": 64
+  },
+  {
+   "text": "BERTHA (SEATTLE, EUA)",
+   "anchor": "a_placaBE",
+   "t_in": 98.79,
+   "t_out": 101.25,
+   "off": [
+    0,
+    -200
+   ],
+   "style": "white",
+   "size": 50
+  },
+  {
+   "text": "17,5 m",
+   "anchor": "a_rodaBE",
+   "t_in": 99.31,
+   "t_out": 101.25,
+   "off": [
+    0,
+    -100
+   ],
+   "style": "yellow",
+   "size": 80,
+   "line": false
+  }
+ ],
+ "blocks": [
+  {
+   "text": "CURIOSIDADE",
+   "pos": [
+    540,
+    200
+   ],
+   "t_in": 0.0,
+   "t_out": 3.6,
+   "style": "orange",
+   "size": 44
+  },
+  {
+   "text": "O TATUZÃO",
+   "pos": [
+    540,
+    300
+   ],
+   "t_in": 0.05,
+   "t_out": 3.6,
+   "style": "yellow",
+   "size": 64
+  },
+  {
+   "text": "A MÁQUINA QUE CAVA O TÚNEL",
+   "pos": [
+    540,
+    395
+   ],
+   "t_in": 0.1,
+   "t_out": 3.6,
+   "style": "white",
+   "size": 36
+  },
+  {
+   "text": "DESABA!",
+   "pos": [
+    540,
+    520
+   ],
+   "t_in": 25.91,
+   "t_out": 26.9,
+   "style": "red",
+   "size": 110
+  },
+  {
+   "text": "SEM RODAS",
+   "pos": [
+    540,
+    480
+   ],
+   "t_in": 68.36,
+   "t_out": 69.0,
+   "style": "red",
+   "size": 96
+  },
+  {
+   "text": "ANDA EMPURRANDO O PRÓPRIO TÚNEL",
+   "pos": [
+    540,
+    420
+   ],
+   "t_in": 74.6,
+   "t_out": 77.3,
+   "style": "yellow",
+   "size": 44
+  },
+  {
+   "text": "SANTA BÁRBARA, PADROEIRA DOS MINEIROS",
+   "pos": [
+    540,
+    420
+   ],
+   "t_in": 93.6,
+   "t_out": 95.85,
+   "style": "white",
+   "size": 36
+  },
+  {
+   "text": "PARABÉNS!",
+   "pos": [
+    540,
+    330
+   ],
+   "t_in": 101.43,
+   "t_out": 104.2,
+   "style": "yellow",
+   "size": 96
+  },
+  {
+   "text": "SABIA? COMENTE",
+   "pos": [
+    540,
+    250
+   ],
+   "t_in": 104.29,
+   "t_out": 108.4,
+   "style": "white",
+   "size": 46
+  },
+  {
+   "text": "ENGENHEIRO",
+   "pos": [
+    540,
+    360
+   ],
+   "t_in": 105.75,
+   "t_out": 108.4,
+   "style": "green",
+   "size": 84
+  },
+  {
+   "text": "NÃO SABIA? COMENTE",
+   "pos": [
+    540,
+    510
+   ],
+   "t_in": 106.41,
+   "t_out": 108.4,
+   "style": "white",
+   "size": 46
+  },
+  {
+   "text": "ESTAGIÁRIO",
+   "pos": [
+    540,
+    620
+   ],
+   "t_in": 107.69,
+   "t_out": 108.4,
+   "style": "orange",
+   "size": 84
+  },
+  {
+   "text": "COMENTE O QUE ACHOU",
+   "pos": [
+    540,
+    280
+   ],
+   "t_in": 108.47,
+   "t_out": 113.6,
+   "style": "white",
+   "size": 56
+  },
+  {
+   "text": "MANDA PRO AMIGO",
+   "pos": [
+    540,
+    400
+   ],
+   "t_in": 108.57,
+   "t_out": 113.6,
+   "style": "yellow",
+   "size": 70
+  },
+  {
+   "text": "SEGUE PRA MAIS MÁQUINAS GIGANTES",
+   "pos": [
+    540,
+    520
+   ],
+   "t_in": 110.23,
+   "t_out": 113.6,
+   "style": "green",
+   "size": 44
+  }
+ ]
+}
