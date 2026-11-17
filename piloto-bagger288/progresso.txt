@@ -1,4 +1,4 @@
 Bagger 288 — render completo (1080x1920, EEVEE, mesma qualidade dos testes_v2)
-Atualizado: 2026-11-17 02:25 UTC
-Quadros prontos: 439 / 3331 (13.2%)
-Estimativa restante: ~53.0 h (a ~66 s por quadro), em blocos de 2 h retomáveis
+Atualizado: 2026-11-17 02:39 UTC
+Quadros prontos: 454 / 3331 (13.6%)
+Estimativa restante: ~52.7 h (a ~66 s por quadro), em blocos de 2 h retomáveis
