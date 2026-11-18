@@ -1,0 +1,136 @@
+{
+ "out": "<scratch>/gta6/s2v2/bistecone_gta6_split_1080p.mp4",
+ "work": "<scratch>/gta6/s2v2",
+ "fontsdir": "<scratch>/assets",
+ "font": "Archivo Black",
+ "fix": {
+  "Jenson": "Jason",
+  "Enquanto": "Aguenta",
+  "PLD": "pele",
+  "tapé,": "tá",
+  "irmã,": "irmão,",
+  "Trê...": "Três..."
+ },
+ "censor": true,
+ "segments": [
+  {
+   "key": "7709607113793850644",
+   "src": "<scratch>/dl/7709607113793850644/full.mp4",
+   "parts": [
+    [
+     0,
+     6.17
+    ]
+   ],
+   "face": [
+    0,
+    0,
+    1080,
+    612
+   ],
+   "game": [
+    0,
+    640,
+    1080,
+    1060
+   ],
+   "headline": "BISTECONE DORMIU PILOTANDO NO GTA 6"
+  },
+  {
+   "key": "7709493751646915861",
+   "src": "<scratch>/dl/7709493751646915861/full.mp4",
+   "parts": [
+    [
+     0,
+     17.0
+    ]
+   ],
+   "face": [
+    0,
+    0,
+    720,
+    480
+   ],
+   "game": [
+    0,
+    545,
+    720,
+    733
+   ],
+   "headline": "BISTECONE VÊ O MAPA DO GTA 6 PELA 1ª VEZ"
+  },
+  {
+   "key": "7709489001270349062",
+   "src": "<scratch>/dl/7709489001270349062/full.mp4",
+   "parts": [
+    [
+     0,
+     23.0
+    ]
+   ],
+   "face": [
+    0,
+    0,
+    1080,
+    560
+   ],
+   "game": [
+    0,
+    700,
+    1080,
+    1220
+   ],
+   "headline": "\"BOM DIA, SENHORAS\" DEU MUITO ERRADO"
+  },
+  {
+   "key": "7709510984322272532",
+   "src": "<scratch>/dl/7709510984322272532/full.mp4",
+   "parts": [
+    [
+     14.5,
+     36.0
+    ]
+   ],
+   "face": [
+    0,
+    0,
+    1080,
+    625
+   ],
+   "game": [
+    0,
+    640,
+    1080,
+    1280
+   ],
+   "headline": "O JASON É MUITO RUIM DE SUPINO"
+  },
+  {
+   "key": "7709527576347151617",
+   "src": "<scratch>/dl/7709527576347151617/full.mp4",
+   "parts": [
+    [
+     5.6,
+     10.0
+    ],
+    [
+     20.5,
+     28.8
+    ]
+   ],
+   "face": [
+    0,
+    0,
+    1080,
+    620
+   ],
+   "game": [
+    0,
+    725,
+    1080,
+    1195
+   ],
+   "headline": "BISTECONE MEXEU COM O JACARÉ ERRADO"
+  }
+ ]
+}

@@ -1,0 +1,132 @@
+{
+ "out": "<scratch>/gta6/s1v2/gta6_streamers_split_1080p.mp4",
+ "work": "<scratch>/gta6/s1v2",
+ "fontsdir": "<scratch>/assets",
+ "font": "Archivo Black",
+ "fix": {
+  "GTN8": "GTA 6",
+  "GTN 8": "GTA 6"
+ },
+ "censor": true,
+ "segments": [
+  {
+   "key": "7709504706912996621",
+   "src": "<scratch>/dl/7709504706912996621/full.mp4",
+   "parts": [
+    [
+     0,
+     15.4
+    ]
+   ],
+   "face": [
+    0,
+    0,
+    1080,
+    670
+   ],
+   "game": [
+    0,
+    935,
+    1080,
+    985
+   ],
+   "headline": "KAI CENAT FINDS THE FIRST BABY IN GTA 6"
+  },
+  {
+   "key": "WealthyNimbleHamsterDansGame-yrU7UShZomelh1Ke",
+   "src": "<scratch>/gta6/dl/WealthyNimbleHamsterDansGame-yrU7UShZomelh1Ke/full.mp4",
+   "parts": [
+    [
+     18.0,
+     33.5
+    ]
+   ],
+   "face": [
+    0,
+    0,
+    368,
+    280
+   ],
+   "game": [
+    450,
+    0,
+    1050,
+    1080
+   ],
+   "headline": "xQc STEALS HIS FIRST CAR IN GTA 6"
+  },
+  {
+   "key": "7709541178965839135",
+   "src": "<scratch>/dl/7709541178965839135/full.mp4",
+   "parts": [
+    [
+     0,
+     17.85
+    ]
+   ],
+   "face": [
+    0,
+    0,
+    1080,
+    630
+   ],
+   "game": [
+    0,
+    810,
+    1080,
+    1110
+   ],
+   "headline": "WILLSTUNNA MEETS A DRUNK DRIVER IN GTA 6"
+  },
+  {
+   "key": "7709516691100732692",
+   "src": "<scratch>/dl/7709516691100732692/full.mp4",
+   "parts": [
+    [
+     50.5,
+     69.7
+    ]
+   ],
+   "face": [
+    0,
+    90,
+    1080,
+    605
+   ],
+   "game": [
+    0,
+    705,
+    1080,
+    1115
+   ],
+   "headline": "LUCKYCHAPPY: \"IT WAS AN ACCIDENT!\""
+  },
+  {
+   "key": "7709523647379115277",
+   "src": "<scratch>/dl/7709523647379115277/full.mp4",
+   "parts": [
+    [
+     13.2,
+     22.0
+    ],
+    [
+     28.8,
+     35.5
+    ]
+   ],
+   "face": [
+    0,
+    0,
+    1080,
+    745
+   ],
+   "game": [
+    0,
+    1090,
+    1080,
+    830
+   ],
+   "headline": "SPEED FINDS OUT YOU NEED A KEY TO STEAL CARS"
+  }
+ ]
+}
