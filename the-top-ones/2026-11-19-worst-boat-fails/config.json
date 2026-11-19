@@ -1,0 +1,199 @@
+{
+ "build_dir": "<scratch>/v13/build",
+ "output": "<scratch>/v13/build/the_top_ones_worst_boat_fails_1080p.mp4",
+ "font": "<scratch>/assets/ArchivoBlack-Regular.ttf",
+ "blue": "#44C9F0",
+ "title": [
+  [
+   [
+    "RANKING",
+    "w"
+   ],
+   [
+    "THE",
+    "w"
+   ],
+   [
+    "WORST",
+    "b"
+   ]
+  ],
+  [
+   [
+    "BOAT",
+    "b"
+   ],
+   [
+    "FAILS",
+    "w"
+   ]
+  ]
+ ],
+ "zoom": 1.1,
+ "grade": {
+  "contrast": 1.07,
+  "brightness": 0.01,
+  "saturation": 1.14,
+  "gamma": 1.0
+ },
+ "layout": {
+  "title_top": 138,
+  "title_max_size": 86,
+  "title_max_width": 960,
+  "title_line_gap": 1.13,
+  "video_y": 318,
+  "video_h": 870,
+  "list_top": 1205,
+  "list_bottom": 1600,
+  "row_h_max": 58,
+  "list_font_ratio": 0.72,
+  "list_x": 78,
+  "name_max_x": 905
+ },
+ "audio": {
+  "music": "<scratch>/assets/music/357.mp3",
+  "music_offset": 13.0,
+  "whoosh": "<scratch>/assets/sfx/1490.mp3",
+  "whoosh_peak": 0.7,
+  "whoosh_gain_db": 4,
+  "fade_out": 2.0,
+  "lufs": -14,
+  "true_peak": -5.0,
+  "music_meta": {
+   "title": "Head Bang",
+   "artist": "Arulo",
+   "source": "Mixkit",
+   "license": "Mixkit Stock Music Free License",
+   "url": "https://mixkit.co/free-stock-music/tag/trap/",
+   "license_url": "https://mixkit.co/license/#musicFree"
+  },
+  "sfx_meta": {
+   "title": "Fast whoosh transition",
+   "source": "Mixkit",
+   "license": "Mixkit Sound Effects Free License",
+   "url": "https://mixkit.co/free-sound-effects/whoosh/"
+  }
+ },
+ "post": {
+  "title": "Ranking the WORST Boat Fails 🚤 #shorts",
+  "main_keyword": "WORST",
+  "hook": "Which boat owner had the worst day on the water? Drop your #1 👇",
+  "hashtags": [
+   "#boatfails",
+   "#boating",
+   "#boatlife"
+  ],
+  "niche_terms": [
+   "boatfails",
+   "boating",
+   "boatlife",
+   "boat",
+   "fails"
+  ]
+ },
+ "clips": [
+  {
+   "rank": 4,
+   "name": "Dock Jump Splashdown",
+   "src": "<scratch>/dl/ig_Dc5L2fFpBPS/full.mp4",
+   "start": 0.0,
+   "end": 10.0,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.5,
+   "source_type": "amador",
+   "creator": "fuentesvictorc",
+   "creator_name": "Victor Carlos Fuentes",
+   "url": "https://www.instagram.com/reel/Dc5L2fFpBPS",
+   "views": 1500000,
+   "replay": {
+    "start": 1.5,
+    "end": 3.5,
+    "speed": 0.5,
+    "zoom": 1.15,
+    "focus_y": 0.5
+   }
+  },
+  {
+   "rank": 2,
+   "name": "Overboard at the Inlet",
+   "src": "<scratch>/dl/ig_Dcrsf8cttbh/full.mp4",
+   "start": 0.0,
+   "end": 29.5,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.5,
+   "source_type": "amador",
+   "creator": "mike_boat_rush",
+   "creator_name": "BOAT RUSH",
+   "url": "https://www.instagram.com/reel/Dcrsf8cttbh",
+   "views": 2000000,
+   "src_crop": [
+    0,
+    230,
+    1080,
+    1690
+   ],
+   "zoom": 1.0
+  },
+  {
+   "rank": 5,
+   "name": "Sailboat vs Bridge",
+   "src": "<scratch>/dl/ig_DdRskvOzFl4/full.mp4",
+   "start": 0.0,
+   "end": 15.0,
+   "flip": true,
+   "focus_x": 0.5,
+   "focus_y": 0.5,
+   "source_type": "amador",
+   "creator": "sailinglover0",
+   "creator_name": "Janefar Lofer",
+   "url": "https://www.instagram.com/reel/DdRskvOzFl4",
+   "views": 1300000
+  },
+  {
+   "rank": 3,
+   "name": "Stuck Between Dock and Boat",
+   "src": "<scratch>/dl/ig_DdEF0iiRvMu/full.mp4",
+   "start": 0.0,
+   "end": 10.0,
+   "flip": true,
+   "focus_x": 0.5,
+   "focus_y": 0.5,
+   "source_type": "amador",
+   "creator": "thesaltymarina",
+   "creator_name": "The Salty Marina",
+   "url": "https://www.instagram.com/reel/DdEF0iiRvMu",
+   "views": 8300000,
+   "src_crop": [
+    0,
+    0,
+    720,
+    1060
+   ],
+   "zoom": 1.0,
+   "replay": {
+    "start": 1.5,
+    "end": 3.5,
+    "speed": 0.5,
+    "zoom": 1.15,
+    "focus_y": 0.5
+   }
+  },
+  {
+   "rank": 1,
+   "name": "Forgot the Drain Plugs",
+   "src": "<scratch>/dl/ig_DcwY6mGhFjR/full.mp4",
+   "start": 3.0,
+   "end": 24.0,
+   "flip": false,
+   "focus_x": 0.5,
+   "focus_y": 0.5,
+   "source_type": "amador",
+   "creator": "parkerrbenton",
+   "creator_name": "Parker Benton",
+   "url": "https://www.instagram.com/reel/DcwY6mGhFjR",
+   "views": 4800000
+  }
+ ]
+}
